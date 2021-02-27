@@ -1,4 +1,4 @@
-class Watchlist < ApplicationRecord
+class WatchlistAnime < ApplicationRecord
   belongs_to :user
   belongs_to :anime
 end
