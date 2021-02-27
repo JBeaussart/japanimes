@@ -1,1 +1,15 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# Japanimes
+
+- [Lien Heroku](http://www.japanimes.net/)
+
+## Identifiants de test
+
+Login
+```
+user@gmail.com
+```
+
+Password 
+```
+password
+```
