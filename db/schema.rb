@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 2021_02_27_135357) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_watchlists_on_user_id"
   end
-  
+
   add_foreign_key "reviews", "animes"
   add_foreign_key "reviews", "users"
   add_foreign_key "watchlists", "users"
