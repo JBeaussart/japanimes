@@ -2,7 +2,6 @@
 	width: 228px;
 	height: 320px;
 	position: relative;
-	text-align: center;
 	box-shadow: 2px 2px 60px grey;
 	border-radius: 4px;
 }
@@ -16,52 +15,67 @@
 
 .cards-img {
 	width: 228px;
-	height: 200px;
+	height: 320px;
 	position: absolute;
 	top: 0;
 	overflow: hidden;
 }
 
 
-.card-bottom {
+.card-description {
 	border-radius: 0 0 4px 4px;
 	position: absolute;
 	bottom: 0;
-	height: 130px;
+	height: 50px;
 	width: 228px;
-	background-color: white;
+	background-color: rgba(30,30,30,1);
 	transition: all 0.3s ease-out;
 	line-height: 30px;
 
 	.title {
-		margin-top: 8px;
+		position: absolute;
+		bottom: 0px;
+		left: 5px;
 		font-size: 26px;
+		color: white;
 	}
 
 	.heart-card {
-	font-size: 24px;
-	color: red;
+		position: absolute;
+		bottom: -10px;
+		right: 5px;
+		font-size: 36px;
+		color: red;
 	}
 
 	.date {
+		display: none;
 		font-size: 16px;
-		opacity: 0.8;
+		position: absolute;
+		bottom: 40px;
+		// align-items: center;
+		left: 40px;
+		color: white;
 	}
 }
 
 
-.card:hover .card-bottom {
+.card:hover .card-description {
 	width: 228px;
 	height: 170px;
-	background: white;
 }
 
-.card:hover .card-bottom .heart-card{
-	line-height: 100px;
-	font-size: 60px;
+.card:hover .card-description .heart-card{
+		top: 10px;
+		right: 5px;
 }
 
-.card:hover .card-bottom .date {
-	display: none;
+.card:hover .card-description .title{
+		top: 10px;
+		left: 5px;
+}
+
+.card:hover .card-description .date {
+	display: block;
 }
 
