@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  position: relative;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +10,15 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.title {
+  position: absolute;
+  margin-left: 50px;
 }
