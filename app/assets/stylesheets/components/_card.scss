@@ -1,0 +1,65 @@
+.card {
+	width: 200px;
+	height: 280px;
+	border: 1px solid black;
+	position: relative;
+	text-align: center;
+	box-shadow: 2px 2px 60px grey;
+	border-radius: 4px;
+}
+
+.card-img {
+	width: 200px;
+	height: 300px;
+}
+
+.cards-img {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+  background-size: cover;
+}
+
+
+.card-bottom {
+	border-radius: 0 0 4px 4px;
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	width: 200px;
+	background-color: white;
+	transition: all 0.3s ease-out;
+	line-height: 14px;
+
+	.title {
+		font-size: 26px;
+	}
+
+	.heart-card {
+	font-size: 24px;
+	color: red;
+	position: absolute;
+	bottom: -10px;
+	left: 5px;
+	}
+
+	.date {
+		font-size: 16px;
+		opacity: 0.8;
+	}
+}
+
+
+
+.card:hover .card-bottom {
+	width: 200px;
+	height: 150px;
+	background: white;
+}
+
+.card:hover .card-bottom .date {
+	display: none;
+}
+
