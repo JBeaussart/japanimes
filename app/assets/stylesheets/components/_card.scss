@@ -11,6 +11,7 @@
 	width: 228px;
 	height: 300px;
 	border-radius: 4px;
+  object-fit: cover;
 }
 
 .cards-img {
@@ -19,7 +20,6 @@
 	position: absolute;
 	top: 0;
 	overflow: hidden;
-  background-size: cover;
 }
 
 
