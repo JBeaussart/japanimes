@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :animes, only: [ :index, :show ] do
-    resources :reviews, only: [ :new, :create ]
-    resources :watchlist_animes, only: [ :create, :edit, :update, :destroy ]
+    resources :reviews, only: :create
+    resources :watchlist_animes, only: :create
   end
+  resources :watchlist_animes, only: :destroy 
   resources :reviews, only: [ :update, :destroy ]
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
