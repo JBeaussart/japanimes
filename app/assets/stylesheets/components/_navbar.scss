@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #FFF5E9;
   position: relative;
 }
 
@@ -20,6 +20,28 @@
 
 .title {
   position: absolute;
+  margin-left: 100px;
+  padding-top: 25px;
+  font-family: 'ZenzaiItacha-vElZ';
+  font-size: 50px;
+  color: #DA4903;
+}
+
+.logo {
+  position: absolute;
   margin-left: 50px;
-  font-family: 'AstagaDragon-VGdMe'
+}
+
+.jojo {
+  position: absolute;
+  font-family: Jojomix-gEr4;
+  font-size: 20px;
+  color: #F99002;
+  padding-top: 10px;
+  margin-left: 470px;
+}
+
+.dropdown-menu {
+  background-color: #FFF5E9;
+  color: #F99002;
 }

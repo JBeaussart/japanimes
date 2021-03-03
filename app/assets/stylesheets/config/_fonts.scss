@@ -16,7 +16,13 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 // $my-font: "Font Name";
 
 @font-face {
-  font-family: "AstagaDragon-VGdMe";
-  src: font-url('AstagaDragon-VGdMe.ttf');
+  font-family: "ZenzaiItacha-vElZ";
+  src: font-url('ZenzaiItacha-vElZ.ttf');
 }
-$my-font: "AstagaDragon-VGdMe";
+$my-font: "ZenzaiItacha-vElZ";
+
+@font-face {
+  font-family: "Jojomix-gEr4";
+  src: font-url('Jojomix-gEr4.ttf');
+}
+$my-font: "Jojomix-gEr4";
