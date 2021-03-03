@@ -6,14 +6,8 @@
 	border-radius: 4px;
 }
 
-.card-img {
-	width: 228px;
-	height: 300px;
-	border-radius: 4px;
-  object-fit: cover;
-}
 
-.cards-img {
+.cards-img-container {
 	width: 228px;
 	height: 320px;
 	position: absolute;
@@ -21,86 +15,54 @@
 	overflow: hidden;
 }
 
+.card-img {
+	width: 228px;
+	height: 300px;
+	border-radius: 4px;
+  object-fit: cover;
+}
 
 .card-description {
 	border-radius: 0 0 4px 4px;
 	position: absolute;
-	bottom: 0;
-	height: 50px;
+	bottom: -10px;
+	height: 80px;
 	width: 228px;
-	background-color: rgba(30,30,30,1);
-	transition: all 1s ease-out;
-	line-height: 30px;
+	background-color: rgb(255, 255, 255);
+
 
 	.title {
 		position: absolute;
-		line-height: 50px;
+		line-height: 40px;
 		left: 8px;
 		font-size: 26px;
-		color: white;
+		color: black;
 	}
 
 	.heart-card {
+		cursor: pointer;
 		position: absolute;
-		line-height: 50px;
+		line-height: 40px;
 		right: 8px;
 		font-size: 36px;
 		color: red;
 	}
 
-	.date {
-		display: none;
-		font-size: 16px;
-		position: absolute;
-		top: 60px;
-		left: 8px;
-		color: white;
-	}
-
-	.episodes {
-		display: none;
-		font-size: 16px;
-		position: absolute;
-		top: 90px;
-		left: 8px;
-		color: white;
-	}
-
 	.rating {
-		display: none;
 		font-size: 16px;
 		position: absolute;
-		bottom: 0px;
+		bottom: -10px;
 		left: 8px;
-		color: white;
+		color: rgb(255, 166, 0);
+		opacity: 0.6;
 	}
 }
 
-
-.card:hover .card-description {
-	width: 228px;
-	height: 170px;
+.card:hover .card-img{
+	transition: all 0.5s ease-in-out;
+	transform: scale(1.5);
 }
-
-.card:hover .card-description .heart-card{
-		top: 10px;
-		right: 5px;
-}
-
-.card:hover .card-description .title{
-		top: 10px;
-		left: 5px;
-}
-
-.card:hover .card-description .date {
-	display: block;
-}
-
-.card:hover .card-description .episodes {
-	display: block;
-}
-
-.card:hover .card-description .rating {
-	display: block;
-}
-
+.tooltip-inner{
+	color: black;
+	background-color:white;
+	}
