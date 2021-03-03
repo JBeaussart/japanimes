@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: #FFF5E9;
+  background: #FFFCF7;
   position: relative;
 }
 
@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
+  color: #DA4903;
 }
 
 .title {
@@ -36,12 +37,14 @@
   position: absolute;
   font-family: Jojomix-gEr4;
   font-size: 20px;
-  color: #F99002;
+  color: #DA4903;
   padding-top: 10px;
   margin-left: 470px;
 }
 
 .dropdown-menu {
-  background-color: #FFF5E9;
-  color: #F99002;
+  background-color: #FFFCF7;
+  border: 0.1rem solid #DA4903;
+  border-radius: 8px;
+  box-shadow: 8px 5px 5px #DA4903;
 }
