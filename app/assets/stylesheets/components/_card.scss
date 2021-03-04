@@ -20,6 +20,7 @@
 	height: 300px;
 	border-radius: 4px;
   object-fit: cover;
+	transition: all 0.3s ease-in-out;
 }
 
 .card-description {
@@ -42,9 +43,9 @@
 	.heart-card {
 		cursor: pointer;
 		position: absolute;
-		line-height: 40px;
-		right: 8px;
-		font-size: 36px;
+		line-height: 80px;
+		right: 18px;
+		font-size: 40px;
 		color: red;
 	}
 
@@ -59,8 +60,7 @@
 }
 
 .card:hover .card-img{
-	transition: all 0.5s ease-in-out;
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
 .tooltip-inner{
 	color: black;
