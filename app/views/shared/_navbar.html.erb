@@ -9,13 +9,13 @@
     <li onclick="toggleMenu();"><%= link_to "Ma watchlist", "#", style: "color: #DA4903" %></li>
   </ul>
 
-  <%= image_tag "4-stars-dragonball.png", class: "dragonball avatar" %>
-  <h1 class="title">Jap'Animes</h1>
+    <%= image_tag "4-stars-dragonball.png", class: "dragonball avatar" %>
+    <h1 class="title">Jap'Animes</h1>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-        <li class="nav-item dropdown jojo-text">Content de te revoir <%= current_user.email %></li>
+        <li class="nav-item dropdown jojo-text">Hello <%= current_user.email %> !</li>
         <li class="nav-item dropdown">
           <%= image_tag "goku.png", class: "goku avatar dropdown-toggle", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -35,7 +35,11 @@
   function toggleMenu() {
     const menuToggle = document.querySelector(".toggle");
     const menu = document.querySelector(".menu");
+    const title = document.querySelector(".title");
+    const dragonball = document.querySelector(".dragonball");
     menuToggle.classList.toggle("active");
     menu.classList.toggle("active");
+    title.classList.toggle("active");
+    dragonball.classList.toggle("active");
   }
 </script>
