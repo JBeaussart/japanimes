@@ -1,32 +1,23 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="nav-item dropdown">
-    <%= image_tag "dropdown.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-
-    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-      <%= link_to "Accueil", "/", class: "dropdown-item", style: "color: #DA4903" %>
-      <%= link_to "Tableau de bord", "user_path(current_user)", class: "dropdown-item", style: "color: #DA4903" %>
-      <%= link_to "Ma watchlist", "#", class: "dropdown-item", style: "color: #DA4903" %>
-      <p class="social-links"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i><i class="fab fa-youtube"></i></p>
-    </div>
+  <div class="toggle" onclick="toggleMenu();">
+    <i class="fas fa-bars"></i>
   </div>
 
-  <%= image_tag "4-stars-dragonball.png", class: "logo avatar" %>
+  <ul class="menu">
+    <li onclick="toggleMenu();"><%= link_to "Accueil", "/", style: "color: #DA4903" %></li>
+    <li onclick="toggleMenu();"><%= link_to "Tableau de bord", "user_path(current_user)", style: "color: #DA4903" %></li>
+    <li onclick="toggleMenu();"><%= link_to "Ma watchlist", "#", style: "color: #DA4903" %></li>
+  </ul>
+
+  <%= image_tag "4-stars-dragonball.png", class: "dragonball avatar" %>
   <h1 class="title">Jap'Animes</h1>
-  <p class="jojo">Bonjour a tous et bienvenue sur Jap'Animes</p>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Une hésitation? Comparez !", "#", class: "nav-link", style: "color: #DA4903" %>
-        </li>
+        <li class="nav-item dropdown jojo-text">Content de te revoir <%= current_user.email %></li>
         <li class="nav-item dropdown">
-          <%= image_tag "goku.png", class: "avatar dropdown-toggle", id: "navbarDropdown2", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <%= image_tag "goku.png", class: "goku avatar dropdown-toggle", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "dropdown-item", style: "color: #DA4903" %>
           </div>
@@ -39,3 +30,12 @@
     </ul>
   </div>
 </div>
+
+<script>
+  function toggleMenu() {
+    const menuToggle = document.querySelector(".toggle");
+    const menu = document.querySelector(".menu");
+    menuToggle.classList.toggle("active");
+    menu.classList.toggle("active");
+  }
+</script>

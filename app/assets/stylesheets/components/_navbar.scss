@@ -12,34 +12,58 @@
   width: 40px;
 }
 
-.social-links {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+.toggle {
+  font-size: 30px;
+  cursor: pointer;
   color: #DA4903;
+}
+
+.toggle.active {
+  cursor: pointer;
+}
+
+.menu {
+  list-style-type: none;
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  display: block;
+  text-align: center;
+  width: 20%;
+  height: 100vh;
+  background: #FFFCF7;
+  transition: 0.9s;
+  z-index: 999;
+  // border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.menu.active {
+  left: 0;
+}
+
+.dragonball {
+  position: absolute;
+  margin-left: 40px;
 }
 
 .title {
   position: absolute;
-  margin-left: 100px;
+  margin-left: 90px;
   padding-top: 25px;
   font-family: 'ZenzaiItacha-vElZ';
   font-size: 50px;
   color: #DA4903;
 }
 
-.logo {
-  position: absolute;
-  margin-left: 50px;
+.jojo-text {
+  font-family: "animeace2_reg";
+  font-size: 15px;
+  color: #DA4903;
+  margin: auto 10px;
 }
 
-.jojo {
-  position: absolute;
-  font-family: Jojomix-gEr4;
-  font-size: 20px;
-  color: #DA4903;
-  padding-top: 10px;
-  margin-left: 470px;
+.goku {
+  cursor: pointer;
 }
 
 .dropdown-menu {
