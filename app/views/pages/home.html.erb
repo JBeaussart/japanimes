@@ -44,7 +44,9 @@
     </div>
     <div class="card-description">
       <h1 class="title">Death note</h1>
-      <p class="heart-card"><i class="far fa-heart"></i></p>
+      <% if current_user != nil %>
+        <p class="heart-card"><i class="far fa-heart"></i></p>
+      <% end %>
       <p class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
