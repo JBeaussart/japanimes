@@ -6,7 +6,6 @@
 	border-radius: 4px;
 }
 
-
 .cards-img-container {
 	width: 228px;
 	height: 320px;
@@ -31,38 +30,49 @@
 	width: 228px;
 	background-color: rgb(255, 255, 255);
 
+		.title {
+			position: absolute;
+			line-height: 40px;
+			left: 8px;
+			font-size: 26px;
+			color: black;
+		}
 
-	.title {
-		position: absolute;
-		line-height: 40px;
-		left: 8px;
-		font-size: 26px;
-		color: black;
-	}
-
-	.heart-card {
-		cursor: pointer;
-		position: absolute;
-		line-height: 80px;
-		right: 18px;
-		font-size: 40px;
-		color: red;
-	}
-
-	.rating {
-		font-size: 16px;
-		position: absolute;
-		bottom: -10px;
-		left: 8px;
-		color: rgb(255, 166, 0);
-		opacity: 0.6;
-	}
+		.rating {
+			font-size: 16px;
+			position: absolute;
+			bottom: -10px;
+			left: 8px;
+			color: rgb(255, 166, 0);
+			opacity: 0.6;
+		}
 }
 
 .card:hover .card-img{
 	transform: scale(1.2);
 }
+
 .tooltip-inner{
 	color: black;
 	background-color:white;
-	}
+}
+
+.like {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  background-image: url(web_heart_animation.png);
+  position: absolute;
+  top: -10%;
+  left: 60%;
+}
+
+.anim-like {
+  animation-name: anim-like;
+  animation-duration: 0.8s;
+  animation-timing-function: steps(28); 
+}
+@keyframes anim-like {
+  from{background-position: left;}
+  to{background-position: right;}
+}
