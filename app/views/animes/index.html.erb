@@ -2,14 +2,18 @@
   <div class="row">
     <% @animes.each do |anime| %>
       <div class="card m-4" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor">  
+
         <div class="cards-img-container">
           <%= image_tag('manga2.png', alt: 'manga1.png', class: "card-img")%>
         </div>
+
         <div class="card-description">
           <h1 class="title"><%= anime.title %></h1>
           <% if current_user != nil %>
+            <div class="like"></div>
           <% end %>
-          <div class="like"></div>
+
+
           <p class="rating">
             <%# <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -19,6 +23,7 @@
             <%= "#{anime.rating} / 5" %>
           </p>
         </div>
+
       </div>
     <% end %>
   </div>
