@@ -13,9 +13,8 @@ class AnimesController < ApplicationController
 
   def create
     @anime = Anime.new(anime_params)
-    @anime.user = current_user
     if @anime.save
-      redirect_to user_path(current_user)
+      redirect_to animes_path(current_user)
     else
       render :new
     end
