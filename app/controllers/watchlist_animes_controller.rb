@@ -9,9 +9,4 @@ class WatchlistAnimesController < ApplicationController
     end
   end
 
-  def destroy
-    @watchlist_animes = WatchlistAnime.find(user_id: current_user.id, anime_id: @anime.id)
-    @watchlist_animes.destroy
-    redirect_to user_path(current_user)
-  end
 end
