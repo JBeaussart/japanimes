@@ -14,7 +14,12 @@
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="far fa-star"></i> -->
-        <%= "#{anime.rating} / 5" %>
+        <% anime.rating.times do  %>
+          <i class="fas fa-star"></i>
+        <% end %>
+        <% anime.blank_stars.times do %>
+          <i class="far fa-star"></i>
+        <% end %>
       </p>
     </div>
   </div>
