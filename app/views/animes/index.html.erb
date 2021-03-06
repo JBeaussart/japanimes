@@ -1,21 +1,29 @@
- <% @animes.each do |anime| %>
-  <div class="card" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor">  
-    <div class="cards-img-container">
-      <%= image_tag('manga1.jpg', alt: 'manga1.jpg', class: "card-img")%>
-    </div>
-    <div class="card-description">
-      <h1 class="title"><%= anime.title %></h1>
-      <% if current_user != nil %>
-        <p class="heart-card"><i class="far fa-heart"></i></p>
-      <% end %>
-      <p class="rating">
-        <% anime.rating.times do  %>
-          <i class="fas fa-star"></i>
-        <% end %>
-        <% anime.blank_stars.times do %>
-          <i class="far fa-star"></i>
-        <% end %>
-      </p>
-    </div>
+<div class="container">
+  <div class="row">
+    <% @animes.each do |anime| %>
+      <div class="card m-4" data-toggle="tooltip" data-placement="right" data-html="true" title="Lorem ipsum dolo <br> coucouc ">  
+
+        <div class="cards-img-container">
+          <%= image_tag('manga2.png', alt: 'manga1.png', class: "card-img")%>
+        </div>
+
+        <div class="card-description">
+          <h1 class="title"><%= anime.title %></h1>
+          <% if current_user != nil %>
+            <div class="like"></div>
+          <% end %>
+
+          <p class="rating">
+            <% anime.rating.times do  %>
+              <i class="fas fa-star"></i>
+            <% end %>
+            <% anime.blank_stars.times do %>
+              <i class="far fa-star"></i>
+            <% end %>
+          </p>   
+        </div>
+      </div>
+    <% end %>
   </div>
-<% end %>
+ </div>
+ 

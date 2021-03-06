@@ -8,10 +8,9 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-// Tooltip bootstrap pour les cards
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+// Custom require
+require("custom/heart_animation")
+require("custom/card_tooltip")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
