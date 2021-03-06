@@ -1,13 +1,13 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="toggle" onclick="toggleMenu();">
+  <div class="toggle">
     <i class="fas fa-bars"></i>
   </div>
 
   <ul class="menu">
-    <li onclick="toggleMenu();"><%= link_to "Accueil", "/", style: "color: #DA4903", class: "menu_link" %></li>
-    <li onclick="toggleMenu();"><%= link_to "Tableau de bord", "#", style: "color: #DA4903", class: "menu_link" %></li>
-    <li onclick="toggleMenu();"><%= link_to "Ma watchlist", "#", style: "color: #DA4903", class: "menu_link" %></li>
-    <li onclick="toggleMenu();"><%= link_to "Théories", "#", style: "color: #DA4903", class: "menu_link" %></li>
+    <li><%= link_to "Accueil", "/", style: "color: #DA4903", class: "menu_link" %></li>
+    <li><%= link_to "Tableau de bord", "#", style: "color: #DA4903", class: "menu_link" %></li>
+    <li><%= link_to "Ma watchlist", "#", style: "color: #DA4903", class: "menu_link" %></li>
+    <li><%= link_to "Théories", "#", style: "color: #DA4903", class: "menu_link" %></li>
   </ul>
 
     <%= image_tag "4-stars-dragonball.png", class: "dragonball avatar" %>
@@ -31,20 +31,3 @@
     </ul>
   </div>
 </div>
-
-<script>
-  const menuToggle = document.querySelector(".toggle");
-  const menuToggleIcon = document.querySelector(".toggle > i.fas")
-  const menu = document.querySelector(".menu");
-  const title = document.querySelector(".title");
-  const dragonball = document.querySelector(".dragonball");
-
-  function toggleMenu() {
-    menuToggle.classList.toggle("active");
-    menuToggleIcon.classList.toggle("fa-bars");
-    menuToggleIcon.classList.toggle("fa-times");
-    menu.classList.toggle("active");
-    title.classList.toggle("active");
-    dragonball.classList.toggle("active");
-  }
-</script>
