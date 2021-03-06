@@ -27,11 +27,12 @@ require("custom/card_tooltip")
 
 // External imports
 import "bootstrap";
-
+import { listenToNavbarToggle } from "../custom/toggle_menu";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  listenToNavbarToggle();
 });
