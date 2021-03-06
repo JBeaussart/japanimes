@@ -1,19 +1,22 @@
-const like = document.querySelector('.like');
+const like = document.querySelectorAll('.like');
 
-let countLike = 0;
-like.addEventListener('click', () => {
 
-    if(countLike === 0) {
-        like.classList.toggle('anim-like');
-        countLike = 1;
-        like.style.backgroundPosition = 'right';
-    } else {
-        countLike = 0;
-        like.style.backgroundPosition = 'left';
-    }
-
-});
-
-like.addEventListener('animationend', () => {
-    like.classList.toggle('anim-like');
+like.forEach((element) => {
+    let countLike = 0;
+    element.addEventListener('click', () => {
+    
+        if(countLike === 0) {
+            element.classList.toggle('anim-like');
+            countLike = 1;
+            element.style.backgroundPosition = 'right';
+        } else {
+            countLike = 0;
+            element.style.backgroundPosition = 'left';
+        }
+    
+    });
+    
+    element.addEventListener('animationend', () => {
+        element.classList.toggle('anim-like');
+    })
 })
