@@ -23,6 +23,6 @@ class AnimesController < ApplicationController
   end
 
   def anime_params
-    params.require(:anime).permit(:title, :description, :parution_date, :category, :streaming_service, :rating)
+    params.require(:anime).permit(:title, :description, :parution_date, :category, :streaming_service, :rating, :photo)
   end
 end
