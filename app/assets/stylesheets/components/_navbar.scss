@@ -44,6 +44,7 @@ a:link {
 
 .menu li {
   font-family: Geomanist-Regular, serif;
+  font-weight: bold;
   margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba($color: #DA4903, $alpha: 0.2);
@@ -57,12 +58,16 @@ a:link {
   left: 0;
 }
 
+.fa-d-and-d {
+  font-size: 40px;
+}
+
 .title {
   position: absolute;
   margin-left: 40px;
-  padding-top: 25px;
-  font-family: 'ZenzaiItacha-vElZ', serif;
-  font-size: 50px;
+  padding-top: 15px;
+  font-family: 'DhfSemangat2012DemoBold-5jDG', serif;
+  font-size: 40px;
   color: #DA4903;
 }
 
