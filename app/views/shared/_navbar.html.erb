@@ -4,9 +4,10 @@
   </div>
 
   <ul class="menu">
-    <li onclick="toggleMenu();"><%= link_to "Accueil", "/", style: "color: #DA4903" %></li>
-    <li onclick="toggleMenu();"><%= link_to "Tableau de bord", "user_path(current_user)", style: "color: #DA4903" %></li>
-    <li onclick="toggleMenu();"><%= link_to "Ma watchlist", "#", style: "color: #DA4903" %></li>
+    <li onclick="toggleMenu();"><%= link_to "Accueil", "/", style: "color: #DA4903", class: "menu_link" %></li>
+    <li onclick="toggleMenu();"><%= link_to "Tableau de bord", "#", style: "color: #DA4903", class: "menu_link" %></li>
+    <li onclick="toggleMenu();"><%= link_to "Ma watchlist", "#", style: "color: #DA4903", class: "menu_link" %></li>
+    <li onclick="toggleMenu();"><%= link_to "Théories", "#", style: "color: #DA4903", class: "menu_link" %></li>
   </ul>
 
     <%= image_tag "4-stars-dragonball.png", class: "dragonball avatar" %>
@@ -15,7 +16,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-        <li class="nav-item dropdown jojo-text">Hello <%= current_user.email %> !</li>
+        <li class="nav-item dropdown hello-text">Hello <%= current_user.email %> !</li>
         <li class="nav-item dropdown">
           <%= image_tag "goku.png", class: "goku avatar dropdown-toggle", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -32,11 +33,12 @@
 </div>
 
 <script>
-    const menuToggle = document.querySelector(".toggle");
-    const menuToggleIcon = document.querySelector(".toggle > i.fas")
-    const menu = document.querySelector(".menu");
-    const title = document.querySelector(".title");
-    const dragonball = document.querySelector(".dragonball");
+  const menuToggle = document.querySelector(".toggle");
+  const menuToggleIcon = document.querySelector(".toggle > i.fas")
+  const menu = document.querySelector(".menu");
+  const title = document.querySelector(".title");
+  const dragonball = document.querySelector(".dragonball");
+
   function toggleMenu() {
     menuToggle.classList.toggle("active");
     menuToggleIcon.classList.toggle("fa-bars");

@@ -1,3 +1,7 @@
+a:link {
+  text-decoration: none;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: #FFFCF7;
@@ -20,6 +24,7 @@
 
 .toggle.active {
   cursor: pointer;
+  font-size: 30px;
 }
 
 .menu {
@@ -33,7 +38,18 @@
   transition: 0.5s;
   z-index: 999;
   font-size: 24px;
-  // border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 10px;
+}
+
+.menu li {
+  font-family: Geomanist-Regular, serif;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba($color: #DA4903, $alpha: 0.2);
+}
+
+.menu_link:hover {
+  opacity: 0.6;
 }
 
 .menu.active {
@@ -53,7 +69,7 @@
   position: absolute;
   margin-left: 90px;
   padding-top: 25px;
-  font-family: 'ZenzaiItacha-vElZ';
+  font-family: 'ZenzaiItacha-vElZ', serif;
   font-size: 50px;
   color: #DA4903;
 }
@@ -62,9 +78,9 @@
   display: none;
 }
 
-.jojo-text {
-  font-family: "animeace2_reg";
-  font-size: 15px;
+.hello-text {
+  font-family: "Geomanist-Regular", serif;
+  font-size: 20px;
   color: #DA4903;
   margin: auto 10px;
 }
@@ -77,5 +93,7 @@
   background-color: #FFFCF7;
   border: 0.1rem solid #DA4903;
   border-radius: 8px;
-  box-shadow: 8px 5px 5px #DA4903;
+  box-shadow: 2px 1px 1px #DA4903;
+  font-family: Geomanist-Regular, serif;
+  text-align: center;
 }
