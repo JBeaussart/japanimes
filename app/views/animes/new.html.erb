@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row mt-10 rounded">
+    <div class="col-6 m-auto mt-5 w-50 bg-dark rounded p-5 border bg-transparent">
+      <h1 class="mb-10">Ajouter un Anime</h1>
+      <%= simple_form_for [ @anime ] do |f| %>
+        <%= f.input :title, label: 'Titre' %>
+        <%= f.input :description %>
+        <%= f.input :parution_date %>
+        <%= f.input :category %>
+        <%= f.input :streaming_service, label: 'Service de streamimng' %>
+        <%= f.input :rating %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit "Valider", class: "btn btn-success" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+ 
