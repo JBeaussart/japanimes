@@ -14,3 +14,21 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+@font-face {
+  font-family: "ZenzaiItacha-vElZ";
+  src: font-url('ZenzaiItacha-vElZ.ttf');
+}
+$my-font: "ZenzaiItacha-vElZ";
+
+@font-face {
+  font-family: "Jojomix-gEr4";
+  src: font-url('Jojomix-gEr4.ttf');
+}
+$my-font: "Jojomix-gEr4";
+
+@font-face {
+  font-family: "Geomanist-Regular";
+  src: font-url('Geomanist-Regular.otf');
+}
+$my-font: "Geomanist-Regular";

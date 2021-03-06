@@ -1,6 +1,11 @@
+a:link {
+  text-decoration: none;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #FFFCF7;
+  position: relative;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +14,86 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.toggle {
+  font-size: 30px;
+  cursor: pointer;
+  color: #DA4903;
+}
+
+.toggle.active {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.menu {
+  list-style-type: none;
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  width: 16%;
+  height: 100vh;
+  background: #FFFCF7;
+  transition: 0.5s;
+  z-index: 999;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.menu li {
+  font-family: Geomanist-Regular, serif;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba($color: #DA4903, $alpha: 0.2);
+}
+
+.menu_link:hover {
+  opacity: 0.6;
+}
+
+.menu.active {
+  left: 0;
+}
+
+.dragonball {
+  position: absolute;
+  margin-left: 40px;
+}
+
+.dragonball.active {
+  display: none;
+}
+
+.title {
+  position: absolute;
+  margin-left: 90px;
+  padding-top: 25px;
+  font-family: 'ZenzaiItacha-vElZ', serif;
+  font-size: 50px;
+  color: #DA4903;
+}
+
+.title.active {
+  display: none;
+}
+
+.hello-text {
+  font-family: "Geomanist-Regular", serif;
+  font-size: 20px;
+  color: #DA4903;
+  margin: auto 10px;
+}
+
+.goku {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  background-color: #FFFCF7;
+  border: 0.1rem solid #DA4903;
+  border-radius: 8px;
+  box-shadow: 2px 1px 1px #DA4903;
+  font-family: Geomanist-Regular, serif;
+  text-align: center;
 }
