@@ -21,11 +21,13 @@ a:link {
   font-size: 30px;
   cursor: pointer;
   color: #DA4903;
+  opacity: 0.8;
 }
 
 .toggle.active {
   cursor: pointer;
   font-size: 30px;
+  opacity: 0.8;
 }
 
 .menu {
@@ -70,12 +72,14 @@ a:link {
 
 .title {
   position: absolute;
-  margin-left: 40px;
-  padding-top: 15px;
   font-family: 'DhfSemangat2012DemoBold-5jDG', serif;
-  font-size: 40px;
-  color: #DA4903;
+  margin-left: 30px;
+  margin-top: 5px;
   transition: all 0.6s ease;
+}
+
+.logo-title {
+  width: 150px;
 }
 
 .title.active {
