@@ -7,6 +7,7 @@ a:link {
   background: #FFFCF7;
   position: relative;
   z-index: 998;
+  height: 60px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -18,7 +19,7 @@ a:link {
 }
 
 .toggle {
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
   color: #DA4903;
   opacity: 0.8;
@@ -26,7 +27,7 @@ a:link {
 
 .toggle.active {
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   opacity: 0.8;
 }
 
