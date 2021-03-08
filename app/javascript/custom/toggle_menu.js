@@ -1,9 +1,9 @@
 export const listenToNavbarToggle = () => {
   const menuToggle     = document.querySelector(".toggle");
-  const menuToggleIcon = document.querySelector(".toggle > i.fas")
+  const menuToggleIcon = document.querySelector(".toggle > i.fas");
   const menu           = document.querySelector(".menu");
   const title          = document.querySelector(".title");
-  const body = document.querySelector("body");
+  const body           = document.querySelector("body");
   
   menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle("active");
