@@ -14,6 +14,7 @@ class WatchlistAnimesController < ApplicationController
   end
 
   def destroy
+    @anime = Anime.find(params[:id])
     @watchlist_animes = WatchlistAnime.find(params[:id])
     @watchlist_animes.destroy
     redirect_to user_path(current_user)
