@@ -5,7 +5,7 @@ export const listenToNavbarToggle = () => {
   const title          = document.querySelector(".title");
   // const dragonball     = document.querySelector(".dragonball");
   const body = document.querySelector("body");
-
+  
   menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle("active");
     menuToggleIcon.classList.toggle("fa-bars");

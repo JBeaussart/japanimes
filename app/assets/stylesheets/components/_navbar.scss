@@ -7,6 +7,7 @@ a:link {
   background: #FFFCF7;
   position: relative;
   z-index: 998;
+  height: 60px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -18,14 +19,16 @@ a:link {
 }
 
 .toggle {
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
   color: #DA4903;
+  opacity: 0.8;
 }
 
 .toggle.active {
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
+  opacity: 0.8;
 }
 
 .menu {
@@ -36,22 +39,28 @@ a:link {
   width: 16%;
   height: 100vh;
   background: #FFFCF7;
-  transition: 0.5s;
+  transition: all 0.8s ease-out;
   z-index: 999;
-  font-size: 24px;
+  font-size: 20px;
   padding-top: 10px;
 }
 
 .menu li {
-  font-family: Geomanist-Regular, serif;
-  font-weight: bold;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 700;
   margin-bottom: 10px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid rgba($color: #DA4903, $alpha: 0.2);
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba($color: #7a2a02, $alpha: 0.3);
+  width: 200px;
+}
+
+.menu_link {
+  color: #000000;
+  transition: all 0.2s ease-out;
 }
 
 .menu_link:hover {
-  opacity: 0.6;
+  color: #DA4903;
 }
 
 .menu.active {
@@ -64,15 +73,18 @@ a:link {
 
 .title {
   position: absolute;
-  margin-left: 40px;
-  padding-top: 15px;
   font-family: 'DhfSemangat2012DemoBold-5jDG', serif;
-  font-size: 40px;
-  color: #DA4903;
+  margin-left: 40px;
+  margin-top: 5px;
+  transition: all 0.6s ease;
+}
+
+.logo-title {
+  width: 150px;
 }
 
 .title.active {
-  display: none;
+  opacity: 0;
 }
 
 .hello-text {
@@ -92,7 +104,6 @@ a:link {
   border: 0.1rem solid #DA4903;
   border-radius: 8px;
   box-shadow: 2px 1px 1px #DA4903;
-  font-family: Geomanist-Regular, serif;
   text-align: center;
 }
 
