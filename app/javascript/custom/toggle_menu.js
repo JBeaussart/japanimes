@@ -3,7 +3,7 @@ export const listenToNavbarToggle = () => {
   const menuToggleIcon = document.querySelector(".toggle > i.fas");
   const menu           = document.querySelector(".menu");
   const title          = document.querySelector(".title");
-  const body           = document.querySelector("body");
+  const overlay        = document.querySelector(".overlay");
   
   menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle("active");
@@ -11,6 +11,6 @@ export const listenToNavbarToggle = () => {
     menuToggleIcon.classList.toggle("fa-times");
     menu.classList.toggle("active");
     title.classList.toggle("active");
-    body.classList.toggle("has-overlay");
+    overlay.classList.toggle("has-overlay");
   });
 }
