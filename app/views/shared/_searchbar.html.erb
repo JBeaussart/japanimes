@@ -1,0 +1,10 @@
+<div class="searchbar">
+  <%= form_tag animes_path, class:"form-inline", method: :get do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Trouvez votre animé"
+    %>
+    <%= submit_tag "Rechercher", class: "btn-nav btn-nav-blue" %>
+  <% end %>
+</div>
