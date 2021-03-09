@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row">
     <% @animes.each do |anime| %>
+    <a href="<%= anime_path(anime) %>">
       <div class="card m-4" data-toggle="tooltip" data-placement="right" data-html="true" title="Description: <%= anime.description %> <br><br> Date de parution:  <%= anime.parution_date %>">  
 
         <div class="cards-img-container">
@@ -23,6 +24,7 @@
           </p>   
         </div>
       </div>
+      </a>
     <% end %>
   </div>
  </div>
