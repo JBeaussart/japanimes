@@ -28,6 +28,7 @@ require("custom/card_tooltip")
 // External imports
 import "bootstrap";
 import { listenToNavbarToggle } from "../custom/toggle_menu";
+import { heart_animation } from "../custom/heart_animation";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -35,4 +36,5 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   listenToNavbarToggle();
+  heart_animation();
 });
