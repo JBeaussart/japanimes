@@ -1,7 +1,21 @@
 .anime-show-container {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .anime-title-show {
   text-align: center;
+}
+
+.anime-title-show {
+  margin: 30px 0;
+}
+
+.description-show-anime {
+  padding: 30px;
+  margin-bottom: 150px;
+}
+
+.commentary-anime {
+  padding: 30px;
 }

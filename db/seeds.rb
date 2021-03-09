@@ -16,7 +16,7 @@ puts "Creating Animes"
 file = URI.open('https://giantbomb1.cbsistatic.com/uploads/original/9/99864/2419866-nes_console_set.png')
 anime = Anime.create!(
   title: "tata", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -28,7 +28,7 @@ anime.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -40,7 +40,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -52,7 +52,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -64,7 +64,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -76,7 +76,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -88,7 +88,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -100,7 +100,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -112,7 +112,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -124,7 +124,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -136,7 +136,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -148,7 +148,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -160,7 +160,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -172,7 +172,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -184,7 +184,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -196,7 +196,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -208,7 +208,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -220,7 +220,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -232,7 +232,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
@@ -244,7 +244,7 @@ anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png
 file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
 anime = Anime.create!(
   title: "Death note", 
-  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit fuga iusto dignissimos tempore dolorum harum repellat maxime fugiat minima nobis facilis, saepe totam ab possimus, placeat nulla. Fugiat deserunt totam inventore nemo autem assumenda veritatis nobis labore vitae soluta voluptatum nulla reprehenderit quaerat ab itaque, laudantium fuga commodi ipsum?", 
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
