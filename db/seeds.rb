@@ -37,6 +37,42 @@ anime = Anime.create!(
 puts " - #{anime.title} (#{Anime.count}/50)"
 anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png')
 # --------------------------------------------------------------------------------------------------------
+file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
+anime = Anime.create!(
+  title: "Death note", 
+  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  parution_date: "01/12/2003", 
+  category: "Thriller psychologique", 
+  streaming_service: "netflix", 
+  rating: 4
+)
+puts " - #{anime.title} (#{Anime.count}/50)"
+anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png')
+# --------------------------------------------------------------------------------------------------------
+file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
+anime = Anime.create!(
+  title: "Death note", 
+  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  parution_date: "01/12/2003", 
+  category: "Thriller psychologique", 
+  streaming_service: "netflix", 
+  rating: 3
+)
+puts " - #{anime.title} (#{Anime.count}/50)"
+anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png')
+# --------------------------------------------------------------------------------------------------------
+file = URI.open('https://fr.web.img5.acsta.net/pictures/18/01/18/14/35/2024405.jpg')
+anime = Anime.create!(
+  title: "Death note", 
+  description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu.", 
+  parution_date: "01/12/2003", 
+  category: "Thriller psychologique", 
+  streaming_service: "netflix", 
+  rating: 1
+)
+puts " - #{anime.title} (#{Anime.count}/50)"
+anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png')
+# --------------------------------------------------------------------------------------------------------
 
 
 
