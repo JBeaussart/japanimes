@@ -57,25 +57,3 @@
 	background-color:white;
 	text-align: left;
 }
-
-// LIKE ANIMATION
-
-.like {
-  cursor: pointer;
-  height: 100px;
-  width: 100px;
-  background-image: url(web_heart_animation.png);
-  position: absolute;
-  top: -10%;
-  left: 60%;
-}
-
-.anim-like {
-  animation-name: anim-like;
-  animation-duration: 0.8s;
-  animation-timing-function: steps(28); 
-}
-@keyframes anim-like {
-  from{background-position: left;}
-  to{background-position: right;}
-}

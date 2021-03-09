@@ -1,38 +1,39 @@
-<%# <div class="container"> %>
-  <%# <div class="row"> %>
-  <h1 class="anime-title-show"><%= @anime.title %></h1>
-  <div class="anime-show-container">
+<h1 class="anime-title-show"><%= @anime.title %></h1>
+<div class="anime-show-container">
+  <div class="img-anime-show">
+    <%= cl_image_tag @anime.photo.key, class: "card-img-show" %>
+      <% if current_user != nil %>
+        <div class="like"></div>
+      <% end %>
+  </div>
 
-    <div class="img-anime-show">
-      <%= cl_image_tag @anime.photo.key, class: "card-img-show" %>
+  <div class="anime-description-commentary">
+    <div class="description-show-anime">
+      <h2>Description</h2>
+      <p><%= @anime.description %></p>
     </div>
-
-    <div class="anime-description-commentary">
-      <div class="description-show-anime">
-        <h2>Description</h2>
-        <p><%= @anime.description %></p>
-      </div>
-      <div class="commentary-anime">
-      <h2>Top commentaires</h2>
-      <ul>
-        <li>Guillaume: Un classique - indemodable </li>
-        <li>Benjamin: Toute mon enfance !</li>
-        <li>Nicolas:  La base :) </li>
-      </ul>
-      <h2>Note</h2>
-      <p class="rating">
-              <% @anime.rating.times do  %>
-                <i class="fas fa-star"></i>
-              <% end %>
-              <% @anime.blank_stars.times do %>
-                <i class="far fa-star"></i>
-              <% end %>
-            </p>   
-      </div>
+    <div class="commentary-anime">
+    <h2 class="mb-3">Top commentaires</h2>
+    <ul>
+      <li>Guillaume: Un classique - indemodable </li>
+      <li>Benjamin: Toute mon enfance !</li>
+      <li>Nicolas:  La base :) </li>
+    </ul>
+    <h2 class="mt-5">Note</h2>
+    <p class="rating">
+            <% @anime.rating.times do  %>
+              <i class="fas fa-star"></i>
+            <% end %>
+            <% @anime.blank_stars.times do %>
+              <i class="far fa-star"></i>
+            <% end %>
+          </p>   
     </div>
   </div>
-  <%# </div> %>
-<%# </div> %>
+</div>
+
+
+
 
 <% if @anime.in?(current_user.animes) %>
   <%= link_to "Destroy", watchlist_anime_path(@watchlist), method: :delete %>
