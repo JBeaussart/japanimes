@@ -6,7 +6,7 @@ a:link {
   justify-content: space-between;
   background: #FFFCF7;
   position: relative;
-  z-index: 998;
+  z-index: 100;
   height: 60px;
 }
 
@@ -21,7 +21,7 @@ a:link {
 .toggle {
   font-size: 20px;
   cursor: pointer;
-  color: #DA4903;
+  color: $orange;
   opacity: 0.8;
 }
 
@@ -38,53 +38,50 @@ a:link {
   left: -100%;
   width: 16%;
   height: 100vh;
-  background: #FFFCF7;
+  background: #171717;
   transition: all 0.7s ease-in-out;
   z-index: 999;
   font-size: 20px;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
 .menu li {
-  font-family: "Geomanist-Regular", serif;
-  font-weight: bold;
+  font-family: "Geomanist-Bold", serif;
   margin-bottom: 10px;
   padding-bottom: 7px;
-  border-bottom: 1px solid rgba($color: #7a2a02, $alpha: 0.3);
+  border-bottom: 1px solid rgba($color: #FFFFFF, $alpha: 0.1);
   width: 200px;
 }
 
 .menu_link {
-  color: #000000;
+  color: #FFFFFF;
   transition: all 0.2s ease-out;
 }
 
 .menu_link:hover {
-  color: #DA4903;
+  color: $orange;
 }
 
 .menu.active {
   left: 0;
 }
 
-.title {
+.logo-navbar {
   position: absolute;
-  font-family: 'DhfSemangat2012DemoBold-5jDG', serif;
-  color: #DA4903;
-  margin-left: 40px;
-  margin-top: 12px;
+  color: $orange;
+  margin-left: 20px;
   transition: all 0.7s ease-in-out;
 }
 
-.title.active {
+.logo-navbar.active {
   opacity: 0;
 }
 
 .hello-text {
-  font-family: "Geomanist-Regular", serif;
+  font-family: "Geomanist-Bold", serif;
   font-size: 16px;
   font-weight: bold;
-  color: #DA4903;
+  color: $orange;
   margin: auto 10px;
 }
 
@@ -94,20 +91,28 @@ a:link {
 
 .dropdown-menu {
   background-color: #FFFCF7;
-  border: 0.1rem solid #DA4903;
+  border: 0.1rem solid $orange;
   border-radius: 8px;
-  box-shadow: 2px 1px 1px #DA4903;
+  box-shadow: 2px 1px 1px $orange;
   text-align: center;
 }
 
-body.has-overlay::after {
-  content: "";
-  display: block;
+.overlay.has-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay {
   position: fixed;
-  padding: 100px 0;
-  width: 100%;
-  height: 100%;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  background-color: rgba(black, 0.9);
+  background-color: rgba(0,0,0,.9);
+  opacity: 0;
+  visibility: hidden;
+  // -webkit-tap-highlight-color: transparent;
+  z-index: 97;
+  cursor: pointer;
+  transition: opacity .8s,visibility .8s;
 }
