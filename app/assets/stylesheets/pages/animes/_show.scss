@@ -71,13 +71,15 @@ body {
 
 .anime-info {
   display: flex;
-  // justify-content: space-between;
 }
 
-.like_heart {
+.like_heart{
   font-size: 60px;
-  color: red;
   position: absolute;
   right: 650px;
   top: 80px;
+}
+
+.fa-heart {
+  color: $orange;
 }
