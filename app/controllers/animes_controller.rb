@@ -1,10 +1,7 @@
 class AnimesController < ApplicationController
   def index
     if params[:query].present?
-      sql_query = " \
-        animes.title @@ :query \
-      "
-      @animes = Anime.where(sql_query, query: "%#{params[:query]}%")
+      @animes = Anime.where("title ILIKE ?", "%#{params[:query]}%")
     else
       @animes = Anime.all
     end
