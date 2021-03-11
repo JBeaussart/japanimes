@@ -1,6 +1,10 @@
 class AnimesController < ApplicationController
   def index
-    @animes = Anime.all
+    if params[:query].present?
+      @animes = Anime.where("title ILIKE ?", "%#{params[:query]}%")
+    else
+      @animes = Anime.all
+    end
   end
 
   def show
