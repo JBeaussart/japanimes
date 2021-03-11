@@ -2,41 +2,55 @@
   display: flex;
   justify-content: space-around;
   margin: 10px auto;
-  background: black;
+  background: white;
   height: 70px;
   width: 50%;
   border-radius: 32px;
+  background: white;
+  border: 1px solid $orange;
 }
 
 .form-control {
   height: 60px;
   padding: 0 40px;
   margin-left: 10px;
+  background: white;
+  border: hidden;
+  text-align-last: center;
 }
 
 .stream-tag {
   height: 60px;
   padding: 0 50px;
+  color: $orange;
+  background: white;
+  border: hidden;
+  text-align-last: center;
 }
 
 .category-tag {
   height: 60px;
   padding: 0 10px;
+  color: $orange;
+  background: white;
+  border: hidden;
+  text-align-last: center;
 }
 
 .search-btn {
-  color: black;
+  color: white;
   font-size: 20px;
-  background: white;
+  background: $orange;
   border-radius: 32px;
   height: 45px;
   display: flex;
   align-items: center;
   padding: 25px 10px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .btn-nav {
-  background: white;
+  background: $orange;
+  color: white;
   border: hidden;
 }
