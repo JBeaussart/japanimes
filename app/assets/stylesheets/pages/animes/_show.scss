@@ -6,6 +6,7 @@
 
 .anime-description-commentary {
   width: 40%;
+  position: relative;
 }
 
 .anime-title-show {
@@ -27,6 +28,22 @@
 
 .description-show-anime:hover {
   opacity: 0.9;
+}
+
+.caret-description {
+  position: absolute;
+  font-size: 150px;
+  color: $orange;
+  top: -21px;
+  left: -45px;
+}
+
+.caret-commentary {
+  position: absolute;
+  font-size: 150px;
+  color: $orange;
+  top: 320px;
+  left: -45px;
 }
 
 
