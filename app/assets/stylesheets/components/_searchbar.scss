@@ -1,4 +1,42 @@
 .searchbar {
- display: flex;
- justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+  background: black;
+  height: 70px;
+  width: 50%;
+  border-radius: 32px;
+}
+
+.form-control {
+  height: 60px;
+  padding: 0 40px;
+  margin-left: 10px;
+}
+
+.stream-tag {
+  height: 60px;
+  padding: 0 50px;
+}
+
+.category-tag {
+  height: 60px;
+  padding: 0 10px;
+}
+
+.search-btn {
+  color: black;
+  font-size: 20px;
+  background: white;
+  border-radius: 32px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 25px 10px;
+  margin-left: 10px;
+}
+
+.btn-nav {
+  background: white;
+  border: hidden;
 }
