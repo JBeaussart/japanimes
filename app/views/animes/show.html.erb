@@ -1,25 +1,57 @@
 <h1 class="anime-title-show"><%= @anime.title %></h1>
+<div class="like_heart">
+  <% if current_user != nil %>
+    <% if @anime.in?(current_user.animes) %>
+      <%= link_to watchlist_anime_path(@watchlist), method: :delete do%>
+        <i class="fas fa-heart"></i>
+      <% end %>
+    <% else %>
+      <%= link_to anime_watchlist_animes_path(@anime), method: :post do %>
+        <i class="far fa-heart"></i>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
+
 <div class="anime-show-container">
   <div class="img-anime-show">
     <%= cl_image_tag @anime.photo.key, class: "card-img-show" %>
-      <% if current_user != nil %>
-        <div class="like"></div>
-      <% end %>
   </div>
 
   <div class="anime-description-commentary">
     <div class="description-show-anime">
-      <h2>Description</h2>
+    <div class="caret-description"><i class="fas fa-caret-left"></i></div>
+
+      <h2 class="text-warning">Description</h2>  
+
       <p><%= @anime.description %></p>
+      <div class="anime-info">
+        <div class="mr-5">
+          <p class="text-muted mb-0">Date de diffusion</p>
+          <p><%= @anime.parution_date %></p>
+        </div>
+        
+        <div class="mr-5">
+          <p class="text-muted mb-0">Genre</p>
+          <p><%= @anime.category %></p>
+        </div>
+
+        <div>
+          <p class="text-muted mb-0">Plateforme</p>
+          <p><%= @anime.streaming_service %></p>
+        </div>
+      </div>
+
     </div>
     <div class="commentary-anime">
-    <h2 class="mb-3">Top commentaires</h2>
+    <div class="caret-commentary"><i class="fas fa-caret-left"></i></div>
+    <h2 class="mb-4 text-warning">Top commentaires</h2>
     <ul>
-      <li>Guillaume: Un classique - indemodable </li>
-      <li>Benjamin: Toute mon enfance !</li>
-      <li>Nicolas:  La base :) </li>
+      <li class="h5 mb-3"><span class="text-secondary">Guillaume:</span> Un classique - indemodable </li>
+      <li class="h5 mb-3"><span class="text-secondary">Benjamin:</span> Toute mon enfance !</li>
+      <li class="h5 mb-3"><span class="text-secondary">Nicolas:</span> La base :) </li>
     </ul>
-    <h2 class="mt-5">Note</h2>
+    <h2 class="mt-5 text-warning">Note</h2>
     <p class="rating">
             <% @anime.rating.times do  %>
               <i class="fas fa-star"></i>
@@ -33,12 +65,5 @@
 </div>
 
 
- <% if current_user != nil %>
-  <% if @anime.in?(current_user.animes) %>
-    <%= link_to "Destroy", watchlist_anime_path(@watchlist), method: :delete %>
-  <% else %>
-    <%= link_to "Like", anime_watchlist_animes_path(@anime), method: :post %>
-  <% end %>
-<% end %>
 
 

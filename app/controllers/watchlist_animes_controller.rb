@@ -6,7 +6,7 @@ class WatchlistAnimesController < ApplicationController
     else
       @watchlist_animes = WatchlistAnime.new(user_id: current_user.id, anime_id: @anime.id)
       if @watchlist_animes.save
-        redirect_to user_path(current_user), notice: "Votre Watchlist a été mise à jour"
+        redirect_to anime_path(@anime), notice: "Votre Watchlist a été mise à jour"
       else
         render "animes/show"
       end
