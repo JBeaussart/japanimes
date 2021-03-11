@@ -1,0 +1,30 @@
+.like {
+  cursor: pointer;
+  background-image: url(web_heart_animation.png);
+}
+
+.anim-like {
+  animation-name: anim-like;
+  animation-duration: 0.8s;
+  animation-timing-function: steps(28); 
+}
+@keyframes anim-like {
+  from{background-position: left;}
+  to{background-position: right;}
+}
+
+.card-description > .like{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -10%;
+  left: 60%;
+}
+
+.img-anime-show > .like{
+  position: absolute;
+  right: 650px;
+  top: 85px;
+  height: 100px;
+  width: 100px;
+}
