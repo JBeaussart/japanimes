@@ -1,0 +1,42 @@
+.anime-show-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.anime-description-commentary {
+  width: 40%;
+}
+
+.anime-title-show {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 64px;
+}
+.img-anime-show .card-img-show{
+  height: 700px;
+}
+
+.description-show-anime {
+  padding: 30px;
+  margin-bottom: 100px;
+  background-color: $orange;
+  border-radius: 8px;
+  color: white;
+}
+
+.description-show-anime:hover {
+  opacity: 0.9;
+}
+
+
+.commentary-anime {
+  padding: 30px;
+  background-color: $orange;
+  border-radius: 8px;
+  color: white;
+}
+
+.commentary-anime:hover {
+  opacity: 0.9;
+}

@@ -9,7 +9,9 @@ class AnimesController < ApplicationController
 
   def show
     @anime = Anime.find(params[:id])
-    @watchlist = current_user.watchlist_animes.find_by(anime: @anime)
+    if current_user != nil
+      @watchlist = current_user.watchlist_animes.find_by(anime: @anime)
+    end
     # on aurait pu remplacer .find_by avec .where.first
   end
 
