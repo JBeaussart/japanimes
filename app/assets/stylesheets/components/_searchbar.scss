@@ -11,29 +11,39 @@
 }
 
 .form-control {
-  height: 60px;
+  height: 40px;
   padding: 0 40px;
   margin-left: 10px;
   background: white;
   border: hidden;
+  border-right: 1px solid $orange;
   text-align-last: center;
 }
 
+.form-control:focus {
+  box-shadow: none;
+  border-right: 1px solid $orange;
+  transform: scale(1.2);
+  background: transparent;
+}
+
 .stream-tag {
-  height: 60px;
-  padding: 0 50px;
+  height: 40px;
+  padding: 0 40px;
   color: $orange;
   background: white;
   border: hidden;
   text-align-last: center;
+  margin-right: 20px;
 }
 
 .category-tag {
-  height: 60px;
+  height: 40px;
   padding: 0 10px;
   color: $orange;
   background: white;
   border: hidden;
+  border-left: 1px solid $orange;
   text-align-last: center;
 }
 
@@ -46,11 +56,19 @@
   display: flex;
   align-items: center;
   padding: 25px 10px;
-  margin-left: 20px;
+  margin-left: 18px;
 }
 
 .btn-nav {
   background: $orange;
   color: white;
   border: hidden;
+}
+
+.select {
+  background: black;
+}
+
+.category-tag::before {
+  background: black;
 }
