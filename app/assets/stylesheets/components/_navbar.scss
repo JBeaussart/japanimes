@@ -68,9 +68,10 @@ a:link {
 
 .logo-navbar {
   position: absolute;
-  color: $orange;
+  // color: $orange;
   margin-left: 20px;
   transition: all 0.7s ease-in-out;
+  cursor: pointer;
 }
 
 .logo-navbar.active {

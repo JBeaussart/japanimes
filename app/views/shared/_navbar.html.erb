@@ -10,8 +10,9 @@
     <li><%= link_to "MA WATCHLIST", "#", class: "menu_link" %></li>
     <li><%= link_to "THÉORIES", "#", class: "menu_link" %></li>
   </ul>
-
-  <%= image_tag 'logo.png', class: "logo-navbar" %>
+  <%= link_to root_path, class: "logo-navbar" do%>
+    <%= image_tag 'logo.png' %>
+  <% end %>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
