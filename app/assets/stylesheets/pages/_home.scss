@@ -3,7 +3,6 @@
 	height: 800px;
 	width: 100%;
 	object-fit: cover;
-	border: 2px solid black;
 }
 
 
@@ -35,4 +34,16 @@
 
 .carousel-inner {
 	box-shadow: 2px 2px 60px rgb(80, 80, 80);
+	position: relative;
+}
+
+.text-anim-top {
+	position: absolute;
+	z-index: 1;
+	bottom: 144px;
+	left: 625px;
+	color: $orange;
+	font-size: 20px;
+	font-family: 'Changa', sans-serif;
+	border-radius: 4px;
 }
