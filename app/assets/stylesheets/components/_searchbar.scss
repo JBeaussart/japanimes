@@ -1,6 +1,14 @@
 .searchbar {
   position: absolute;
   bottom: 0;
-  margin-bottom: -20px;
-  z-index: 2;
+  margin-bottom: -25px;
+  z-index: 2; 
+}
+
+.form-control {
+  height: 50px;
+}
+
+.btn {
+  height: 50px;
 }

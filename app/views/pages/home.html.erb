@@ -1,4 +1,12 @@
 <div class="container-fluid">
-  <%= render 'shared/banner' %>
-  <%= render 'shared/carousel' %>
+  <div class="row">
+    <%= render 'shared/banner' %>
+
+    <h1>Plateformes VOD</h1>
+    <%= link_to image_tag('wakanim_logo.png', class: "wakanim-logo"), "#"%>
+    <%= link_to image_tag('crunchyroll_logo.png', class: "crunchyroll-logo"), "#"%>
+    <%= link_to image_tag('adn_logo.png', class: "adn-logo"), "#"%>
+    <%= link_to image_tag('netflix_logo.png', class: "netflix-logo"), "#"%>
+    <%# <%= render 'shared/carousel' %>
+  </div>
 </div>
