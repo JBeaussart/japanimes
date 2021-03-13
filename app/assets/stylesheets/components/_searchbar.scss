@@ -13,28 +13,52 @@
 .text-field {
   height: 40px;
   padding: 0 40px;
-  margin-left: 10px;
-  background: white;
+  background: transparent;
   border: hidden;
-  border-right: 1px solid $orange;
   text-align-last: center;
+}
+
+.text-field:hover {
+  background-color: rgba(230, 126, 34, 0.1);
+  height: 68px;
+  border-radius: 32px;
+  border: hidden;
+}
+
+.text-field:hover ~ .stream-tag,
+.stream-tag:hover {
+  border: hidden;
 }
 
 .text-field:focus {
   box-shadow: none;
   border-right: 1px solid $orange;
-  transform: scale(1.2);
   background: transparent;
+  transform: scale(1.02);
 }
 
 .stream-tag {
   height: 40px;
-  padding: 0 40px;
+  padding: 0 40px 0 40px;
   color: $orange;
   background: white;
   border: hidden;
+  border-left: 1px solid $orange;
   text-align-last: center;
-  margin-right: 20px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.stream-tag:hover {
+  background-color : rgba(230, 126, 34, 0.1);
+  height: 68px;
+  border-radius: 32px;
+  border: hidden;
+}
+
+.stream-tag:hover ~ .category-tag,
+.category-tag:hover {
+  border: hidden;
 }
 
 .category-tag {
@@ -45,6 +69,15 @@
   border: hidden;
   border-left: 1px solid $orange;
   text-align-last: center;
+  appearance: none;
+  cursor: pointer;
+}
+
+.category-tag:hover {
+  background-color : rgba(230, 126, 34, 0.1);
+  height: 68px;
+  border-radius: 32px;
+  border: hidden;
 }
 
 .search-btn {
@@ -56,7 +89,7 @@
   display: flex;
   align-items: center;
   padding: 25px 10px;
-  margin-left: 18px;
+  margin-left: 12px;
 }
 
 .btn-nav {
