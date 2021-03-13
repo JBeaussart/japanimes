@@ -9,9 +9,20 @@
         <div class="card-description">
           <h1 class="title-card"><%= anime.title %></h1>
           </a>
-          <% if current_user != nil %>
-            <div class="like"></div>
-          <% end %>
+          <div class="like-btn">
+            <% if current_user != nil %>
+              <% if @anime.in?(current_user.animes) %>
+                <%= link_to watchlist_anime_path(@watchlist), method: :delete do%>
+                  <i class="fas fa-heart"></i>
+                <% end %>
+              <% else %>
+                <%= link_to anime_watchlist_animes_path(anime ), method: :post do %>
+                  <i class="far fa-heart"></i>
+                <% end %>
+              <% end %>
+            <% end %>
+          </div>
+          <p class="category"><%= anime.category %></p>
           <p class="rating">
             <% anime.rating.times do  %>
               <i class="fas fa-star"></i>
@@ -20,7 +31,7 @@
               <i class="far fa-star"></i>
             <% end %>
             (<%= rand(1..100) %> votes)
-          </p>   
+          </p>
         </div>
       </div>
     <% end %>
