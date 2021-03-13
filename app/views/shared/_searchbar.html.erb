@@ -2,11 +2,11 @@
   <%= form_tag animes_path, class:"form-inline", method: :get do %>
     <%= text_field_tag :query,
       params[:query],
-      class: "form-control",
+      class: "text-field form-control",
       placeholder: "Trouvez votre animé"
     %>
-    <%= select_tag 'animes', options_for_select(animes.pluck(:streaming_service).uniq), prompt: "Plateforme", class: "stream-tag" %>
-    <%= select_tag 'animes', options_for_select(animes.pluck(:category).uniq), prompt: "Genre", class: "category-tag" %>
+    <%= select_tag 'animes', options_for_select(animes.pluck(:streaming_service).uniq), prompt: "Service VOD ?", class: "stream-tag" %>
+    <%= select_tag 'animes', options_for_select(animes.pluck(:category).uniq), prompt: "Genre ?", class: "category-tag" %>
     <div class="search-btn"><i class="fas fa-search"></i><%= submit_tag "Rechercher", class: "btn-nav" %></div>
   <% end %>
 </div>
