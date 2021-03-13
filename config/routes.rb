@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :users, only: :show
   resources :animes, only: [ :index, :show ] do
     resources :reviews, only: :create
-    resources :watchlist_animes, only: :create
+    resources :watchlist_animes, only: [ :create, :index ]
   end
   resources :watchlist_animes, only: :destroy
   resources :reviews, only: [ :update, :destroy ]
