@@ -2,7 +2,7 @@
   <%= form_tag animes_path, class:"form-inline", method: :get do %>
     <%= text_field_tag :query,
       params[:query],
-      class: "form-control",
+      class: "text-field form-control",
       placeholder: "Trouvez votre animé"
     %>
     <%= select_tag 'animes', options_for_select(animes.pluck(:streaming_service).uniq), prompt: "Plateforme", class: "stream-tag" %>

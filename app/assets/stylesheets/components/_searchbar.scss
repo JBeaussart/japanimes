@@ -10,7 +10,7 @@
   border: 1px solid $orange;
 }
 
-.form-control {
+.text-field {
   height: 40px;
   padding: 0 40px;
   margin-left: 10px;
@@ -20,7 +20,7 @@
   text-align-last: center;
 }
 
-.form-control:focus {
+.text-field:focus {
   box-shadow: none;
   border-right: 1px solid $orange;
   transform: scale(1.2);
