@@ -34,11 +34,15 @@
           <p><%= @anime.category %></p>
         </div>
 
+      </div>
+
+      <div class=plateform-show-anime>
         <div>
           <p class="text-muted mb-0">Plateforme</p>
           <p><%= @anime.streaming_service %></p>
         </div>
       </div>
+
 
   </div>
 </div>
@@ -46,14 +50,14 @@
     </div>
       <div class="commentary-anime">
         <div class="caret-commentary"><i class="fas fa-caret-left"></i></div>
-        <h2 class="mb-4 text-warning">Top commentaires</h2>
-        <ul>
-          <li class="h5 mb-3"><span class="text-secondary">Guillaume:</span> Un classique - indemodable </li>
-          <li class="h5 mb-3"><span class="text-secondary">Benjamin:</span> Toute mon enfance !</li>
-          <li class="h5 mb-3"><span class="text-secondary">Nicolas:</span> La base :) </li>
-        </ul>
-        <h2 class="mt-5 text-warning">Note</h2>
-        <p class="rating">
+          <h2 class="mb-4 text-warning">Commentaires</h2>
+          <ul>
+            <li class="h5 mb-3"><span class="text-secondary">Guillaume:</span> Un classique - indemodable </li>
+            <li class="h5 mb-3"><span class="text-secondary">Benjamin:</span> Toute mon enfance !</li>
+            <li class="h5 mb-3"><span class="text-secondary">Nicolas:</span> La base :) </li>
+          </ul>
+          <h2 class="mt-5 text-warning">Note</h2>
+          <p class="rating">
               <% @anime.rating.times do  %>
                 <i class="fas fa-star"></i>
               <% end %>
