@@ -1,7 +1,5 @@
 <body class="show_body"></body>
 
-
-
 <div class="anime-show-container">
   <div class="img-anime-show">
     <%= cl_image_tag @anime.photo.key, class: "card-img-show" %>
@@ -9,7 +7,6 @@
 
   <div class="anime-description-commentary">
     <div class="description-show-anime">
-
     <h1 class="anime-title-show"><%= @anime.title %></h1>
       <div class="like_heart">
         <% if current_user != nil %>
@@ -25,9 +22,6 @@
         <% end %>
       </div>
     <div class="caret-description"><i class="fas fa-caret-left"></i></div>
-
-      <h2 class="text-warning">Description</h2>  
-
       <p><%= @anime.description %></p>
       <div class="anime-info">
         <div class="mr-5">
@@ -46,28 +40,28 @@
         </div>
       </div>
 
-    </div>
-    <div class="commentary-anime">
-    <div class="caret-commentary"><i class="fas fa-caret-left"></i></div>
-    <h2 class="mb-4 text-warning">Top commentaires</h2>
-    <ul>
-      <li class="h5 mb-3"><span class="text-secondary">Guillaume:</span> Un classique - indemodable </li>
-      <li class="h5 mb-3"><span class="text-secondary">Benjamin:</span> Toute mon enfance !</li>
-      <li class="h5 mb-3"><span class="text-secondary">Nicolas:</span> La base :) </li>
-    </ul>
-    <h2 class="mt-5 text-warning">Note</h2>
-    <p class="rating">
-            <% @anime.rating.times do  %>
-              <i class="fas fa-star"></i>
-            <% end %>
-            <% @anime.blank_stars.times do %>
-              <i class="far fa-star"></i>
-            <% end %>
-          </p>   
-    </div>
   </div>
 </div>
 
+    </div>
+      <div class="commentary-anime">
+        <div class="caret-commentary"><i class="fas fa-caret-left"></i></div>
+        <h2 class="mb-4 text-warning">Top commentaires</h2>
+        <ul>
+          <li class="h5 mb-3"><span class="text-secondary">Guillaume:</span> Un classique - indemodable </li>
+          <li class="h5 mb-3"><span class="text-secondary">Benjamin:</span> Toute mon enfance !</li>
+          <li class="h5 mb-3"><span class="text-secondary">Nicolas:</span> La base :) </li>
+        </ul>
+        <h2 class="mt-5 text-warning">Note</h2>
+        <p class="rating">
+              <% @anime.rating.times do  %>
+                <i class="fas fa-star"></i>
+              <% end %>
+              <% @anime.blank_stars.times do %>
+                <i class="far fa-star"></i>
+              <% end %>
+          </p>   
+    </div>
 
 
 
