@@ -1,4 +1,9 @@
 class WatchlistAnimesController < ApplicationController
+
+  def index
+    @watchlist_animes = WatchlistAnime.all
+  end
+  
   def create
     @anime = Anime.find(params[:anime_id])
     if current_user.nil?

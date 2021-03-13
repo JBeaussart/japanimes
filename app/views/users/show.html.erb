@@ -1,4 +1,4 @@
 <% @watchlist.each do |watchlist_anime| %>
+  <%= watchlist_anime.anime.title %>
   <%= link_to "Destroy", watchlist_anime_path(watchlist_anime), method: :delete %>
 <% end %>
-  
