@@ -2,6 +2,7 @@ class AnimesController < ApplicationController
   def index
     if params[:query].present?
       @animes = Anime.where("title ILIKE ?", "%#{params[:query]}%")
+      @filter = params[:query]
     else
       @animes = Anime.all
     end
