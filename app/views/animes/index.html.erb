@@ -1,7 +1,11 @@
-<div class="container">
-<h1><%= @filter %></h1>
-
-
+<div class="container mt-5">
+  <% if @filter != nil %>
+    <h4>Résultat de la recherche: "<%= @filter %>"</h4>
+  <% end %>
+  <%= link_to  root_path do%>
+    <i class="fas fa-arrow-circle-left return_home"></i>
+  <% end %>
+  <p class="count_result"><%= @animes.count %> résultats</p>
   <div class="row">
     <% @animes.each do |anime| %>
       <div class="card m-4">  
@@ -19,7 +23,7 @@
                   <i class="fas fa-heart"></i>
                 <% end %>
               <% else %>
-                <%= link_to anime_watchlist_animes_path(anime ), method: :post do %>
+                <%= link_to anime_watchlist_animes_path(anime), method: :post do %>
                   <i class="far fa-heart"></i>
                 <% end %>
               <% end %>

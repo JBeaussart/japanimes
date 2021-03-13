@@ -13,7 +13,6 @@ class AnimesController < ApplicationController
     if current_user != nil
       @watchlist = current_user.watchlist_animes.find_by(anime: @anime)
     end
-    # on aurait pu remplacer .find_by avec .where.first
   end
 
   def new
