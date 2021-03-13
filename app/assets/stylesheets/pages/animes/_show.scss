@@ -1,85 +1,85 @@
-* {
-  list-style-type: none;
-}
+// * {
+//   list-style-type: none;
+// }
 
-.show_body {
-  background-color: black;
-}
+// .show_body {
+//   background-color: black;
+// }
 
-.anime-show-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .anime-show-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-.anime-description-commentary {
-  width: 40%;
-  position: relative;
-}
+// .anime-description-commentary {
+//   width: 40%;
+//   position: relative;
+// }
 
-.anime-title-show {
-  text-align: center;
-  margin: 30px 0;
-  font-size: 64px;
-  font-family: "Geomanist-Bold", serif;
-  color: white;
-}
+// .anime-title-show {
+//   text-align: center;
+//   margin: 30px 0;
+//   font-size: 64px;
+//   font-family: "Geomanist-Bold", serif;
+//   color: white;
+// }
 
-.img-anime-show .card-img-show{
-  height: 700px;
-  box-shadow: 2px 2px 60px rgb(122, 122, 122);
-}
+// .img-anime-show .card-img-show{
+//   height: 700px;
+//   box-shadow: 2px 2px 60px rgb(122, 122, 122);
+// }
 
-.img-anime-show {
-  margin-right: 80px;
-}
+// .img-anime-show {
+//   margin-right: 80px;
+// }
 
-.description-show-anime {
-  padding: 30px;
-  margin-bottom: 100px;
-  background-color: rgb(46, 46, 46);
-  border-radius: 8px;
-  color: white;
-}
+// .description-show-anime {
+//   padding: 30px;
+//   margin-bottom: 100px;
+//   background-color: rgb(46, 46, 46);
+//   border-radius: 8px;
+//   color: white;
+// }
 
-.caret-description {
-  position: absolute;
-  font-size: 150px;
-  color: rgb(46, 46, 46);
-  top: 7px;
-  left: -40px;
-}
+// .caret-description {
+//   position: absolute;
+//   font-size: 150px;
+//   color: rgb(46, 46, 46);
+//   top: 7px;
+//   left: -40px;
+// }
 
-.caret-commentary {
-  position: absolute;
-  font-size: 150px;
-  color: rgb(46, 46, 46);
-  top: 400px; 
-  left: -45px;
-}
+// .caret-commentary {
+//   position: absolute;
+//   font-size: 150px;
+//   color: rgb(46, 46, 46);
+//   top: 400px; 
+//   left: -45px;
+// }
 
 
-.commentary-anime {
-  padding: 30px;
-  background-color: rgb(46, 46, 46);
-  border-radius: 8px;
-  color: white;
-}
-.parution_show {
-  color: white;
-}
+// .commentary-anime {
+//   padding: 30px;
+//   background-color: rgb(46, 46, 46);
+//   border-radius: 8px;
+//   color: white;
+// }
+// .parution_show {
+//   color: white;
+// }
 
-.anime-info {
-  display: flex;
-}
+// .anime-info {
+//   display: flex;
+// }
 
-.like_heart{
-  font-size: 60px;
-  position: absolute;
-  right: 650px;
-  top: 80px;
-}
+// .like_heart{
+//   font-size: 60px;
+//   position: absolute;
+//   right: 650px;
+//   top: 80px;
+// }
 
-.fa-heart {
-  color: $orange;
-}
+// .fa-heart {
+//   color: $orange;
+// }

@@ -1,19 +1,6 @@
 <body class="show_body"></body>
 
-<h1 class="anime-title-show"><%= @anime.title %></h1>
-<div class="like_heart">
-  <% if current_user != nil %>
-    <% if @anime.in?(current_user.animes) %>
-      <%= link_to watchlist_anime_path(@watchlist), method: :delete do%>
-        <i class="fas fa-heart"></i>
-      <% end %>
-    <% else %>
-      <%= link_to anime_watchlist_animes_path(@anime), method: :post do %>
-        <i class="far fa-heart"></i>
-      <% end %>
-    <% end %>
-  <% end %>
-</div>
+
 
 <div class="anime-show-container">
   <div class="img-anime-show">
@@ -22,6 +9,21 @@
 
   <div class="anime-description-commentary">
     <div class="description-show-anime">
+
+    <h1 class="anime-title-show"><%= @anime.title %></h1>
+      <div class="like_heart">
+        <% if current_user != nil %>
+          <% if @anime.in?(current_user.animes) %>
+            <%= link_to watchlist_anime_path(@watchlist), method: :delete do%>
+              <i class="fas fa-heart"></i>
+            <% end %>
+          <% else %>
+            <%= link_to anime_watchlist_animes_path(@anime), method: :post do %>
+              <i class="far fa-heart"></i>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
     <div class="caret-description"><i class="fas fa-caret-left"></i></div>
 
       <h2 class="text-warning">Description</h2>  
