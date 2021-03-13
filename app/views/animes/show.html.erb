@@ -28,6 +28,16 @@
           <p class="text-muted mb-0">Date de diffusion</p>
           <p><%= @anime.parution_date %></p>
         </div>
+          
+          <h2 class="mt-5 text-secondary">Note</h2>
+          <p class="rating">
+              <% @anime.rating.times do  %>
+                <i class="fas fa-star"></i>
+              <% end %>
+              <% @anime.blank_stars.times do %>
+                <i class="far fa-star"></i>
+              <% end %>
+          </p>   
         
         <div class="mr-5">
           <p class="text-muted mb-0">Genre</p>
@@ -50,21 +60,12 @@
     </div>
       <div class="commentary-anime">
         <div class="caret-commentary"><i class="fas fa-caret-left"></i></div>
-          <h2 class="mb-4 text-warning">Commentaires</h2>
+          <h2 class="mb-4 text-secondary">Commentaires</h2>
           <ul>
             <li class="h5 mb-3"><span class="text-secondary">Guillaume:</span> Un classique - indemodable </li>
             <li class="h5 mb-3"><span class="text-secondary">Benjamin:</span> Toute mon enfance !</li>
             <li class="h5 mb-3"><span class="text-secondary">Nicolas:</span> La base :) </li>
           </ul>
-          <h2 class="mt-5 text-warning">Note</h2>
-          <p class="rating">
-              <% @anime.rating.times do  %>
-                <i class="fas fa-star"></i>
-              <% end %>
-              <% @anime.blank_stars.times do %>
-                <i class="far fa-star"></i>
-              <% end %>
-          </p>   
     </div>
 
 
