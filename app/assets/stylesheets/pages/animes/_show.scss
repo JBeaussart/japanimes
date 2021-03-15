@@ -91,7 +91,7 @@
 
 .anime-show-container {
   display: flex;
-  align-content: space-around;
+  justify-content: space-around;
 }
 
 .anime-info {
@@ -99,5 +99,21 @@
 }
 
 .date-genre-anime-show {
-  grid-column: auto;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.note-globale-show-anime {
+  padding-right: 25%;
+}
+
+.description-show-anime {
+  background-color: orange;
+  margin: 5% 10%;
+  padding: 5% 10%;
+}
+
+.img-anime-show {
+  margin-left: 10%;
 }
