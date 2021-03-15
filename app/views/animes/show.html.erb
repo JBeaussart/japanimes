@@ -10,7 +10,7 @@
 
     <div class="description-show-anime">
 
-      <h1 class="anime-title-show text-light"><%= @anime.title %><i class="fas fa-caret-left"></h1>
+      <h1 class="anime-title-show text-light"><%= @anime.title %></h1>
 
       <div class="like_heart">
         <% if current_user != nil %>
@@ -58,9 +58,9 @@
     </div>
 
         <div class="plateform-show-anime">
-          <h2 class="anime-title-show text-light">Disponible sur<i class="fas fa-caret-left"></i></h2>
+          <h2 class="anime-title-show text-light">Disponible sur :</i></h2>
           <p class="text-light mb-0">Plateforme</p>
-          <p><%= @anime.streaming_service %></p>
+          <p><%= @anime.streaming_service %><button type="button" class="btn btn-link btn-light">Visualiser</button></p>
         </div>
 
   </div>
