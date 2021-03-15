@@ -13,7 +13,7 @@ class WatchlistAnimesController < ApplicationController
       if @watchlist_animes.save
         redirect_to animes_path, notice: "Anime ajouté de votre Watchlist"
       else
-        render "animes/show"
+        redirect_to animes_path
       end
     end
   end
