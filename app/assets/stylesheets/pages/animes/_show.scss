@@ -83,3 +83,21 @@
 // .fa-heart {
 //   color: $orange;
 // }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.anime-show-container {
+  display: flex;
+  align-content: space-around;
+}
+
+.anime-info {
+  display: flex;
+}
+
+.date-genre-anime-show {
+  grid-column: auto;
+}

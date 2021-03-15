@@ -7,7 +7,7 @@
 
   <div class="anime-description-commentary">
     <div class="description-show-anime">
-    <h1 class="anime-title-show"><%= @anime.title %></h1>
+    <h1 class="anime-title-show text-light"><%= @anime.title %></h1>
       <div class="like_heart">
         <% if current_user != nil %>
           <% if @anime.in?(current_user.animes) %>
@@ -24,12 +24,9 @@
     <div class="caret-description"><i class="fas fa-caret-left"></i></div>
       <p><%= @anime.description %></p>
       <div class="anime-info">
-        <div class="mr-5">
-          <p class="text-muted mb-0">Date de diffusion</p>
-          <p><%= @anime.parution_date %></p>
-        </div>
-          
-          <h2 class="mt-5 text-secondary">Note</h2>
+
+        <div class="note-globale-show-anime">
+          <p class="text-muted mb-0">Note globale</p>
           <p class="rating">
               <% @anime.rating.times do  %>
                 <i class="fas fa-star"></i>
@@ -38,20 +35,26 @@
                 <i class="far fa-star"></i>
               <% end %>
           </p>   
+        </div>  
         
-        <div class="mr-5">
-          <p class="text-muted mb-0">Genre</p>
-          <p><%= @anime.category %></p>
+        <div class="date-genre-anime-show">
+          <div class="mr-5">
+            <p class="text-muted mb-0">Date de diffusion</p>
+            <p><%= @anime.parution_date %></p>
+          </div>
+          <div class="genre-show-anime">
+            <p class="text-muted mb-0">Genre</p>
+            <p><%= @anime.category %></p>
+          </div>
         </div>
 
       </div>
 
-      <div class=plateform-show-anime>
-        <div>
+        <div class=plateform-show-anime>
+          <h2>Disponible sur</h2>
           <p class="text-muted mb-0">Plateforme</p>
           <p><%= @anime.streaming_service %></p>
         </div>
-      </div>
 
 
   </div>
