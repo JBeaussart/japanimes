@@ -10,7 +10,7 @@
 
     <div class="description-show-anime">
 
-      <h1 class="anime-title-show text-light"><%= @anime.title %></h1>
+      <h1 class="anime-title-show text-light"><%= @anime.title %><i class="fas fa-caret-left"></h1>
 
       <div class="like_heart">
         <% if current_user != nil %>
@@ -26,7 +26,7 @@
         <% end %>
       </div>
 
-      <div class="caret-description"><i class="fas fa-caret-left"></i></div>
+      <div class="caret-description"></i></div>
 
       <p class="text-light"><%= @anime.description %></p>
 
@@ -57,9 +57,9 @@
       </div>
     </div>
 
-        <div class=plateform-show-anime>
-          <h2>Disponible sur</h2>
-          <p class="text-muted mb-0">Plateforme</p>
+        <div class="plateform-show-anime">
+          <h2 class="anime-title-show text-light">Disponible sur<i class="fas fa-caret-left"></i></h2>
+          <p class="text-light mb-0">Plateforme</p>
           <p><%= @anime.streaming_service %></p>
         </div>
 
@@ -67,7 +67,7 @@
 </div>
 
 <div class="commentary-anime">
-  <div class="caret-commentary"><i class="fas fa-caret-left"></i></div>
+  <div class="caret-commentary"></div>
     <h2 class="mb-4 text-secondary">Commentaires</h2>
       <ul>
         <li class="h5 mb-3"><span class="text-secondary">Guillaume:</span> Un classique - indemodable </li>
