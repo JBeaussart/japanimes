@@ -1,92 +1,7 @@
-// * {
-//   list-style-type: none;
-// }
-
-// .show_body {
-//   background-color: black;
-// }
-
-// .anime-show-container {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .anime-description-commentary {
-//   width: 40%;
-//   position: relative;
-// }
-
-// .anime-title-show {
-//   text-align: center;
-//   margin: 30px 0;
-//   font-size: 64px;
-//   font-family: "Geomanist-Bold", serif;
-//   color: white;
-// }
-
-// .img-anime-show .card-img-show{
-//   height: 700px;
-//   box-shadow: 2px 2px 60px rgb(122, 122, 122);
-// }
-
-// .img-anime-show {
-//   margin-right: 80px;
-// }
-
-// .description-show-anime {
-//   padding: 30px;
-//   margin-bottom: 100px;
-//   background-color: rgb(46, 46, 46);
-//   border-radius: 8px;
-//   color: white;
-// }
-
-// .caret-description {
-//   position: absolute;
-//   font-size: 150px;
-//   color: rgb(46, 46, 46);
-//   top: 7px;
-//   left: -40px;
-// }
-
-// .caret-commentary {
-//   position: absolute;
-//   font-size: 150px;
-//   color: rgb(46, 46, 46);
-//   top: 400px; 
-//   left: -45px;
-// }
-
-
-// .commentary-anime {
-//   padding: 30px;
-//   background-color: rgb(46, 46, 46);
-//   border-radius: 8px;
-//   color: white;
-// }
-// .parution_show {
-//   color: white;
-// }
-
-// .anime-info {
-//   display: flex;
-// }
-
-// .like_heart{
-//   font-size: 60px;
-//   position: absolute;
-//   right: 650px;
-//   top: 80px;
-// }
-
-// .fa-heart {
-//   color: $orange;
-// }
-
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .anime-show-container {
@@ -122,6 +37,8 @@
 
 .img-anime-show {
   margin-left: 10%;
+  margin-top: 3%;
+  box-shadow: 1px 1px 12px #555
 }
 
 .anime-title-show {
@@ -130,4 +47,26 @@
 
 .btn {
   margin-left: 25%;
+}
+
+.commentary-anime-show {
+  margin: 5% 10%;
+  border-style: solid;
+}
+
+.commentary-anime-show ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.commentary-anime-show li {
+  align-content: space-between;
+}
+
+.commentary-date {
+  font-size: 0.5em;
+}
+
+.commentary-nickname {
+  font-size: 1em;
 }
