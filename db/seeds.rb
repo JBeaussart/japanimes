@@ -20,7 +20,8 @@ anime = Anime.create!(
   parution_date: "01/12/2003", 
   category: "Thriller psychologique", 
   streaming_service: "netflix", 
-  rating: 4
+  rating: 4,
+  vote: 93
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'deathnote.png', content_type: 'image/png')
@@ -32,7 +33,9 @@ anime = Anime.create!(
   parution_date: "07/04/2013", 
   category: "Action", 
   streaming_service: "netflix", 
-  rating: 3
+  rating: 3,
+  vote: 23
+  
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'attaque des titans.png', content_type: 'image/png')
@@ -44,7 +47,8 @@ anime = Anime.create!(
   parution_date: "05/07/2019", 
   category: "Action", 
   streaming_service: "wakanim", 
-  rating: 4
+  rating: 4,
+  vote: 67
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'fire force.png', content_type: 'image/png')
@@ -56,7 +60,8 @@ anime = Anime.create!(
   parution_date: "09/01/2019", 
   category: "aventure", 
   streaming_service: "wakanim", 
-  rating: 4
+  rating: 4,
+  vote: 71
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'the promised nerverland.png', content_type: 'image/png')
@@ -68,7 +73,8 @@ anime = Anime.create!(
   parution_date: "16/02/2015", 
   category: "fantastique", 
   streaming_service: "crunchyroll", 
-  rating: 3
+  rating: 3,
+  vote: 12
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'black clover.png', content_type: 'image/png')
@@ -80,7 +86,8 @@ anime = Anime.create!(
   parution_date: "04/12/2013", 
   category: "horreur", 
   streaming_service: "netflix", 
-  rating: 5
+  rating: 5,
+  vote: 39
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'sky high survival.png', content_type: 'image/png')
@@ -92,7 +99,8 @@ anime = Anime.create!(
   parution_date: "05/03/2018", 
   category: "shonen", 
   streaming_service: "crunchyroll", 
-  rating: 2
+  rating: 2,
+  vote: 58
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'jujutsu kaisen.png', content_type: 'image/png')
@@ -104,7 +112,8 @@ anime = Anime.create!(
   parution_date: "07/01/2021", 
   category: "comedie", 
   streaming_service: "crunchyroll", 
-  rating: 1
+  rating: 1,
+  vote: 41
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'Heaven design team.png', content_type: 'image/png')
@@ -116,7 +125,8 @@ anime = Anime.create!(
   parution_date: "06/04/2014", 
   category: "shonen", 
   streaming_service: "wakanim", 
-  rating: 5
+  rating: 5,
+  vote: 34
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'haikyu!!.png', content_type: 'image/png')
@@ -128,7 +138,8 @@ anime = Anime.create!(
   parution_date: "10/01/2021", 
   category: "action", 
   streaming_service: "wakanim", 
-  rating: 3
+  rating: 3,
+  vote: 92
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'kemono incidents.png', content_type: 'image/png')
@@ -140,7 +151,8 @@ anime = Anime.create!(
   parution_date: "06/07/2016", 
   category: "shonen", 
   streaming_service: "netflix", 
-  rating: 5
+  rating: 5,
+  vote: 52
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'food wars.png', content_type: 'image/png')
@@ -152,7 +164,8 @@ anime = Anime.create!(
   parution_date: "26/09/2017", 
   category: "comedie", 
   streaming_service: "crunchyroll", 
-  rating: 1
+  rating: 1,
+  vote: 42
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'dr ramune.png', content_type: 'image/png')
@@ -164,7 +177,8 @@ anime = Anime.create!(
   parution_date: "08/09/2011", 
   category: "seinen", 
   streaming_service: "netflix", 
-  rating: 5
+  rating: 5,
+  vote: 96
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'Tokyo ghoul.png', content_type: 'image/png')
@@ -176,7 +190,8 @@ anime = Anime.create!(
   parution_date: "01/04/2016", 
   category: "shonen", 
   streaming_service: "netflix", 
-  rating: 5
+  rating: 5,
+  vote: 83
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'myhero academia.png', content_type: 'image/png')
@@ -188,7 +203,8 @@ anime = Anime.create!(
   parution_date: "09/01/2021", 
   category: "comedie", 
   streaming_service: "wakanim", 
-  rating: 3
+  rating: 3,
+  vote: 88
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'Horimiya.png', content_type: 'image/png')
@@ -200,7 +216,8 @@ anime = Anime.create!(
   parution_date: "08/01/2021", 
   category: "action", 
   streaming_service: "wakanim", 
-  rating: 4
+  rating: 4,
+  vote: 19
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'black arrow.png', content_type: 'image/png')
@@ -212,7 +229,8 @@ anime = Anime.create!(
   parution_date: "03/07/2009", 
   category: "seinen", 
   streaming_service: "netflix", 
-  rating: 5
+  rating: 5,
+  vote: 51
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'onepunchman.png', content_type: 'image/png')
@@ -224,7 +242,8 @@ anime = Anime.create!(
   parution_date: "22/07/1997", 
   category: "shonen", 
   streaming_service: "adn", 
-  rating: 4
+  rating: 4,
+  vote: 55
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'onepiece.png', content_type: 'image/png')
@@ -236,7 +255,8 @@ anime = Anime.create!(
   parution_date: "20/08/2001", 
   category: "shonen", 
   streaming_service: "adn", 
-  rating: 5
+  rating: 5,
+  vote: 60
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'bleach.png', content_type: 'image/png')
@@ -248,7 +268,8 @@ anime = Anime.create!(
   parution_date: "01/01/1986", 
   category: "action", 
   streaming_service: "adn", 
-  rating: 2
+  rating: 2,
+  vote: 72
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'jojobizarreadventure.png', content_type: 'image/png')
@@ -260,7 +281,8 @@ anime = Anime.create!(
   parution_date: "07/04/2018", 
   category: "horreur", 
   streaming_service: "adn", 
-  rating: 4
+  rating: 4,
+  vote: 17
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'devilsline.png', content_type: 'image/png')
@@ -272,7 +294,8 @@ anime = Anime.create!(
   parution_date: "19/01/1994", 
   category: "mystere", 
   streaming_service: "adn", 
-  rating: 1
+  rating: 1,
+  vote: 69
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'conan.png', content_type: 'image/png')
@@ -284,7 +307,8 @@ anime = Anime.create!(
   parution_date: "06/01/2021", 
   category: "action", 
   streaming_service: "wakanim", 
-  rating: 5
+  rating: 5,
+  vote: 11
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'lbxgirl.png', content_type: 'image/png')
@@ -297,7 +321,8 @@ anime = Anime.create!(
   parution_date: "08/01/2021", 
   category: "action", 
   streaming_service: "wakanim", 
-  rating: 2
+  rating: 2,
+  vote: 28
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'projectscared.png', content_type: 'image/png')
@@ -309,7 +334,8 @@ anime = Anime.create!(
   parution_date: "03/10/2002", 
   category: "shonen", 
   streaming_service: "netflix", 
-  rating: 5
+  rating: 5,
+  vote: 189
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'Naruto.png', content_type: 'image/png')
