@@ -6,8 +6,10 @@
   <ul class="menu">
     <li><%= link_to "ACCUEIL", "/", class: "menu_link" %></li>
     <li><%= link_to "CATALOGUE", animes_path, class: "menu_link" %></li>
+    <% if current_user != nil %>
+      <li><%= link_to "MA WATCHLIST", user_path(current_user), class: "menu_link" %></li>
+    <% end %>
     <li><%= link_to "TABLEAU DE BORD", "#", class: "menu_link" %></li>
-    <%# <li><%= link_to "MA WATCHLIST", user_path(current_user), class: "menu_link" %></li> %>
     <li><%= link_to "THÉORIES", "#", class: "menu_link" %></li>
   </ul>
   <%= link_to root_path, class: "logo-navbar" do%>
