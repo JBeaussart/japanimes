@@ -10,21 +10,24 @@
 
     <div class="description-show-anime">
 
-      <h1 class="anime-title-show text-light"><%= @anime.title %></h1>
+      <div class="anime-title-like-heart-show">
+        <h1 class="anime-title-show text-light"><%= @anime.title %></h1>
 
-      <div class="like_heart">
-        <% if current_user != nil %>
-          <% if @anime.in?(current_user.animes) %>
-            <%= link_to watchlist_anime_path(@watchlist), method: :delete do%>
-              <i class="fas fa-heart"></i>
-            <% end %>
-          <% else %>
-            <%= link_to anime_watchlist_animes_path(@anime), method: :post do %>
-              <i class="far fa-heart"></i>
+        <div class="like_heart">
+          <% if current_user != nil %>
+            <% if @anime.in?(current_user.animes) %>
+              <%= link_to watchlist_anime_path(@watchlist), method: :delete do%>
+                <i class="fas fa-heart"></i>
+              <% end %>
+            <% else %>
+              <%= link_to anime_watchlist_animes_path(@anime), method: :post do %>
+                <i class="far fa-heart"></i>
+              <% end %>
             <% end %>
           <% end %>
-        <% end %>
+        </div>
       </div>
+
 
       <div class="caret-description"></i></div>
 
@@ -60,7 +63,7 @@
         <div class="plateform-show-anime">
           <h2 class="anime-title-show text-light">Disponible sur :</i></h2>
           <p class="text-light mb-0">Plateforme</p>
-          <p><%= @anime.streaming_service %><button type="button" class="btn btn-link btn-light">Visualiser</button></p>
+          <p class="streaming-service"><%= @anime.streaming_service %><button type="button" class="btn btn-visualize btn-link btn-light">Visualiser</button></p>
         </div>
 
   </div>

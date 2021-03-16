@@ -15,14 +15,14 @@ export const ongletsAnimeShow = () => {
       index = onglet.getAttribute('data-anim');
       console.log(index);
   
-      for(i = 0; i < onglets.length; i++) {
+      for(let i = 0; i < onglets.length; i++) {
         if(onglets[i].getAttribute('data-anim')
         != index) {
           onglets[i].classList.remove('activeOnglet');
         }
       }
   
-      for(j = 0; j < contenu.length; j++) {
+      for(let j = 0; j < contenu.length; j++) {
         if(contenu[j].getAttribute('data-anim') == index) {
           contenu[j].classList.add('activeContenu');
         } else {
