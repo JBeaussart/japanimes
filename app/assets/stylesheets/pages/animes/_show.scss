@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 
-.anime-title-like-heart-show {
-  display: flex;
-  justify-content: space-between;
+.anime-description-streaming-show {
+  margin: 5% 10%;
+  width: 50%;
 }
 
 .anime-show-container {
@@ -15,49 +15,55 @@
   justify-content: space-around;
 }
 
-.anime-info {
-  display: flex;
-}
-
-.date-genre-anime-show {
-  display: flex;
-  align-items: center;
-  flex-flow: column wrap;
-}
-
-.note-globale-show-anime {
-  padding-right: 25%;
-}
-
-.description-show-anime {
-  background-color: orange;
-  margin: 5% 10%;
-  padding: 5% 5%;
-}
-
-.plateform-show-anime {
-  background-color: orange;
-  margin: 5% 10%;
-  padding: 5% 5%;
-}
-
 .img-anime-show {
-  margin-left: 10%;
+  width: 50%;
   margin-top: 3%;
-  box-shadow: 1px 1px 12px #555
+  box-shadow: 1px 1px 12px #555;
+  overflow: hidden;
 }
 
 .anime-title-show {
   padding-bottom: 2%;
 }
 
-.btn-visualize {
-  margin-left: 25%;
-  border-radius: 20px;
+.anime-title-like-heart-show {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anime-info-show {
+  background-color: white;
+  box-shadow: 1px 1px 12px #555;
+  padding: 5% 5%;
+}
+
+.anime-date-genre-show {
+  display: flex;
+}
+
+.date-genre-anime-show {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start | space-evenly;
+}
+
+.note-globale-show-anime {
+  padding-right: 25%;
+}
+
+.plateform-show-anime {
+  background-color: white;
+  padding: 5% 5%;
+  box-shadow: 1px 1px 12px #555;
 }
 
 .streaming-service{
   font-size: 20px;
+}
+
+.btn-visualize {
+  margin-left: 25%;
+  // border-radius: 20px;
 }
 
 // onglets comments & predictions

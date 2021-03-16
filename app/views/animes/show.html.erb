@@ -6,12 +6,12 @@
     <%= cl_image_tag @anime.photo.key, class: "card-img-show" %>
   </div>
 
-  <div class="anime-description-commentary">
+  <div class="anime-description-streaming-show">
 
-    <div class="description-show-anime">
+    <div class="anime-info-show">
 
       <div class="anime-title-like-heart-show">
-        <h1 class="anime-title-show text-light"><%= @anime.title %></h1>
+        <h1 class="anime-title-show"><%= @anime.title %></h1>
 
         <div class="like_heart">
           <% if current_user != nil %>
@@ -31,11 +31,11 @@
 
       <div class="caret-description"></i></div>
 
-      <p class="text-light"><%= @anime.description %></p>
+      <p class=""><%= @anime.description %></p>
 
-      <div class="anime-info">
+      <div class="anime-date-genre-show">
         <div class="note-globale-show-anime">
-          <p class="text-light mb-0">Note globale</p>
+          <p class="mb-0">Note globale</p>
           <p class="rating">
               <% @anime.rating.times do  %>
                 <i class="fas fa-star"></i>
@@ -48,11 +48,11 @@
         
         <div class="date-genre-anime-show">
           <div class="mr-5">
-            <p class="text-light mb-0">Date de diffusion</p>
+            <p class="mb-0">Date de diffusion</p>
             <p><%= @anime.parution_date %></p>
           </div>
           <div class="genre-show-anime">
-            <p class="text-light mb-0">Genre</p>
+            <p class="mb-0">Genre</p>
             <p><%= @anime.category %></p>
           </div>
         </div>
@@ -61,9 +61,9 @@
     </div>
 
         <div class="plateform-show-anime">
-          <h2 class="anime-title-show text-light">Disponible sur :</i></h2>
-          <p class="text-light mb-0">Plateforme</p>
-          <p class="streaming-service"><%= @anime.streaming_service %><button type="button" class="btn btn-visualize btn-link btn-light">Visualiser</button></p>
+          <h2 class="anime-title-show">Disponible sur :</i></h2>
+          <p class="mb-0">Plateforme</p>
+          <p class="streaming-service"><%= @anime.streaming_service %><button type="button" class="btn btn-visualize btn-link">Visualiser</button></p>
         </div>
 
   </div>
