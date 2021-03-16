@@ -111,7 +111,7 @@ anime.photo.attach(io: file, filename: 'Heaven design team.png', content_type: '
 # 9--------------------------------------------------------------------------------------------------------
 file = URI.open('https://d2y6mqrpjbqoe6.cloudfront.net/image/upload/f_auto,q_auto/media/library-400/148_637014119586825382Haikyuu_Small_hq.jpg')
 anime = Anime.create!(
-  title: "heikyun", 
+  title: "haikyu!!", 
   description: "Shôyô est un joueur de volley-ball de petite taille. Malgré ce handicap, celui-ci arrive à rivaliser contre ses adversaires grâce à une incroyable détente. Lors de son premier tournoi au collège, il est humilié par Tobio, un joueur prétentieux, mais bourré de talent. Une fois au lycée, il décide de prendre sa revanche. En intégrant l'équipe, il découvre que son rival va devenir son coéquipier. C'est ainsi qu'est né un des duos les plus prodigieux du volley-ball.", 
   parution_date: "06/04/2014", 
   category: "shonen", 
@@ -119,7 +119,7 @@ anime = Anime.create!(
   rating: 5
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
-anime.photo.attach(io: file, filename: 'heikyun.png', content_type: 'image/png')
+anime.photo.attach(io: file, filename: 'haikyu!!.png', content_type: 'image/png')
 # 10--------------------------------------------------------------------------------------------------------
 file = URI.open('https://d2y6mqrpjbqoe6.cloudfront.net/image/upload/f_auto,q_auto/media/library-400/41_637453581125831396Kemono_Small_FR_hq.jpg')
 anime = Anime.create!(
