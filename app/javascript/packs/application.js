@@ -30,6 +30,7 @@ require("custom/onglets_anime_show")
 import "bootstrap";
 import { listenToNavbarToggle } from "../custom/toggle_menu";
 import { heart_animation } from "../custom/heart_animation";
+import { ongletsAnimeShow } from "../custom/onglets_anime_show";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -38,4 +39,5 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   listenToNavbarToggle();
   heart_animation();
+  ongletsAnimeShow();
 });
