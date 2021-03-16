@@ -53,18 +53,18 @@ anime = Anime.create!(
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'fire force.png', content_type: 'image/png')
 # 4--------------------------------------------------------------------------------------------------------
-file = URI.open('https://d2y6mqrpjbqoe6.cloudfront.net/image/upload/f_auto,q_auto/media/library-400/41_636822051567388188PN_Small_hq.jpg')
+file = URI.open('https://image.animedigitalnetwork.fr/license/perfectblue/film/web/affiche_370x0.jpg')
 anime = Anime.create!(
-  title: "The promised neverland", 
-  description: "Celle qu’ils aiment comme leur mère n’est pas leur vraie maman. Les enfants qui vivent tous ensemble dans ce lieu ne sont pas vraiment frères et sœurs. Gracefield House est un orphelinat, une maison unique en son genre où s’épanouissent trente-huit frères et sœurs sans liens de sang, élevés par Maman. Cependant, leur charmant quotidien va brutalement prendre fin…", 
-  parution_date: "09/01/2019", 
-  category: "aventure", 
-  streaming_service: "wakanim", 
+  title: "Perfect blue", 
+  description: "Un thriller psychologique d'une intensité et d'un réalisme tels qu'il transcende le film d'animation. Cultissime. Mima, une chanteuse adulée et extrêmement populaire décide de quitter son groupe pour se vouer à une carrière d'actrice. Alors que cette décision provoque la colère de nombreux fans, elle persiste et accepte un petit rôle dans une série télévisée. L'image sage et édulcorée de l'icône pop est alors écornée lorsque la jeune femme doit jouer des scènes de viol collectif et se dévoile nue dans des photos de charme. Mais un fan semble bien plus...", 
+  parution_date: "04/08/1997", 
+  category: "thriller", 
+  streaming_service: "adn", 
   rating: 4,
   vote: 71
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
-anime.photo.attach(io: file, filename: 'the promised nerverland.png', content_type: 'image/png')
+anime.photo.attach(io: file, filename: 'Perfect blue.png', content_type: 'image/png')
 # 5--------------------------------------------------------------------------------------------------------
 file = URI.open('https://images-na.ssl-images-amazon.com/images/I/81Cr46R95HL._AC_SL1500_.jpg')
 anime = Anime.create!(
@@ -261,12 +261,12 @@ anime = Anime.create!(
 puts " - #{anime.title} (#{Anime.count}/25)"
 anime.photo.attach(io: file, filename: 'bleach.png', content_type: 'image/png')
 # 20--------------------------------------------------------------------------------------------------------
-file = URI.open('https://image.animedigitalnetwork.fr/license/jojo/tv4/web/affiche_370x0.jpg')
+file = URI.open('https://image.animedigitalnetwork.fr/license/kuroko/film3/web/affiche_370x0.jpg')
 anime = Anime.create!(
-  title: "Jojo's bizarre adventure", 
-  description: "Dans la ville de Morio, Josuke Higashikata, jeune lycéen, doit faire face à une importante menace. Des meurtres en série, quelque chose d'étrange est à l'oeuvre, quelque chose de bizarre... Mais la police est désemparée... Josuke Higashikata avec son caractère bien trempé et son puissant stand (représentation de sa force psychique et de son esprit combatif ) va tenter de percer le mystère avec son camarade Koichi Hirose. A eux deux, pourront-ils sauver la ville de Morio ?", 
-  parution_date: "01/01/1986", 
-  category: "action", 
+  title: "Kuroko's basket", 
+  description: "Seirin est en finale de la Winter Cup! L'autre demie-finale oppose Rakuzan et Shutoku : Akashi et son œil de l'Empereur donne du fil à retordre à Midorima et Takao de l'équipe de Shutoku. Très vite, Akashi réduit leurs espoirs de victoire en miettes et mène Rakuzan à la finale de la Winter Cup face à Seirin. Contrairement aux autres matchs, Kagami et Kuroko font face à un adversaire qui semble insurmontable : ils ont beau tout tenté, Akashi les surpasse. Kuroko ne baisse pas les bras pour autant et continue de se battre de toutes ses forces mais...", 
+  parution_date: "08/12/2008", 
+  category: "shonen", 
   streaming_service: "adn", 
   rating: 2,
   vote: 72
