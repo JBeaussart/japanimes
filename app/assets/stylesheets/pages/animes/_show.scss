@@ -1,85 +1,140 @@
 * {
-  list-style-type: none;
-}
-
-.show_body {
-  background-color: black;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .anime-show-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.anime-description-commentary {
-  width: 40%;
-  position: relative;
-}
-
-.anime-title-show {
-  text-align: center;
-  margin: 30px 0;
-  font-size: 64px;
-  font-family: "Geomanist-Bold", serif;
-  color: white;
-}
-
-.img-anime-show .card-img-show{
-  height: 700px;
-  box-shadow: 2px 2px 60px rgb(122, 122, 122);
-}
-
-.img-anime-show {
-  margin-right: 80px;
-}
-
-.description-show-anime {
-  padding: 30px;
-  margin-bottom: 100px;
-  background-color: rgb(46, 46, 46);
-  border-radius: 8px;
-  color: white;
-}
-
-.caret-description {
-  position: absolute;
-  font-size: 150px;
-  color: rgb(46, 46, 46);
-  top: 7px;
-  left: -40px;
-}
-
-.caret-commentary {
-  position: absolute;
-  font-size: 150px;
-  color: rgb(46, 46, 46);
-  top: 400px; 
-  left: -45px;
-}
-
-
-.commentary-anime {
-  padding: 30px;
-  background-color: rgb(46, 46, 46);
-  border-radius: 8px;
-  color: white;
-}
-.parution_show {
-  color: white;
+  justify-content: space-around;
 }
 
 .anime-info {
   display: flex;
 }
 
-.like_heart{
-  font-size: 60px;
+.date-genre-anime-show {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.note-globale-show-anime {
+  padding-right: 25%;
+}
+
+.description-show-anime {
+  background-color: orange;
+  margin: 5% 10%;
+  padding: 5% 5%;
+}
+
+.plateform-show-anime {
+  background-color: orange;
+  margin: 5% 10%;
+  padding: 5% 5%;
+}
+
+.img-anime-show {
+  margin-left: 10%;
+  margin-top: 3%;
+  box-shadow: 1px 1px 12px #555
+}
+
+.anime-title-show {
+  padding-bottom: 2%;
+}
+
+.btn {
+  margin-left: 25%;
+}
+
+// onglets comments & predictions
+
+.commentary-anime-show, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.commentary-anime-show {
+  margin: 5% 10%;
   position: absolute;
-  right: 650px;
-  top: 80px;
+  width: 1200px;
+  height: auto;
+  // background-color: rgb(246, 198, 110);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container-onglets {
+  background: white;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.onglets {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  cursor: pointer;
+}
+
+.onglets:not(:nth-child(2)) {
+  border-right: 1px solid black;
+}
+
+.container-contenu {
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.container-contenu li {
+  padding: 20px;
+}
+
+// .commentary-anime-show ul {
+//   display: flex;
+//   flex-wrap: wrap;
+//   padding-top: 40px;
+// }
+
+// .commentary-anime-show li {
+//   align-content: space-between;
+// }
+
+.date {
+  font-size: 0.5em;
+}
+
+.nickname {
+  font-size: 1em;
+}
+
+// animation onglets
+
+.active {
+  background: orange;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.activeContenu {
+  animation: fade 0.5s forwards;
 }
 
 .fa-heart {
   color: red;
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
