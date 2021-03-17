@@ -9,6 +9,7 @@
 
   <div class="watchlist_show_user">
     <h1 class="title_header_user_show">MA WATCHLIST</h1>
+    <div class="card-grid-container">
     <% @watchlist.each do |watchlist_anime| %>
       <div class="card m-4">  
       <a href="<%= anime_path(watchlist_anime.anime) %>">
@@ -36,5 +37,6 @@
         </div>
       </div>
     <% end %>
+    </div>
   </div>
 </div>

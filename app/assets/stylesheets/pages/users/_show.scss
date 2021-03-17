@@ -1,15 +1,40 @@
 .user_show_container {
   display: flex;
   justify-content: space-around;
+  margin-top: 36px;
+
+  .user_information {
+    background: rgb(148, 148, 148);
+    width: 30%;
+    height: 80vh;
+  }
+
+  .watchlist_show_user {
+    width: 60%;
+    padding: 32px;
+
+      .title_header_user_show {
+        font-family: "Geomanist-Bold", serif;
+        text-align: center;
+      }
+
+      .card-grid-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+          .like-user-show{
+            position: absolute;
+            bottom: 23px;
+            right: 25px;
+            font-size: 35px;
+          }
+      }
+  }
 }
 
-.title_header_user_show {
-  font-family: "Geomanist-Bold", serif;
-}
 
-.like-user-show{
-  position: absolute;
-  bottom: 23px;
-  right: 25px;
-  font-size: 35px;
-}
+
+
+
+
