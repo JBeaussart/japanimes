@@ -1,6 +1,10 @@
+.user_show_container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .title_header_user_show {
   font-family: "Geomanist-Bold", serif;
-  text-align: center;
 }
 
 .like-user-show{

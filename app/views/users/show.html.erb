@@ -1,32 +1,40 @@
-  <h1 class="title_header_user_show">MA WATCHLIST</h1>
-  <div class="container">
-    <div class="row">
-      <% @watchlist.each do |watchlist_anime| %>
-        <div class="card m-4">  
-        <a href="<%= anime_path(watchlist_anime.anime) %>">
-          <div class="cards-img-container">
-            <%= cl_image_tag watchlist_anime.anime.photo.key, class: "card-img" %>
-          </div>
-          <div class="card-description">
-            <h1 class="title-card"><%= watchlist_anime.anime.title %></h1>
-            </a>
-            <div>
-              <% if current_user != nil %>
-                <%= link_to watchlist_anime_path(watchlist_anime), method: :delete do%>
-                  <i class="fas fa-heart like-user-show"></i>
-                <% end %>
-              <% end %>
-            </div>
-            <p class="rating">
-              <% watchlist_anime.anime.rating.times do  %>
-                <i class="fas fa-star"></i>
-              <% end %>
-              <% watchlist_anime.anime.blank_stars.times do %>
-                <i class="far fa-star"></i>
-              <% end %>
-            </p>   
-          </div>
-        </div>
-      <% end %>
-    </div>
+<div class="user_show_container">
+  <div class="user_information">
+    <%= image_tag "goku.png", class: "avatar" %>
+    <%= @user.nickname %>
+    <%= link_to 'Edit', edit_user_registration_path %>
+    <div class="my-infos"></div>
+    <div class="my-subscription"></div>
   </div>
+
+  <div class="watchlist_show_user">
+    <h1 class="title_header_user_show">MA WATCHLIST</h1>
+    <% @watchlist.each do |watchlist_anime| %>
+      <div class="card m-4">  
+      <a href="<%= anime_path(watchlist_anime.anime) %>">
+        <div class="cards-img-container">
+          <%= cl_image_tag watchlist_anime.anime.photo.key, class: "card-img" %>
+        </div>
+        <div class="card-description">
+          <h1 class="title-card"><%= watchlist_anime.anime.title %></h1>
+          </a>
+          <div>
+            <% if current_user != nil %>
+              <%= link_to watchlist_anime_path(watchlist_anime), method: :delete do%>
+                <i class="fas fa-heart like-user-show"></i>
+              <% end %>
+            <% end %>
+          </div>
+          <p class="rating">
+            <% watchlist_anime.anime.rating.times do  %>
+              <i class="fas fa-star"></i>
+            <% end %>
+            <% watchlist_anime.anime.blank_stars.times do %>
+              <i class="far fa-star"></i>
+            <% end %>
+          </p>   
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
