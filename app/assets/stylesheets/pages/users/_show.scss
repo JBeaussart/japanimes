@@ -1,19 +1,53 @@
 .user_show_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 36px;
-
+  
   .user_information {
     position:relative;
-    background: rgb(148, 148, 148);
+    background: rgb(194, 191, 186);
     width: 30%;
     height: 80vh;
+    border-radius: 8px;
+    top: 40px;
 
     .avatar_show_user {
       position: absolute;
-      top: 100px;
+      top: 60px;
       left: 80px;
       width: 150px;
+    }
+    .nickname_user_show_user {
+      position: absolute;
+      top: 100px;
+      right: 80px;
+      font-size: 40px;
+    }
+    .btn_user_show_modify {
+      position: absolute;
+      top: 270px;
+      left: -50px;
+      width: 70%;
+    }
+    .my-infos {
+      position: absolute;
+      width: 80%;
+      height: 100px;
+      background: white;
+      bottom: 260px;
+      left: 54px;
+      height: 150px;
+      padding: 8px;
+    }
+    .my-subscription {
+      position: absolute;
+      width: 80%;
+      height: 100px;
+      background: white;
+      bottom: 70px;
+      left: 54px;
+      height: 150px;
+      padding: 8px;
     }
   }
 

@@ -1,10 +1,10 @@
 <div class="user_show_container">
   <div class="user_information">
     <%= image_tag "goku.png", class: "avatar avatar_show_user" %>
-    <%= @user.nickname %>
-    <%= link_to 'Edit', edit_user_registration_path %>
-    <div class="my-infos"></div>
-    <div class="my-subscription"></div>
+    <p class="nickname_user_show_user"><%= @user.nickname %></p>
+    <%= link_to 'Modifier votre profil', edit_user_registration_path, class: "btn_user_show_modify btn btn-primary btn-lg" %>
+    <div class="my-infos">Mes informations</div>
+    <div class="my-subscription">Mes abonnements</div>
   </div>
 
   <div class="watchlist_show_user">
