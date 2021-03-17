@@ -19,13 +19,14 @@
         <div class="card-description">
           <h1 class="title-card"><%= watchlist_anime.anime.title %></h1>
           </a>
-          <div>
+          <div class="like-btn">
             <% if current_user != nil %>
               <%= link_to watchlist_anime_path(watchlist_anime), method: :delete do%>
-                <i class="fas fa-heart like-user-show"></i>
+                <i class="fas fa-heart "></i>
               <% end %>
             <% end %>
           </div>
+          <p class="category"><%= watchlist_anime.anime.category %></p>
           <p class="rating">
             <% watchlist_anime.anime.rating.times do  %>
               <i class="fas fa-star"></i>
@@ -33,6 +34,7 @@
             <% watchlist_anime.anime.blank_stars.times do %>
               <i class="far fa-star"></i>
             <% end %>
+            (<%= watchlist_anime.anime.vote %> votes)
           </p>   
         </div>
       </div>
