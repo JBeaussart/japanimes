@@ -4,9 +4,17 @@
   margin-top: 36px;
 
   .user_information {
+    position:relative;
     background: rgb(148, 148, 148);
     width: 30%;
     height: 80vh;
+
+    .avatar_show_user {
+      position: absolute;
+      top: 100px;
+      left: 80px;
+      width: 150px;
+    }
   }
 
   .watchlist_show_user {
