@@ -16,12 +16,11 @@
         <div class="card-description">
           <h1 class="title-card"><%= anime.title %></h1>
           </a>
-          <p><%= anime.id %></p>
           <div class="like-btn">
              <% if current_user != nil %>
               <% if anime.in?(current_user.animes) %>
-                <%= link_to watchlist_anime_path(anime), method: :delete do%>
-                  <div class="like" data-like-state="1">H</div>
+                <%= link_to watchlist_anime_path(WatchlistAnime.where(user_id: current_user.id, anime_id: anime.id).first), method: :delete do%>
+                  <div class="like" data-like-state="1"></div>
                 <% end %>
               <% else %>
                 <%= link_to anime_watchlist_animes_path(anime), method: :post do%>
