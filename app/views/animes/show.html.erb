@@ -78,10 +78,6 @@
   </div>
 
   <div class="container-contenu-com-pred-section-anime-show activeContenu" data-anim="1">
-    <%= simple_form_for([ @anime, @review ]) do |f| %>
-      <%= f.input :content, as: :text %>
-      <%= f.button :submit %>
-    <% end %>
     <ul>
       <li class="h5 mb-3"><span class="nickname text-secondary">Guillaume:</span><br> Un classique - indemodable </li>
       <li class="h5 mb-3"><span class="nickname text-secondary">Benjamin:</span><br> Toute mon enfance !</li>
@@ -99,4 +95,8 @@
       <li class="h5 mb-3"><span class="nickname text-secondary">Sakura:</span><br> Et si Naruto était en fait mort depuis le début ? </li>
     </ul>
   </div>
+  <%= simple_form_for([ @anime, @review ]) do |f| %>
+      <%= f.input :content, as: :text %>
+      <%= f.button :submit %>
+    <% end %>
 </div>
