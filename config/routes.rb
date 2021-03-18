@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :users, only: :show
   resources :animes, only: [ :index, :show ] do
+    resources :theory, only: :create
     resources :reviews, only: :create
     resources :watchlist_animes, only: [ :create, :index ]
   end
