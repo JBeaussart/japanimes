@@ -22,7 +22,7 @@
           <div class="like-btn">
             <% if current_user != nil %>
               <%= link_to watchlist_anime_path(watchlist_anime), method: :delete do%>
-                <i class="fas fa-heart "></i>
+                <div class="like" data-like-state="1"></div>
               <% end %>
             <% end %>
           </div>

@@ -19,11 +19,8 @@ class WatchlistAnimesController < ApplicationController
   end
 
   def destroy
-    @watchlist_ids = current_user.watchlist_animes.ids
-    @watchlist_ids.each do |watchlist_id|
-      @watchlist_animes = WatchlistAnime.find(watchlist_id)
-    end
-    @watchlist_animes.destroy
+    @watchlist_anime = WatchlistAnime.find(params[:id])
+    @watchlist_anime.destroy
     redirect_to animes_path, notice: "Anime supprimé de votre Watchlist"
   end
 end

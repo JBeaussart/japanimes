@@ -1,11 +1,12 @@
 export const heart_animation = () => {
     const like = document.querySelectorAll('.like');
     like.forEach((element) => {
-        let countLike = 0;
+        let countLike = parseInt(element.dataset.likeState, 10);
+        if (countLike === 1) element.classList.add('filled-like');
         element.addEventListener('click', () => {
         
             if(countLike === 0) {
-                element.classList.toggle('anim-like');
+                element.classList.add('anim-like');
                 countLike = 1;
                 element.style.backgroundPosition = 'right';
             } else {
@@ -14,9 +15,5 @@ export const heart_animation = () => {
             }
         
         });
-        
-        element.addEventListener('animationend', () => {
-            element.classList.toggle('anim-like');
-        })
     })
 };
