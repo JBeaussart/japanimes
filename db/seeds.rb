@@ -18,7 +18,7 @@ anime = Anime.create!(
   title: "Death note", 
   description: "Light Yagami est un lycéen surdoué qui juge le monde actuel criminel, pourri et corrompu. Sa vie change du tout au tout le jour où il ramasse par hasard un mystérieux cahier intitulé « Death Note ». Son mode d'emploi indique que « la personne dont le nom est écrit dans ce cahier meurt ». D'abord sceptique, Light décide toutefois de tester le cahier et découvre que son pouvoir est bien réel. Il rencontre l'ancien propriétaire du Death Note, un dieu de la mort nommé Ryûk. Celui-ci déclare avoir volontairement laissé tomber son carnet dans le but de se divertir...", 
   parution_date: "01/12/2003", 
-  category: "Thriller Psychologique", 
+  category: "Thriller", 
   streaming_service: "Netflix", 
   rating: 5,
   vote: 93
@@ -292,7 +292,7 @@ anime = Anime.create!(
   title: "Conan", 
   description: "Imaginez un Sherlock Holmes moderne, âgé d’à peine 17 ans, vivant à la fin des années 1990 ! Comme si cela ne suffisait pas, imaginez en outre qu’il a l’apparence d’un petit garçon de 6 ans... Shinichi Kudô est élève de première au lycée Tivedétec. Pour avoir résolu plusieurs enquêtes difficiles, beaucoup le considèrent comme «l’aide la plus précieuse que la police pouvait espérer». ", 
   parution_date: "19/01/1994", 
-  category: "Mystere", 
+  category: "Thriller", 
   streaming_service: "ADN", 
   rating: 5,
   vote: 69
