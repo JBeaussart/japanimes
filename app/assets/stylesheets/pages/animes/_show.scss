@@ -141,6 +141,10 @@
   animation: fade 0.5s forwards;
 }
 
+.fa-heart {
+  color: red;
+}
+
 @keyframes fade {
   from {
     opacity: 0;

@@ -11,16 +11,19 @@ class WatchlistAnimesController < ApplicationController
     else
       @watchlist_animes = WatchlistAnime.new(user_id: current_user.id, anime_id: @anime.id)
       if @watchlist_animes.save
-        redirect_to anime_path(@anime), notice: "Anime ajouté de votre Watchlist"
+        redirect_to animes_path, notice: "Anime ajouté de votre Watchlist"
       else
-        render "animes/show"
+        redirect_to animes_path
       end
     end
   end
 
   def destroy
-    @watchlist_animes = WatchlistAnime.find(params[:id])
+    @watchlist_ids = current_user.watchlist_animes.ids
+    @watchlist_ids.each do |watchlist_id|
+      @watchlist_animes = WatchlistAnime.find(watchlist_id)
+    end
     @watchlist_animes.destroy
-    redirect_to anime_path(@watchlist_animes.anime), notice: "Anime supprimé de votre Watchlist"
+    redirect_to animes_path, notice: "Anime supprimé de votre Watchlist"
   end
 end

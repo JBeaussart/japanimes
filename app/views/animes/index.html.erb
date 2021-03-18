@@ -1,18 +1,37 @@
-<div class="container">
+<div class="container mt-5">
+  <% if @filter != nil %>
+    <h4>Résultat de la recherche: "<%= @filter %>"</h4>
+  <% end %>
+  <%= link_to  root_path do%>
+    <i class="fas fa-arrow-circle-left return_home"></i>
+  <% end %>
+  <p class="count_result"><%= @animes.count %> résultats</p>
   <div class="row">
     <% @animes.each do |anime| %>
-      <div class="card m-4" data-toggle="tooltip" data-placement="right" data-html="true" title="Description: <%= anime.description %> <br><br> Date de parution:  <%= anime.parution_date %>">  
+      <div class="card m-4">  
       <a href="<%= anime_path(anime) %>">
         <div class="cards-img-container">
           <%= cl_image_tag anime.photo.key, class: "card-img" %>
         </div>
-
         <div class="card-description">
           <h1 class="title-card"><%= anime.title %></h1>
           </a>
-          <% if current_user != nil %>
-            <div class="like"></div>
-          <% end %>
+
+          <div class="like-btn">
+             <% if current_user != nil %>
+              <% if anime.in?(current_user.animes) %>
+                <%= link_to watchlist_anime_path(anime), method: :delete do%>
+                  <i class="fas fa-heart"></i>
+                <% end %>
+              <% else %>
+                <%= link_to anime_watchlist_animes_path(anime), method: :post do%>
+                  <i class="far fa-heart"></i>
+                <% end %>
+              <% end %>
+            <% end %>
+          </div>
+
+          <p class="category"><%= anime.category %></p>
           <p class="rating">
             <% anime.rating.times do  %>
               <i class="fas fa-star"></i>
@@ -20,11 +39,10 @@
             <% anime.blank_stars.times do %>
               <i class="far fa-star"></i>
             <% end %>
-          </p>   
+            (<%= anime.vote %> votes)
+          </p>
         </div>
       </div>
-      
-          
     <% end %>
   </div>
  </div>

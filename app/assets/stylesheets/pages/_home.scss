@@ -1,49 +1,16 @@
 // Specific CSS for your home-page
-.img-carousel {
-	height: 800px;
-	width: 100%;
-	object-fit: cover;
+.netflix-logo {
+  width: 120px;
 }
 
-
-.carousel-item:after {
-  content:'';
-  position:absolute;
-  left:0; top:0;
-  width:100%; height:100%;
-  display:inline-block;
-	background-color: rgba($color: #000000, $alpha: 0.3);
+.wakanim-logo {
+  width: 100px;
 }
 
-.home_container {
-	margin: 0 auto;
-	width: 80%;
+.crunchyroll-logo {
+  width: 85px;
 }
 
-.title-carouselle {
-	background-color: rgba($color: #000000, $alpha: 1.0);
-	color: $orange;
-	font-size: 50px;
-	font-family: 'Changa', sans-serif;
-	padding: 16px;
-	width: 500px;
-	margin: 0 auto;
-	border-radius: 16px;
-	box-shadow: 2px 2px 20px $orange;
-}
-
-.carousel-inner {
-	box-shadow: 2px 2px 60px rgb(80, 80, 80);
-	position: relative;
-}
-
-.text-anim-top {
-	position: absolute;
-	z-index: 1;
-	bottom: 144px;
-	left: 625px;
-	color: $orange;
-	font-size: 20px;
-	font-family: 'Changa', sans-serif;
-	border-radius: 4px;
+.adn-logo {
+  width: 120px;
 }

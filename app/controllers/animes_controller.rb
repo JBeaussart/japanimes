@@ -2,6 +2,7 @@ class AnimesController < ApplicationController
   def index
     if params[:query].present?
       @animes = Anime.where("title ILIKE ?", "%#{params[:query]}%")
+      @filter = params[:query]
     else
       @animes = Anime.all
     end
@@ -12,7 +13,6 @@ class AnimesController < ApplicationController
     if current_user != nil
       @watchlist = current_user.watchlist_animes.find_by(anime: @anime)
     end
-    # on aurait pu remplacer .find_by avec .where.first
   end
 
   def new

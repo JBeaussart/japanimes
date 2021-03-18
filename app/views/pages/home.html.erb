@@ -1,40 +1,25 @@
-<%= render 'shared/searchbar', animes: @animes %>
+<div class="container-fluid">
+  <div class="row">
+    <%= render 'shared/banner' %>
 
-<div class="home_container">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-    <div class="text-anim-top">ANIMES DU MOMENT</div>
-      <div class="carousel-item">
-        <%= image_tag('manga1.jpg', alt: 'manga1.jpg', class: 'img-carousel d-block w-80')%>
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="title-carouselle">One punch man</h1>
-        </div>
-      </div>
-      <div class="carousel-item active">
-        <%= image_tag('manga2.jpg', alt: 'manga1.jpg', class: 'img-carousel d-block w-80')%>
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="title-carouselle">Death note</h1>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag('manga3.jpg', alt: 'manga1.jpg', class: 'img-carousel d-block w-80')%>
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="title-carouselle">Demon slayer</h1>
-        </div>
-      </div>
+    <div class="homepage">
+      <h1>Plateformes VOD</h1>
+      <%= link_to image_tag('wakanim_logo.png', class: "wakanim-logo"), "#"%>
+      <%= link_to image_tag('crunchyroll_logo.png', class: "crunchyroll-logo"), "#"%>
+      <%= link_to image_tag('adn_logo.png', class: "adn-logo"), "#"%>
+      <%= link_to image_tag('netflix_logo.png', class: "netflix-logo"), "#"%>
+
+      <h1>Choisissez votre style</h1>
+      <ul>
+        <li>
+          <% @categories.each do |category| %>
+            <%= category %>
+          <% end %>
+        </li>
+      </ul>
+
+      <h1>Animes du moment</h1>
+      <%= render 'shared/carousel' %>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
 </div>

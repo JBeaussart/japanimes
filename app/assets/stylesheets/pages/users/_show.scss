@@ -1,11 +1,83 @@
-.title_header_user_show {
-  font-family: "Geomanist-Bold", serif;
-  text-align: center;
+.user_show_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 36px;
+  
+  .user_information {
+    position:relative;
+    background: rgb(218, 215, 211);
+    width: 30%;
+    height: 80vh;
+    border-radius: 8px;
+    top: 40px;
+
+    .avatar_show_user {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      width: 170px;
+    }
+    .nickname_user_show_user {
+      position: absolute;
+      top: 100px;
+      right: 60px;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    .btn_user_show_modify {
+      position: absolute;
+      top: 270px;
+      left: -50px;
+      width: 70%;
+    }
+    .my-infos {
+      position: absolute;
+      width: 80%;
+      height: 100px;
+      background: white;
+      bottom: 260px;
+      left: 54px;
+      height: 150px;
+      padding: 8px;
+    }
+    .my-subscription {
+      position: absolute;
+      width: 80%;
+      height: 100px;
+      background: white;
+      bottom: 70px;
+      left: 54px;
+      height: 150px;
+      padding: 8px;
+    }
+  }
+
+  .watchlist_show_user {
+    width: 60%;
+    padding: 32px;
+
+      .title_header_user_show {
+        font-family: "Geomanist-Bold", serif;
+        text-align: center;
+      }
+
+      .card-grid-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+          .like-user-show{
+            position: absolute;
+            bottom: 23px;
+            right: 25px;
+            font-size: 35px;
+          }
+      }
+  }
 }
 
-.like-user-show{
-  position: absolute;
-  bottom: 23px;
-  right: 25px;
-  font-size: 35px;
-}
+
+
+
+
+
