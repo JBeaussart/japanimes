@@ -2,14 +2,16 @@
   <div class="row">
     <%= render 'shared/banner' %>
 
-    <div class="homepage">
-      <h1>Plateformes VOD</h1>
+    <div class="choice-vod">
+      <h1>Une plateforme préférée ?</h1>
       <%= link_to image_tag('wakanim_logo.png', class: "wakanim-logo"), "#"%>
       <%= link_to image_tag('crunchyroll_logo.png', class: "crunchyroll-logo"), "#"%>
       <%= link_to image_tag('adn_logo.png', class: "adn-logo"), "#"%>
       <%= link_to image_tag('netflix_logo.png', class: "netflix-logo"), "#"%>
+    </div>
 
-      <h1>Choisissez votre style</h1>
+    <div class="choice-category">
+      <h1>Un style en particulier ?</h1>
       <ul>
         <li>
           <% @categories.each do |category| %>
@@ -17,8 +19,10 @@
           <% end %>
         </li>
       </ul>
+    </div>
 
-      <h1>Animes du moment</h1>
+    <div class="top-anime">
+      <h1>Indécis ? Voici la sélection du moment</h1>
       <%= render 'shared/carousel' %>
     </div>
   </div>
