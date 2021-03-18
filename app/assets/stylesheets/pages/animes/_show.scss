@@ -22,12 +22,11 @@
 
 .image-anime-show {
   box-shadow: 1px 1px 12px #555;
-  // overflow: hidden;
-  // object-fit: fill;
   width: 500px;
   height: 750px;
   background-size: cover;
   background-position: center;
+  border-radius: 15px;
 }
 
 .title-colored {
@@ -67,9 +66,10 @@
   font-size: 20px;
 }
 
+// attention bouton!!!
+
 .btn-visualize {
   margin-left: 25%;
-  color: orange;
 }
 
 // onglets comments & predictions
@@ -84,11 +84,9 @@
   margin: 5% 10%;
   position: absolute;
   width: 1200px;
-  // background-color: rgb(246, 198, 110);
 }
 
 .commentary-prediction-anime-show ul {
-  // position: absolute;
   border: 1px solid black;
 }
 

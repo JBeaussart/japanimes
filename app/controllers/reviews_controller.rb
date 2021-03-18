@@ -2,6 +2,7 @@ class ReviewsController < ApplicationController
   before_action :find_review, only: [ :update, :destroy ]
 
   def create
+    @anime = Anime.find(params[:anime_id])
     @review = Review.new(review_params)
     @review.user = current_user
     if @review.save
