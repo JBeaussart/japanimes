@@ -23,6 +23,13 @@
 .img-anime-show {
   box-shadow: 1px 1px 12px #555;
   overflow: hidden;
+  object-fit: fill;
+  width: 500px;
+  height: 750px;
+}
+
+.title-colored {
+  color: orange;
 }
 
 .anime-title-show {
@@ -38,27 +45,20 @@
   background-color: white;
   box-shadow: 1px 1px 12px #555;
   padding: 5% 5%;
+  border-radius: 15px;
 }
 
 .anime-date-genre-note-show {
   display: flex;
   flex-direction: row;
-}
-
-.date-genre-anime-show {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start | space-evenly;
-}
-
-.note-globale-show-anime {
-  padding-right: 25%;
+  justify-content: space-evenly;
 }
 
 .plateform-show-anime {
   background-color: white;
   padding: 5% 5%;
   box-shadow: 1px 1px 12px #555;
+  border-radius: 15px;
 }
 
 .streaming-service{
@@ -82,12 +82,12 @@
   margin: 5% 10%;
   position: absolute;
   width: 1200px;
-  height: auto;
   // background-color: rgb(246, 198, 110);
 }
 
 .commentary-prediction-anime-show ul {
-  border: 1px solid black;
+  position: absolute;
+  // border: 1px solid black;
 }
 
 .container-onglets {
@@ -113,7 +113,7 @@
 .container-contenu-com-pred-section-anime-show {
   height: 70%;
   width: 100%;
-  position: absolute;
+  // position: absolute;
   opacity: 0;
 }
 
