@@ -2,8 +2,7 @@
 
 <div class="anime-show-container">
 
-  <div class="img-anime-show">
-    <%= cl_image_tag @anime.photo.key%>
+  <div class="image-anime-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @anime.photo.key, crop: :fill %>')">
   </div>
 
   <div class="anime-description-streaming-show">
@@ -17,11 +16,11 @@
           <% if current_user != nil %>
             <% if @anime.in?(current_user.animes) %>
               <%= link_to watchlist_anime_path(@watchlist), method: :delete do%>
-                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart fa-3x"></i>
               <% end %>
             <% else %>
               <%= link_to anime_watchlist_animes_path(@anime), method: :post do %>
-                <i class="far fa-heart"></i>
+                <i class="far fa-heart fa-3x"></i>
               <% end %>
             <% end %>
           <% end %>
@@ -34,36 +33,33 @@
       <p class=""><%= @anime.description %></p>
 
       <div class="anime-date-genre-note-show">
-        <div class="note-globale-show-anime">
-          <p class="mb-0">Note globale</p>
-          <p class="rating">
-              <% @anime.rating.times do  %>
-                <i class="fas fa-star"></i>
-              <% end %>
-              <% @anime.blank_stars.times do %>
-                <i class="far fa-star"></i>
-              <% end %>
-          </p>   
-        </div>  
-        
-        <div class="date-genre-anime-show">
+          <div class="note-globale-show-anime">
+            <p class="title-colored mb-0">Note globale</p>
+            <p class="rating">
+                <% @anime.rating.times do  %>
+                  <i class="fas fa-star"></i>
+                <% end %>
+                <% @anime.blank_stars.times do %>
+                  <i class="far fa-star"></i>
+                <% end %>
+            </p>   
+          </div>  
           <div class="date-show-anime">
-            <p class="mb-0">Date de diffusion</p>
+            <p class="title-colored mb-0">Date de diffusion</p>
             <p><%= @anime.parution_date %></p>
           </div>
           <div class="genre-show-anime">
-            <p class="mb-0">Genre</p>
+            <p class="title-colored mb-0">Genre</p>
             <p><%= @anime.category %></p>
           </div>
-        </div>
-
       </div>
     </div>
 
         <div class="plateform-show-anime">
           <h2 class="anime-title-show">Disponible sur :</i></h2>
-          <p class="mb-0">Plateforme</p>
-          <p class="streaming-service"><%= @anime.streaming_service %><button class="btn btn-visualize btn-link">Visualiser</button></p>
+          <p class="streaming-service"><%= @anime.streaming_service %>
+          <button class="btn btn-visualize btn-link">Visualiser</button>
+          </p>
         </div>
 
   </div>
@@ -83,16 +79,24 @@
 
   <div class="container-contenu-com-pred-section-anime-show activeContenu" data-anim="1">
     <ul>
-      <li class="h5 mb-3"><span class="nickname text-secondary">Guillaume:</span><br><span class="date text-secondary">commenté le 23 février 2021</span><br> Un classique - indemodable </li>
-      <li class="h5 mb-3"><span class="nickname text-secondary">Benjamin:</span><br><span class="date text-secondary">commenté le 14 janvier 2021</span><br> Toute mon enfance !</li>
-      <li class="h5 mb-3"><span class="nickname text-secondary">Nicolas:</span><br><span class="date text-secondary">commenté le 02 mars 2021</span><br> La base :) </li>
+      <li class="h5 mb-3"><span class="nickname text-secondary">Guillaume:</span><br> Un classique - indemodable </li>
+      <li class="h5 mb-3"><span class="nickname text-secondary">Benjamin:</span><br> Toute mon enfance !</li>
+      <li class="h5 mb-3"><span class="nickname text-secondary">Nicolas:</span><br> La base :) </li>
     </ul>
   </div>
   <div class="container-contenu-com-pred-section-anime-show" data-anim="2">
+    <%= simple_form_for([ @anime, @review ]) do |f| %>
+      <%= f.input :content, as: :text %>
+      <%= f.button :submit, class: 'btn' %>
+    <% end %>
     <ul>
-      <li class="h5 mb-3"><span class="nickname text-secondary">Jacqueline:</span><br><span class="date text-secondary">commenté le 23 février 2021</span><br> Dans le prochain épisode Sangoku et Vegeta vont s'avouer leurs sentiments </li>
-      <li class="h5 mb-3"><span class="nickname text-secondary">Sherlock:</span><br><span class="date text-secondary">commenté le 14 janvier 2021</span><br> Il y va avoir un cross-over DeathNote et Tata c'est évident ! </li>
-      <li class="h5 mb-3"><span class="nickname text-secondary">Sakura:</span><br><span class="date text-secondary">commenté le 02 mars 2021</span><br> Et si Naruto était en fait mort depuis le début ? </li>
+      <li class="h5 mb-3"><span class="nickname text-secondary">Jacqueline:</span><br> Dans le prochain épisode Sangoku et Vegeta vont s'avouer leurs sentiments </li>
+      <li class="h5 mb-3"><span class="nickname text-secondary">Sherlock:</span><br> Il y va avoir un cross-over DeathNote et Tata c'est évident ! </li>
+      <li class="h5 mb-3"><span class="nickname text-secondary">Sakura:</span><br> Et si Naruto était en fait mort depuis le début ? </li>
     </ul>
   </div>
+  <%= simple_form_for([ @anime, @review ]) do |f| %>
+      <%= f.input :content, as: :text %>
+      <%= f.button :submit %>
+    <% end %>
 </div>

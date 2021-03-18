@@ -20,9 +20,17 @@
   width: 50%;
 }
 
-.img-anime-show {
+.image-anime-show {
   box-shadow: 1px 1px 12px #555;
-  overflow: hidden;
+  width: 500px;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.title-colored {
+  color: orange;
 }
 
 .anime-title-show {
@@ -38,36 +46,30 @@
   background-color: white;
   box-shadow: 1px 1px 12px #555;
   padding: 5% 5%;
+  border-radius: 15px;
 }
 
 .anime-date-genre-note-show {
   display: flex;
   flex-direction: row;
-}
-
-.date-genre-anime-show {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start | space-evenly;
-}
-
-.note-globale-show-anime {
-  padding-right: 25%;
+  justify-content: space-evenly;
 }
 
 .plateform-show-anime {
   background-color: white;
   padding: 5% 5%;
   box-shadow: 1px 1px 12px #555;
+  border-radius: 15px;
 }
 
 .streaming-service{
   font-size: 20px;
 }
 
+// attention bouton!!!
+
 .btn-visualize {
   margin-left: 25%;
-  color: orange;
 }
 
 // onglets comments & predictions
@@ -82,8 +84,6 @@
   margin: 5% 10%;
   position: absolute;
   width: 1200px;
-  height: auto;
-  // background-color: rgb(246, 198, 110);
 }
 
 .commentary-prediction-anime-show ul {
