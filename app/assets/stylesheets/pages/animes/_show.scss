@@ -8,19 +8,19 @@
 .anime-show-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2.5%;
+  margin: 5% 5%;
 }
 
 .anime-description-streaming-show {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 5% 10%;
+  justify-content: space-evenly;
   width: 50%;
 }
 
 .img-anime-show {
-  width: 50%;
-  margin-top: 3%;
   box-shadow: 1px 1px 12px #555;
   overflow: hidden;
 }
