@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_16_195015) do
+ActiveRecord::Schema.define(version: 2021_03_18_180735) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,16 @@ ActiveRecord::Schema.define(version: 2021_03_16_195015) do
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
+  create_table "theories", force: :cascade do |t|
+    t.text "content"
+    t.bigint "user_id", null: false
+    t.bigint "anime_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["anime_id"], name: "index_theories_on_anime_id"
+    t.index ["user_id"], name: "index_theories_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -83,6 +93,8 @@ ActiveRecord::Schema.define(version: 2021_03_16_195015) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "reviews", "animes"
   add_foreign_key "reviews", "users"
+  add_foreign_key "theories", "animes"
+  add_foreign_key "theories", "users"
   add_foreign_key "watchlist_animes", "animes"
   add_foreign_key "watchlist_animes", "users"
 end
