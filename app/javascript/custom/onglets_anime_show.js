@@ -1,6 +1,6 @@
 export const ongletsAnimeShow = () => {
   const onglets = document.querySelectorAll('.onglets');
-  const contenu = document.querySelectorAll('.container-contenu');
+  const contenu = document.querySelectorAll('.container-contenu-com-pred-section-anime-show');
   
   let index = 0;
   

@@ -5,14 +5,17 @@
   box-sizing: border-box;
 }
 
-.anime-description-streaming-show {
-  margin: 5% 10%;
-  width: 50%;
-}
-
 .anime-show-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+}
+
+.anime-description-streaming-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5% 10%;
+  width: 50%;
 }
 
 .img-anime-show {
@@ -37,13 +40,14 @@
   padding: 5% 5%;
 }
 
-.anime-date-genre-show {
+.anime-date-genre-note-show {
   display: flex;
+  flex-direction: row;
 }
 
 .date-genre-anime-show {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: flex-start | space-evenly;
 }
 
@@ -68,13 +72,13 @@
 
 // onglets comments & predictions
 
-.commentary-anime-show, ::before, ::after {
+.commentary-prediction-anime-show, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.commentary-anime-show {
+.commentary-prediction-anime-show {
   margin: 5% 10%;
   position: absolute;
   width: 1200px;
@@ -82,7 +86,7 @@
   // background-color: rgb(246, 198, 110);
 }
 
-.commentary-anime-show ul {
+.commentary-prediction-anime-show ul {
   border: 1px solid black;
 }
 
@@ -106,26 +110,16 @@
   border-right: 1px solid black;
 }
 
-.container-contenu {
+.container-contenu-com-pred-section-anime-show {
   height: 70%;
   width: 100%;
   position: absolute;
   opacity: 0;
 }
 
-.container-contenu li {
+.container-contenu-com-pred-section-anime-show li {
   padding: 20px;
 }
-
-// .commentary-anime-show ul {
-//   display: flex;
-//   flex-wrap: wrap;
-//   padding-top: 40px;
-// }
-
-// .commentary-anime-show li {
-//   align-content: space-between;
-// }
 
 .date {
   font-size: 0.5em;
