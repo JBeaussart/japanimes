@@ -2,8 +2,7 @@
 
 <div class="anime-show-container">
 
-  <div class="img-anime-show">
-    <%= cl_image_tag @anime.photo.key %>
+  <div class="image-anime-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @anime.photo.key, crop: :fill %>')">
   </div>
 
   <div class="anime-description-streaming-show">

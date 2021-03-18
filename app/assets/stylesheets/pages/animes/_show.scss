@@ -20,12 +20,14 @@
   width: 50%;
 }
 
-.img-anime-show {
+.image-anime-show {
   box-shadow: 1px 1px 12px #555;
-  overflow: hidden;
-  object-fit: fill;
+  // overflow: hidden;
+  // object-fit: fill;
   width: 500px;
   height: 750px;
+  background-size: cover;
+  background-position: center;
 }
 
 .title-colored {
@@ -86,8 +88,8 @@
 }
 
 .commentary-prediction-anime-show ul {
-  position: absolute;
-  // border: 1px solid black;
+  // position: absolute;
+  border: 1px solid black;
 }
 
 .container-onglets {
@@ -113,7 +115,7 @@
 .container-contenu-com-pred-section-anime-show {
   height: 70%;
   width: 100%;
-  // position: absolute;
+  position: absolute;
   opacity: 0;
 }
 
