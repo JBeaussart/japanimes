@@ -1,9 +1,9 @@
 <%= render 'shared/banner' %>
 
-<h2 class="choice-title">Indécis ? Laissez-nous vous inspirer !</h2>
+<h2 class="carousel-title">Indécis ? Laissez-nous vous inspirer !</h2>
 <%= render 'shared/carousel' %>
 
-<h2 class="choice-title">Rechercher par genre :</h2>
+<h3 class="category-title">Recherchez par genre</h3>
 <ul class="category-choice">
   <li>
     <% @categories.each do |category| %>
@@ -12,7 +12,7 @@
   </li>
 </ul>
   
-<h2 class="choice-title">Choisissez en fonction de vos abonnements</h2>
+<h3 class="vod-title">Choisissez en fonction de vos abonnements</h3>
 <div class="vod-choice">
   <%= link_to image_tag('wakanim_logo.png', class: "wakanim-logo"), "#"%>
   <%= link_to image_tag('crunchyroll_logo.png', class: "crunchyroll-logo"), "#"%>

@@ -1,5 +1,5 @@
 .img-carousel {
-	height: 800px;
+	height: 400px;
 	width: 100%;
 	object-fit: cover;
 }
@@ -38,7 +38,7 @@
 .text-anim-top {
 	position: absolute;
 	z-index: 1;
-	bottom: 144px;
+	top: 10px;
 	left: 625px;
 	color: $orange;
 	font-size: 20px;
