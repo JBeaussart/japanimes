@@ -7,7 +7,7 @@ Anime.destroy_all
 
 puts "---------------------"
 puts "Creating Users"
-User.create!(email: "user@gmail.com", password: "password")
+User.create!(email: "user@gmail.com", password: "password", nickname: "Joseph")
 
 puts "---------------------"
 puts "Creating Animes"

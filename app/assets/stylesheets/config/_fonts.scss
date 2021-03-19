@@ -39,3 +39,9 @@ $my-font: "Asap-Italic";
   src: font-url('Asap-SemiBold.ttf');
 }
 $my-font: "Asap-SemiBold";
+
+@font-face {
+  font-family: "Asap-Regular";
+  src: font-url('Asap-Regular.ttf');
+}
+$my-font: "Asap-Regular";
