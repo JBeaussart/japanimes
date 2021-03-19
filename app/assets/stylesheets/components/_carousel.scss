@@ -23,11 +23,11 @@
 	color: $orange;
 	font-size: 30px;
 	font-family: 'Changa', sans-serif;
-	padding: 16px;
+	padding: 5px;
 	width: 300px;
 	margin: 0 auto;
-	border-radius: 16px;
-	box-shadow: 2px 2px 20px $orange;
+	border-radius: 8px;
+	box-shadow: 1px 1px 10px $orange;
 }
 
 .carousel-inner {
@@ -38,10 +38,13 @@
 .text-anim-top {
 	position: absolute;
 	z-index: 1;
+	background-color: rgba($color: #000000, $alpha: 1.0);
 	top: 10px;
 	left: 625px;
 	color: $orange;
 	font-size: 20px;
 	font-family: 'Changa', sans-serif;
-	border-radius: 4px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 10px $orange;
+	padding: 3px 8px 3px 8px;
 }
