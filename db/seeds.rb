@@ -159,7 +159,7 @@ anime.photo.attach(io: file, filename: 'food wars.png', content_type: 'image/png
 # 12--------------------------------------------------------------------------------------------------------
 file = URI.open('https://img1.ak.crunchyroll.com/i/spire3/70740067e96df4abe309bf512dfd3bf11610177676_full.jpg')
 anime = Anime.create!(
-  title: "Dr ramune", 
+  title: "Dr Ramune", 
   description: "Tant que les gens auront un cœur, certains souffriront. Dès lors, quelque chose de “bizarre” entre dans leur esprit et provoque la manifestation d'une étrange maladie dans leur corps que l'on appelle maladie mystérieuse", 
   parution_date: "26/09/2017", 
   category: "Comedie", 
@@ -185,7 +185,7 @@ anime.photo.attach(io: file, filename: 'Tokyo ghoul.png', content_type: 'image/p
 # 14--------------------------------------------------------------------------------------------------------
 file = URI.open('https://images-na.ssl-images-amazon.com/images/I/71MP3oCjD6L.jpg')
 anime = Anime.create!(
-  title: "Myhero academia", 
+  title: "My hero academia", 
   description: "Dans un monde où 80 % de la population mondiale possède des super-pouvoirs, ici nommés « Alters » (個性, Kosei?), n'importe qui peut devenir un héros ou, s'il le souhaite, un criminel. Le manga suit les aventures de Izuku Midoriya « Deku », l'un des rares humains ne possédant pas d'Alter, qui rêve pourtant de rejoindre la filière super-héroïque de la grande académie Yuei (勇井高校, Yūei Kōkō?) et de devenir un jour un des plus grands héros de son époque, à l'image de son héros, All Might. Un jour, il a la chance de rencontrer son idole et celui-ci va lui donner une chose dont il ne croyait jamais pouvoir bénéficier.", 
   parution_date: "01/04/2016", 
   category: "Shonen", 
