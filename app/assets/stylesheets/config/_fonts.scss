@@ -16,7 +16,6 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
-
 @font-face {
   font-family: "DhfSemangat2012DemoBold-5jDG";
   src: font-url('DhfSemangat2012DemoBold-5jDG.ttf');
@@ -28,3 +27,15 @@ $my-font: "DhfSemangat2012DemoBold-5jDG";
   src: font-url('Geomanist-Bold.ttf');
 }
 $my-font: "Geomanist-Bold";
+
+@font-face {
+  font-family: "Asap-Italic";
+  src: font-url('Asap-Italic.ttf');
+}
+$my-font: "Asap-Italic";
+
+@font-face {
+  font-family: "Asap-SemiBoldItalic";
+  src: font-url('Asap-SemiBoldItalic.ttf');
+}
+$my-font: "Asap-SemiBoldItalic";
