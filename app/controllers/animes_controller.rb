@@ -7,7 +7,7 @@ class AnimesController < ApplicationController
       @animes = Anime.all
     end
   end
-
+  
   def show
     @anime = Anime.find(params[:id])
     if current_user != nil
@@ -15,7 +15,7 @@ class AnimesController < ApplicationController
     end
     @review = Review.new
   end
-
+  
   def new
     @anime = Anime.new
   end
@@ -29,7 +29,10 @@ class AnimesController < ApplicationController
     end
   end
 
+  private
+
   def anime_params
     params.require(:anime).permit(:title, :description, :parution_date, :category, :streaming_service, :rating, :photo)
   end
+
 end
