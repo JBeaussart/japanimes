@@ -63,56 +63,55 @@
         </div>
 
     <div class="commentary-prediction-anime-show">
-      <div class="container-onglets">
-        <div class="onglets activeOnglet" data-anim="1">
-          <h2 class="mb-4 text-secondary">Commentaires</h2>
-        </div>
-        <div class="onglets" data-anim="2">
-          <h2 class="mb-4 text-secondary">Prédictions</h2>
-        </div>
-        <hr>
-      </div>
+    <h1 class="title_prediction">PREDICTIONS</h1>
 
-      <div class="container-contenu-com-pred-section-anime-show activeContenu" data-anim="1">
-        <ul>
-          <li class="h5 mb-3"><span class="nickname text-secondary">Guillaume:</span><br> Un classique - indemodable </li>
-          <li class="h5 mb-3"><span class="nickname text-secondary">Benjamin:</span><br> Toute mon enfance !</li>
-          <li class="h5 mb-3"><span class="nickname text-secondary">Nicolas:</span><br> La base :) </li>
-        </ul>
+      <div class="card-product">
+        <%= image_tag 'joseph.jpg' %>
+        <div class="card-product-infos">
+          <div class="card_user_info mr-5">
+            <h2><%= current_user.nickname %> <span class="date_card_theory">(20/02/2021)</span></h2>
+            <p>Le personnage mystère est <strong>Kakhashi</strong> c'est une certitude !</p>
+          </div>
+          <div class="upvote ml-5">
+            <p class="button" id="minus">-</p>
+            <p id="count">89</p>
+            <p class="button" id="plus">+</p>
+          </div>
+        </div>  
       </div>
-      <div class="container-contenu-com-pred-section-anime-show" data-anim="2">
-        <%= simple_form_for([ @anime, @review ]) do |f| %>
-          <%= f.input :content, as: :text %>
-          <%= f.button :submit, class: 'btn' %>
-        <% end %>
-        <ul>
-          <li class="h5 mb-3"><span class="nickname text-secondary">Jacqueline:</span><br> Dans le prochain épisode Sangoku et Vegeta vont s'avouer leurs sentiments </li>
-          <li class="h5 mb-3"><span class="nickname text-secondary">Sherlock:</span><br> Il y va avoir un cross-over DeathNote et Tata c'est évident ! </li>
-          <li class="h5 mb-3"><span class="nickname text-secondary">Sakura:</span><br> Et si Naruto était en fait mort depuis le début ? </li>
-        </ul>
+      <div class="card-product">
+        <%= image_tag 'thomas.png' %>
+        <div class="card-product-infos">
+          <div class="card_user_info mr-5">
+            <h2>Thomas<span class="date_card_theory">(20/02/2021)</span></h2>
+            <p>Vous en pensez quoi de la fin de l'épisode ??</p>
+          </div>
+          <div class="upvote ml-5">
+            <p class="button" id="minus">-</p>
+            <p id="count">6</p>
+            <p class="button" id="plus">+</p>
+          </div>
+        </div>  
       </div>
-      <%= simple_form_for([ @anime, @review ]) do |f| %>
-          <%= f.input :content, as: :text %>
-          <%= f.button :submit %>
-        <% end %>
+      <div class="card-product">
+        <%= image_tag 'fabien.png' %>
+        <div class="card-product-infos">
+          <div class="card_user_info mr-5">
+            <h2>Fabien<span class="date_card_theory">(20/02/2021)</span></h2>
+            <p>Une tuerie cet épisode !!</p>
+          </div>
+          <div class="upvote ml-5">
+            <p class="button" id="minus">-</p>
+            <p id="count">27</p>
+            <p class="button" id="plus">+</p>
+          </div>
+        </div>  
+      </div>
+     
     </div>
   </div>
 </div>
 
 
 
-<div class="card-product">
-  <%= image_tag 'joseph.jpg' %>
-  <div class="card-product-infos">
-    <div class="card_user_info mr-5">
-      <h2><%= current_user.nickname %> <span class="date_card_theory">(20/02/2021)</span></h2>
-      <p>Le personnage mystère est <strong>Kakhashi</strong> c'est une certitude !</p>
-    </div>
-    <div class="upvote ml-5">
-      <p class="button" id="minus">-</p>
-      <p id="count">0</p>
-      <p class="button" id="plus">+</p>
-    </div>
-  </div>  
-</div>
 
