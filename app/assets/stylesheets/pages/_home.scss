@@ -25,34 +25,42 @@
   color: $orange;
 }
 
-.category-title {
-  margin: 65px 175px 10px 175px;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 10px;
-  font-family: "Geomanist-Bold", serif;
-  color: $orange;
-  border-top: 1px solid $orange;
+.vod {
+  background-color: black;
+  width: 100%;
+  margin-top: 50px;
 }
 
-.category-choice {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 50px;
-}
-
-.vod-title {
-  margin: 50px 175px 20px 175px;
+.vod h3 {
   text-align: center;
-  padding-top: 55px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   font-family: "Geomanist-Bold", serif;
   color: $orange;
-  border-top: 1px solid $orange;
+  border-top: 2px solid $orange;
 }
 
 .vod-choice {
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
+}
+
+.category {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-top: 2px solid $orange;
+}
+
+.category h3 {
+  font-family: "Geomanist-Bold", serif;
+  color: $orange;
+  padding-bottom: 10px;
+}
+
+.category-choice {
+  display: flex;
+  justify-content: space-around;
   padding-bottom: 50px;
 }
