@@ -1,17 +1,11 @@
 <body class="show_body"></body>
-
 <div class="anime-show-container">
-
   <div class="image-anime-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @anime.photo.key, crop: :fill %>')">
   </div>
-
   <div class="anime-description-streaming-show">
-
     <div class="anime-info-show">
-
       <div class="anime-title-like-heart-show">
-        <h1 class="anime-title-show"><%= @anime.title %></h1>
-
+        <h1 class="anime-title-show font-family-title"><%= @anime.title %></h1>
         <div class="like_heart">
           <% if current_user != nil %>
             <% if @anime.in?(current_user.animes) %>
@@ -26,92 +20,86 @@
           <% end %>
         </div>
       </div>
-
-
-      <div class="caret-description"></i></div>
-
-      <p class=""><%= @anime.description %></p>
-
+      <p class="description_anime_show"><%= @anime.description %></p>
       <div class="anime-date-genre-note-show">
-          <div class="note-globale-show-anime">
-            <p class="title-colored mb-0">Note globale</p>
-            <p class="rating">
-                <% @anime.rating.times do  %>
-                  <i class="fas fa-star"></i>
-                <% end %>
-                <% @anime.blank_stars.times do %>
-                  <i class="far fa-star"></i>
-                <% end %>
-            </p>   
-          </div>  
-          <div class="date-show-anime">
-            <p class="title-colored mb-0">Date de diffusion</p>
-            <p><%= @anime.parution_date %></p>
-          </div>
-          <div class="genre-show-anime">
-            <p class="title-colored mb-0">Genre</p>
-            <p><%= @anime.category %></p>
-          </div>
-      </div>
-    </div>
-
-        <div class="plateform-show-anime">
-          <h2 class="anime-title-show">Disponible sur :</i></h2>
-          <p class="streaming-service"><%= logo_streaming_service(@anime.streaming_service) %>
-          <%= link_to "Visualiser", "https://www.crunchyroll.com/fr/jujutsu-kaisen" %>
-          </p>
+        <div class="note-globale-show-anime">
+          <p class="title-colored mb-0">Note globale</p>
+          <p class="rating">
+              <% @anime.rating.times do  %>
+                <i class="fas fa-star"></i>
+              <% end %>
+              <% @anime.blank_stars.times do %>
+                <i class="far fa-star"></i>
+              <% end %>
+          </p>   
+        </div>  
+        <div class="date-show-anime">
+          <p class="title-colored mb-0">Date de diffusion</p>
+          <p><%= @anime.parution_date %></p>
         </div>
-
-    <div class="commentary-prediction-anime-show">
-    <h1 class="title_prediction mb-4 mt-5">PREDICTIONS</h1>
-
-      <div class="card-product">
-        <%= image_tag 'thomas.png' %>
-        <div class="card-product-infos">
-          <div class="card_user_info mr-5">
-            <h2>Thomas<span class="date_card_theory"> (20/02/2021)</span></h2>
-            <p>Le personnage mystère est <strong>Kakhashi</strong> c'est une certitude !</p>
-          </div>
-          <div class="upvote ml-5">
-            <p class="button" id="minus">-</p>
-            <p id="count">89</p>
-            <p class="button" id="plus">+</p>
-          </div>
-        </div>  
+        <div class="genre-show-anime">
+          <p class="title-colored mb-0">Genre</p>
+          <p><%= @anime.category %></p>
+        </div>
       </div>
-      <div class="card-product">
-        <%= image_tag 'joseph.jpg' %>
-        <div class="card-product-infos">
-          <div class="card_user_info mr-5">
-            <h2>Joseph<span class="date_card_theory"> (20/02/2021)</span></h2>
-            <p>Vous en pensez quoi de la fin de l'épisode ??</p>
-          </div>
-          <div class="upvote ml-5">
-            <p class="button" id="minus">-</p>
-            <p id="count">6</p>
-            <p class="button" id="plus">+</p>
-          </div>
-        </div>  
-      </div>
-      <div class="card-product">
-        <%= image_tag 'fabien.png' %>
-        <div class="card-product-infos">
-          <div class="card_user_info mr-5">
-            <h2>Fabien<span class="date_card_theory"> (20/02/2021)</span></h2>
-            <p>Une tuerie cet épisode !!</p>
-          </div>
-          <div class="upvote ml-5">
-            <p class="button" id="minus">-</p>
-            <p id="count">27</p>
-            <p class="button" id="plus">+</p>
-          </div>
-        </div>  
-      </div>
-     
     </div>
+    <div class="plateform-show-anime">
+      <h2 class="anime-title-show dispo-on">Disponible sur:</h2>
+      <p><%= logo_streaming_service(@anime.streaming_service) %>
+      <%= link_to "Visualiser", "https://www.crunchyroll.com/fr/jujutsu-kaisen" %>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="pred">
+<div class="commentary-prediction-anime-show">
+  <h1 class="title_prediction mb-4">Théories</h1>
+  <div class="card-product">
+    <%= image_tag 'thomas.png' %>
+    <div class="card-product-infos">
+      <div class="card_user_info mr-5">
+        <h2>Thomas<span class="date_card_theory"> (20/02/2021)</span></h2>
+        <p>Le personnage mystère est <strong>Kakhashi</strong> c'est une certitude !</p>
+      </div>
+      <div class="upvote ml-5">
+        <p class="button" id="minus">-</p>
+        <p id="count">99</p>
+        <p class="button" id="plus">+</p>
+      </div>
+    </div>  
+  </div>
+  <div class="card-product">
+    <%= image_tag 'joseph.jpg' %>
+    <div class="card-product-infos">
+      <div class="card_user_info mr-5">
+        <h2>Joseph<span class="date_card_theory"> (20/02/2021)</span></h2>
+        <p>Vous en pensez quoi de la fin de l'épisode ??</p>
+      </div>
+      <div class="upvote ml-5">
+        <p class="button" id="minus">-</p>
+        <p id="count">6</p>
+        <p class="button" id="plus">+</p>
+      </div>
+    </div>  
+  </div>
+  <div class="card-product">
+    <%= image_tag 'fabien.png' %>
+    <div class="card-product-infos">
+      <div class="card_user_info mr-5">
+        <h2>Fabien<span class="date_card_theory"> (20/02/2021)</span></h2>
+        <p>Une tuerie cet épisode !!</p>
+      </div>
+      <div class="upvote ml-5">
+        <p class="button" id="minus">-</p>
+        <p id="count">27</p>
+        <p class="button" id="plus">+</p>
+      </div>
+    </div>  
   </div>
 </div>
 
 
 
 
+
+</div>
