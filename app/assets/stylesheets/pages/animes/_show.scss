@@ -14,7 +14,6 @@
 .anime-description-streaming-show {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   width: 950px;
 }
 
@@ -26,7 +25,7 @@
   background-position: center;
   border-radius: 15px;
   position: sticky;
-  top: 0;
+  top: 5%;
 }
 
 .title-colored {
@@ -47,6 +46,7 @@
   box-shadow: 1px 1px 12px #555;
   padding: 5% 5%;
   border-radius: 15px;
+  margin-bottom: 5%;
 }
 
 .anime-date-genre-note-show {
@@ -60,6 +60,7 @@
   padding: 5% 5%;
   box-shadow: 1px 1px 12px #555;
   border-radius: 15px;
+  margin-bottom: 5%;
 }
 
 .streaming-service{
