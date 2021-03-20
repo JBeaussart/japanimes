@@ -83,6 +83,10 @@
   // margin: 5% 10%;
   // position: absolute;
   width: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .commentary-prediction-anime-show ul {
