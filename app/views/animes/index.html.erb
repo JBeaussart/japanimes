@@ -19,11 +19,11 @@
           <div class="like-btn">
              <% if current_user != nil %>
               <% if anime.in?(current_user.animes) %>
-                <%= link_to watchlist_anime_path(WatchlistAnime.where(user_id: current_user.id, anime_id: anime.id).first), method: :delete do%>
+                <%= link_to watchlist_anime_path(WatchlistAnime.where(user_id: current_user.id, anime_id: anime.id).first), method: :delete, remote: true do%>
                   <div class="like" data-like-state="1"></div>
                 <% end %>
               <% else %>
-                <%= link_to anime_watchlist_animes_path(anime), method: :post do%>
+                <%= link_to anime_watchlist_animes_path(anime), method: :post, remote: true do%>
                   <div class="like" data-like-state="0"></div>
                 <% end %>
               <% end %>
