@@ -2,22 +2,27 @@
   height: 600px;
   width: 100%;
   display: flex;
-  align-items: center;
   position: relative;
   background-position-y: -70px;
 }
 
 .tagline {
+  display: flex;
+  justify-content: space-around;
   color: white;
-  margin-left: 30px;
+  align-items: center;
+  width: 100%;
+  margin: 0 260px;
+  text-align: center;
 }
 
 .tagline p {
   font-family: "Asap-Italic", serif;
-  font-size: 14px;
+  font-size: 16px;
+  max-width: 350px;
 }
 
 .tagline h1 {
   font-family: "Asap-SemiBold", serif;
-  font-size: 50px;
+  font-size: 40px;
 }

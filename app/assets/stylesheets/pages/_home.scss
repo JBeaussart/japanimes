@@ -28,29 +28,29 @@
   background-color: black;
   width: 100%;
   margin-top: 50px;
+  border-top: 2px solid $orange;
+  border-bottom: 2px solid $orange;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .vod h3 {
   text-align: center;
-  padding-top: 30px;
   padding-bottom: 20px;
   font-family: "Geomanist-Bold", serif;
   color: $orange;
-  border-top: 2px solid $orange;
 }
 
 .vod-choice {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 30px;
 }
 
 .category {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;
-  border-top: 2px solid $orange;
 }
 
 .category h3 {
