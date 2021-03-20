@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // color: white;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  color: #FFFCF7;
+  font-size: 16px;
+  height: 4vh;
+  line-height: 4vh;
+}
+
+.social-media p:first-child{
+  margin-right: 16px;
+}
+
+.social-media i {
+  margin-right: 16px;
+}
+
+.copyright {
+  margin-left: 16px;
+}
+
+.color-link {
+  color: orange;
+  cursor: pointer;
+}
+
+.font-family {
+  font-family: "ReggaeOne-Regular.ttf";
+}
