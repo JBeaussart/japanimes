@@ -1,6 +1,6 @@
 // Specific CSS for your home-page
 .netflix-logo {
-  width: 130px;
+  width: 200px;
   margin-left: 25px;
 }
 
@@ -16,7 +16,6 @@
 .adn-logo {
   width: 120px;
   margin-left: 50px;
-  margin-top: 10px;
 }
 
 .carousel-title {
@@ -43,6 +42,7 @@
 .vod-choice {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-bottom: 30px;
 }
 
