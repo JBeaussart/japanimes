@@ -1,10 +1,14 @@
 export const upvote = () => {
-  const upvote = document.querySelector('.upvote_card');
+ 
+  var counter = 0;
   
-  let counter = 0;
+  $("#plus").click(function(){
+    counter++;
+    $("#count").text(counter);
+  });
   
-  upvote.addEventListener('click', () => {
-    console.log(counter += 1)
-  })
-
+  $("#minus").click(function(){
+    counter--;    
+    $("#count").text(counter);
+  });
 }
