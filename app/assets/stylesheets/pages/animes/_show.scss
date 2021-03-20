@@ -5,28 +5,26 @@
 .anime-show-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 2.5%;
-  margin: 5% 5%;
-  height: 120vh;
+  margin: 2% 2%;
 }
 
 .anime-description-streaming-show {
   display: flex;
   flex-direction: column;
-  width: 950px;
-  height: 120vh;
+  width: 50vw;
+  margin-left: 2vw;
 }
 
 .image-anime-show {
-  box-shadow: 1px 1px 12px #555;
-  width: 500px;
-  height: 750px;
+  box-shadow: 1px 1px 4px rgb(165, 165, 165);
+  width: 30vw;
+  height: 80vh;
   background-size: cover;
   background-position: center;
-  border-radius: 15px;
+  border-radius: 8px;
   position: sticky;
-  top: 5%;
 }
 
 .title-colored {
@@ -35,6 +33,21 @@
 
 .anime-title-show {
   padding-bottom: 2%;
+  font-size: 2em;
+  color: orange;
+}
+
+.font-family-title {
+  font-family: "Geomanist-Bold", serif;
+}
+
+.dispo-on {
+  font-size: 1.5em;
+}
+
+.logo-size {
+  width: 100px;
+  margin-left: 25px;
 }
 
 .anime-title-like-heart-show {
@@ -44,87 +57,45 @@
 
 .anime-info-show {
   background-color: white;
-  box-shadow: 1px 1px 12px #555;
-  padding: 5% 5%;
-  border-radius: 15px;
-  margin-bottom: 5%;
+  box-shadow: 1px 1px 4px rgb(165, 165, 165);
+  padding: 3% 3%;
+  border-radius: 8px;
+  margin-bottom: 3%;
+}
+
+.description_anime_show {
+  font-size: 0.9em;
+  opacity: 0.8;
 }
 
 .anime-date-genre-note-show {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin: 0 1em;
 }
 
 .plateform-show-anime {
   background-color: white;
-  padding: 5% 5%;
-  box-shadow: 1px 1px 12px #555;
-  border-radius: 15px;
-  margin-bottom: 5%;
+  padding: 3% 3%;
+  box-shadow: 1px 1px 4px rgb(165, 165, 165);
+  border-radius: 8px;
 }
 
-.streaming-service{
-  font-size: 20px;
-}
 
 .btn-visualize {
   margin-left: 25%;
 }
 
-// onglets comments & predictions
-
-// .commentary-prediction-anime-show, ::before, ::after {
-//   box-sizing: border-box;
-//   margin: 0;
-//   padding: 0;
-// }
-
 .commentary-prediction-anime-show {
-//   // margin: 5% 10%;
-//   // position: absolute;
-  width: 950px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-// .commentary-prediction-anime-show ul {
-//   border: 1px solid black;
-//   width: 950px;
-// }
-
-// .container-onglets {
-//   background: white;
-//   // width: 100%;
-//   height: 30%;
-//   display: flex;
-// }
-
-// .onglets {
-//   width: 475px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding-top: 2%;
-//   cursor: pointer;
-// }
-
-// .onglets:not(:nth-child(2)) {
-//   border-right: 1px solid black;
-// }
-
-// .container-contenu-com-pred-section-anime-show {
-//   height: 70%;
-//   // width: 100%;
-//   position: absolute;
-//   opacity: 0;
-// }
-
-// .container-contenu-com-pred-section-anime-show li {
-//   padding: 20px;
-// }
 
 .date {
   font-size: 0.5em;
@@ -136,27 +107,9 @@
 
 // animation onglets
 
-.activeOnglet {
-  background: orange;
-  color: white;
-  transition: all 0.3s ease;
-}
-
-.activeContenu {
-  animation: fade 0.5s forwards;
-}
-
 .fa-heart {
   color: red;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  font-size: 2em;
 }
 
 .title_prediction {
