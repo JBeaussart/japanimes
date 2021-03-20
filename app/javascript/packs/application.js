@@ -31,6 +31,7 @@ import "bootstrap";
 import { listenToNavbarToggle } from "../custom/toggle_menu";
 import { heart_animation } from "../custom/heart_animation";
 import { ongletsAnimeShow } from "../custom/onglets_anime_show";
+import { upvote } from "../custom/upvote_card";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -40,4 +41,5 @@ document.addEventListener('turbolinks:load', () => {
   listenToNavbarToggle();
   heart_animation();
   ongletsAnimeShow();
+  upvote();
 });
