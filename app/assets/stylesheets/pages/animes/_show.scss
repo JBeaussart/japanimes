@@ -89,11 +89,14 @@
 }
 
 .commentary-prediction-anime-show {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10em;
+  background-color: red;
+  width: 70%;
+  margin: 0 auto;
 }
 
 
