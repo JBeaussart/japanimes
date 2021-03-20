@@ -1,6 +1,7 @@
 // Specific CSS for your home-page
 .netflix-logo {
-  width: 120px;
+  width: 130px;
+  margin-left: 25px;
 }
 
 .wakanim-logo {
@@ -9,8 +10,49 @@
 
 .crunchyroll-logo {
   width: 85px;
+  margin-left: 50px;
 }
 
 .adn-logo {
   width: 120px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.carousel-title {
+  margin: 90px 0 10px 175px;
+  font-family: "Geomanist-Bold", serif;
+  color: $orange;
+}
+
+.category-title {
+  margin: 65px 175px 10px 175px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-family: "Geomanist-Bold", serif;
+  color: $orange;
+  border-top: 1px solid $orange;
+}
+
+.category-choice {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.vod-title {
+  margin: 50px 175px 20px 175px;
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 10px;
+  font-family: "Geomanist-Bold", serif;
+  color: $orange;
+  border-top: 1px solid $orange;
+}
+
+.vod-choice {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
 }

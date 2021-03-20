@@ -1,29 +1,21 @@
-<div class="container-fluid">
-  <div class="row">
-    <%= render 'shared/banner' %>
+<%= render 'shared/banner' %>
 
-    <div class="choice-vod">
-      <h1>Une plateforme préférée ?</h1>
-      <%= link_to image_tag('wakanim_logo.png', class: "wakanim-logo"), "#"%>
-      <%= link_to image_tag('crunchyroll_logo.png', class: "crunchyroll-logo"), "#"%>
-      <%= link_to image_tag('adn_logo.png', class: "adn-logo"), "#"%>
-      <%= link_to image_tag('netflix_logo.png', class: "netflix-logo"), "#"%>
-    </div>
+<h2 class="carousel-title">Indécis ? Laissez-nous vous inspirer !</h2>
+<%= render 'shared/carousel' %>
 
-    <div class="choice-category">
-      <h1>Un style en particulier ?</h1>
-      <ul>
-        <li>
-          <% @categories.each do |category| %>
-            <%= category %>
-          <% end %>
-        </li>
-      </ul>
-    </div>
-
-    <div class="top-anime">
-      <h1>Indécis ? Voici la sélection du moment</h1>
-      <%= render 'shared/carousel' %>
-    </div>
-  </div>
+<h3 class="category-title">Recherchez par genre</h3>
+<ul class="category-choice">
+  <li>
+    <% @categories.each do |category| %>
+      <a href="#" class="button-3d"><%= category %></a>
+    <% end %>
+  </li>
+</ul>
+  
+<h3 class="vod-title">Choisissez en fonction de vos abonnements</h3>
+<div class="vod-choice">
+  <%= link_to image_tag('wakanim_logo.png', class: "wakanim-logo"), "#"%>
+  <%= link_to image_tag('crunchyroll_logo.png', class: "crunchyroll-logo"), "#"%>
+  <%= link_to image_tag('adn_logo.png', class: "adn-logo"), "#"%>
+  <%= link_to image_tag('netflix_logo.png', class: "netflix-logo"), "#"%>
 </div>

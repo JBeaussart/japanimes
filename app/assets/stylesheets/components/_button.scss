@@ -1,0 +1,35 @@
+.button-3d {
+  position:relative;
+  width: 120px;
+  display:inline-block;
+  color:black;
+  font-family: "Geomanist-Bold", serif;
+  text-decoration:none;
+  border-radius:5px;
+  border:solid 1px #f39c12;
+  background: $orange;
+  text-align:center;
+  padding:16px 18px 14px;
+  margin: 12px;
+  
+  -webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+  -webkit-box-shadow: 0px 6px 0px #d35400;
+  -moz-box-shadow: 0px 6px 0px #d35400;
+  box-shadow: 0px 6px 0px #d35400;
+}
+
+.button-3d:active{
+    -webkit-box-shadow: 0px 2px 0px #d35400;
+    -moz-box-shadow: 0px 2px 0px #d35400;
+    box-shadow: 0px 2px 0px #d35400;
+    position:relative;
+    top:4px;
+}
+
+.button-3d:hover {
+  opacity: 0.9;
+  color: #FFFCF7;
+}
