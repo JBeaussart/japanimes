@@ -1,7 +1,6 @@
 .user_show_container {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 36px;
   
   .user_information {
     position:relative;
@@ -34,12 +33,11 @@
     .my-subscription {
       position: absolute;
       width: 80%;
-      // height: 100px;
+      height: 25vh;
       background: white;
-      bottom: 120px;
-      left: 54px;
-      height: 250px;
-      padding: 8px;
+      bottom: 5vh;
+      left: 3vw;
+      padding: 1em;
     }
   }
 
