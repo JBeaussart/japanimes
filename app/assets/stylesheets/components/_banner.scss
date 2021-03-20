@@ -8,11 +8,11 @@
 
 .tagline {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   color: white;
   align-items: center;
   width: 100%;
-  margin: 0 260px;
+  margin: 0;
   text-align: center;
 }
 
@@ -25,4 +25,9 @@
 .tagline h1 {
   font-family: "Asap-SemiBold", serif;
   font-size: 40px;
+}
+
+.Tagline-item {
+  min-width: 350px;
+  margin: 15px;
 }
