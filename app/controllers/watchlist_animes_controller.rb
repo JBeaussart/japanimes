@@ -21,6 +21,6 @@ class WatchlistAnimesController < ApplicationController
   def destroy
     @watchlist_anime = WatchlistAnime.find(params[:id])
     @watchlist_anime.destroy
-    redirect_to animes_path, notice: "Anime supprimé de votre Watchlist"
+    redirect_to user_path(current_user), notice: "Anime supprimé de votre Watchlist"
   end
 end
