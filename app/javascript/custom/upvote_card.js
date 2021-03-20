@@ -1,6 +1,6 @@
 export const upvote = () => {
  
-  var counter = 0;
+  var counter = 89;
   
   $("#plus").click(function(){
     counter++;
