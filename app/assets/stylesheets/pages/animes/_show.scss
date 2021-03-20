@@ -7,10 +7,10 @@
 
 .anime-show-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 2.5%;
-  margin: 5% 5%;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // padding: 0 2.5%;
+  // margin: 5% 5%;
 }
 
 .anime-description-streaming-show {
@@ -27,6 +27,7 @@
   background-size: cover;
   background-position: center;
   border-radius: 15px;
+  position: sticky;
 }
 
 .title-colored {
@@ -82,7 +83,7 @@
 
 .commentary-prediction-anime-show {
   margin: 5% 10%;
-  position: absolute;
+  // position: absolute;
   width: 1200px;
 }
 
