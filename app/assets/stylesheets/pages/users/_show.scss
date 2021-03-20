@@ -3,12 +3,12 @@
   justify-content: space-evenly;
   
   .user_information {
-    position:relative;
+    position: sticky;
     background: rgb(218, 215, 211);
     width: 30%;
     height: 80vh;
     border-radius: 8px;
-    top: 40px;
+    top: 12vh;
 
     .avatar_show_user {
       position: absolute;
