@@ -42,6 +42,14 @@
   font-size: 12px;
   opacity: 0.5;
 }
+.grand-maitre {
+  font-size: 12px;
+  display: none;
+}
+
+.grand-maitre.active-show {
+  display: inline-block;
+}
 
 //Counter vote
 
