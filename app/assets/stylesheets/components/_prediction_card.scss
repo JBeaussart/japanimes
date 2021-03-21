@@ -51,6 +51,14 @@
   display: inline-block;
 }
 
+.initie {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.initie.inite-show {
+  display: none;
+}
 //Counter vote
 
 .upvote {
