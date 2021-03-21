@@ -8,16 +8,16 @@
   <p class="count_result"><%= @animes.count %> résultats</p>
   <div class="row">
     <% @animes.each do |anime| %>
-      <div class="card m-4">  
-      <a href="<%= anime_path(anime) %>">
-        <div class="cards-img-container">
-          <%= cl_image_tag anime.photo.key, class: "card-img" %>
-        </div>
-        <div class="card-description">
-          <h1 class="title-card"><%= anime.title %></h1>
+      <div class="card m-4">
+        <a href="<%= anime_path(anime) %>">
+          <div class="cards-img-container">
+            <%= cl_image_tag anime.photo.key, class: "card-img" %>
+          </div>
+          <div class="card-description">
+            <h1 class="title-card"><%= anime.title %></h1>
           </a>
           <div class="like-btn">
-             <% if current_user != nil %>
+            <% if current_user != nil %>
               <% if anime.in?(current_user.animes) %>
                 <%= link_to watchlist_anime_path(WatchlistAnime.where(user_id: current_user.id, anime_id: anime.id).first), method: :delete, remote: true do%>
                   <div class="like" data-like-state="1"></div>
@@ -29,7 +29,6 @@
               <% end %>
             <% end %>
           </div>
-
           <p class="category"><%= anime.category %></p>
           <p class="rating">
             <% anime.rating.times do  %>
@@ -44,5 +43,4 @@
       </div>
     <% end %>
   </div>
- </div>
- 
+</div>
