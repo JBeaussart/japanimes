@@ -25,14 +25,14 @@
         <div class="note-globale-show-anime">
           <p class="title-colored mb-0">Note globale</p>
           <p class="rating">
-              <% @anime.rating.times do  %>
-                <i class="fas fa-star"></i>
-              <% end %>
-              <% @anime.blank_stars.times do %>
-                <i class="far fa-star"></i>
-              <% end %>
-          </p>   
-        </div>  
+            <% @anime.rating.times do  %>
+              <i class="fas fa-star"></i>
+            <% end %>
+            <% @anime.blank_stars.times do %>
+              <i class="far fa-star"></i>
+            <% end %>
+          </p>
+        </div>
         <div class="date-show-anime">
           <p class="title-colored mb-0">Date de diffusion</p>
           <p><%= @anime.parution_date %></p>
@@ -45,61 +45,58 @@
     </div>
     <div class="plateform-show-anime">
       <h2 class="anime-title-show dispo-on">Disponible sur:</h2>
-      <p><%= logo_streaming_service(@anime.streaming_service) %>
-      <%= link_to "Visualiser", "https://www.crunchyroll.com/fr/jujutsu-kaisen" %>
+      <p class="d-inline"><%= logo_streaming_service(@anime.streaming_service) %>
+        <%= link_to "https://www.crunchyroll.com/fr/jujutsu-kaisen", target:"_blank" do %>
+          <p class="btn btn-light ml-4 btn-lg"><span class="text-dark">Visionner <i class="fas fa-play ml-2"></i></span></p>
+        <% end %>
       </p>
     </div>
   </div>
 </div>
 <div class="pred">
-<div class="commentary-prediction-anime-show">
-  <h1 class="title_prediction mb-4">Théories</h1>
-  <div class="card-product">
-    <%= image_tag 'thomas.png' %>
-    <div class="card-product-infos">
-      <div class="card_user_info mr-5">
-        <h2>Thomas<span class="date_card_theory"> (20/02/2021)</span></h2>
-        <p>Le personnage mystère est <strong>Kakhashi</strong> c'est une certitude !</p>
+  <div class="commentary-prediction-anime-show">
+    <h1 class="title_prediction mb-4">Théories</h1>
+    <div class="card-product">
+      <%= image_tag 'thomas.png' %>
+      <div class="card-product-infos">
+        <div class="card_user_info mr-5">
+          <h2>Thomas<span class="date_card_theory"> (20/02/2021)</span></h2>
+          <p>Le personnage mystère est <strong>Kakhashi</strong> c'est une certitude !</p>
+        </div>
+        <div class="upvote ml-5">
+          <p class="button" id="minus">-</p>
+          <p id="count">99</p>
+          <p class="button" id="plus">+</p>
+        </div>
       </div>
-      <div class="upvote ml-5">
-        <p class="button" id="minus">-</p>
-        <p id="count">99</p>
-        <p class="button" id="plus">+</p>
+    </div>
+    <div class="card-product">
+      <%= image_tag 'joseph.jpg' %>
+      <div class="card-product-infos">
+        <div class="card_user_info mr-5">
+          <h2>Joseph<span class="date_card_theory"> (20/02/2021)</span></h2>
+          <p>Vous en pensez quoi de la fin de l'épisode ??</p>
+        </div>
+        <div class="upvote ml-5">
+          <p class="button" id="minus">-</p>
+          <p id="count">6</p>
+          <p class="button" id="plus">+</p>
+        </div>
       </div>
-    </div>  
+    </div>
+    <div class="card-product">
+      <%= image_tag 'fabien.png' %>
+      <div class="card-product-infos">
+        <div class="card_user_info mr-5">
+          <h2>Fabien<span class="date_card_theory"> (20/02/2021)</span></h2>
+          <p>Une tuerie cet épisode !!</p>
+        </div>
+        <div class="upvote ml-5">
+          <p class="button" id="minus">-</p>
+          <p id="count">27</p>
+          <p class="button" id="plus">+</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="card-product">
-    <%= image_tag 'joseph.jpg' %>
-    <div class="card-product-infos">
-      <div class="card_user_info mr-5">
-        <h2>Joseph<span class="date_card_theory"> (20/02/2021)</span></h2>
-        <p>Vous en pensez quoi de la fin de l'épisode ??</p>
-      </div>
-      <div class="upvote ml-5">
-        <p class="button" id="minus">-</p>
-        <p id="count">6</p>
-        <p class="button" id="plus">+</p>
-      </div>
-    </div>  
-  </div>
-  <div class="card-product">
-    <%= image_tag 'fabien.png' %>
-    <div class="card-product-infos">
-      <div class="card_user_info mr-5">
-        <h2>Fabien<span class="date_card_theory"> (20/02/2021)</span></h2>
-        <p>Une tuerie cet épisode !!</p>
-      </div>
-      <div class="upvote ml-5">
-        <p class="button" id="minus">-</p>
-        <p id="count">27</p>
-        <p class="button" id="plus">+</p>
-      </div>
-    </div>  
-  </div>
-</div>
-
-
-
-
-
 </div>
