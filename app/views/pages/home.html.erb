@@ -15,8 +15,9 @@
   <ul class="category-choice">
     <li>
       <% @categories.each do |category| %>
-        <a href="#" class="button-3d"><%= category %></a>
+        <span class="button-3d"><%= link_to "#{category}", "#", class: 'remove-deco' %></span>
       <% end %>
     </li>
   </ul>
 </div>
+
