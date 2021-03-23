@@ -1,13 +1,13 @@
 <div class="container mt-5">
+  <div class="search-index">
+    <%= render 'shared/searchbar', animes: @animes %>
+  </div>
   <% if params[:query].present? %>
     <h4>Résultat de la recherche : "<%= params[:query] %>"</h4>
   <% elsif  params[:category].present? %>
-    <h4>Tous les animes dans la catégorie : "<%= params[:category] %>"</h4>
+    <h4>Tous les animés dans la catégorie : "<%= params[:category] %>"</h4>
   <% elsif  params[:streaming_service].present? %>
-    <h4>Tous les animes disponible sur : "<%= params[:streaming_service] %>"</h4>
-  <% end %>
-  <%= link_to  root_path do%>
-    <i class="fas fa-arrow-circle-left return_home"></i>
+    <h4>Tous les animés disponibles sur : "<%= params[:streaming_service] %>"</h4>
   <% end %>
   <p class="count_result"><%= @animes.count %> résultats</p>
   <div class="row">

@@ -1,10 +1,8 @@
-<div class="searchBar">
-  <%= form_tag animes_path, method: :get do %>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "searchInput",
-      placeholder: "Trouvez votre animé"
-    %>
-    <div class="searchIcon"></div>
-  <% end %>
-</div>
+<%= form_tag animes_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "searchInput",
+    placeholder: "Trouvez votre animé"
+  %>
+  <div class="searchIcon"></div>
+<% end %>
