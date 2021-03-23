@@ -42,6 +42,21 @@
   font-size: 12px;
   opacity: 0.5;
 }
+
+// RANK ANIMATION
+
+@keyframes rank {
+  0% {content: "Initié";}
+  50% { opacity: 0;}
+  100% {content: "Maitre"; opacity: 1; }
+}
+
+.rank:after {
+  content:"";
+  animation: rank 3s linear forwards;
+}
+
+
 .grand-maitre {
   font-size: 12px;
   display: none;
