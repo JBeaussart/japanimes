@@ -1,15 +1,22 @@
+.remove-deco {
+  color: black;
+}
+
+.remove-deco:hover {
+  color: #FFFCF7;
+}
+
 .button-3d {
-  position:relative;
+  position: relative;
   width: 120px;
-  display:inline-block;
-  color:black;
+  display: inline-block;
+  color: black;
   font-family: "Geomanist-Bold", serif;
-  text-decoration:none;
-  border-radius:5px;
-  border:solid 1px #f39c12;
+  border-radius: 5px;
+  border: solid 1px #f39c12;
   background: $orange;
-  text-align:center;
-  padding:16px 18px 14px;
+  text-align: center;
+  padding: 16px 18px 14px;
   margin: 12px;
   
   -webkit-transition: all 0.1s;
@@ -31,5 +38,4 @@
 
 .button-3d:hover {
   opacity: 0.9;
-  color: #FFFCF7;
 }

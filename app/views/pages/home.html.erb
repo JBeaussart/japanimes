@@ -1,13 +1,15 @@
 <%= render 'shared/banner' %>
-<h2 class="carousel-title">Indécis ? Laissez-nous vous inspirer !</h2>
+
 <%= render 'shared/carousel' %>
+
 <div class="vod">
   <h3>Choisissez en fonction de vos abonnements</h3>
   <div class="vod-choice">
-    <%= link_to image_tag('wakanim_logo.png', class: "wakanim-logo"), "#"%>
-    <%= link_to image_tag('crunchyroll_logo.png', class: "crunchyroll-logo"), "#"%>
-    <%= link_to image_tag('adn_logo.png', class: "adn-logo"), "#"%>
-    <%= link_to image_tag('netflix_logo.png', class: "netflix-logo"), "#"%>
+    <% @streaming_services.each do |streaming_service| %> 
+      <%= link_to animes_path(streaming_service: streaming_service) do %>
+        <%= logo_streaming_service(streaming_service) %>
+      <% end %>
+    <% end %>
   </div>
 </div>
 <div class="category">
@@ -15,7 +17,9 @@
   <ul class="category-choice">
     <li>
       <% @categories.each do |category| %>
-        <a href="#" class="button-3d"><%= category %></a>
+        <span class="button-3d">
+          <%= link_to "#{category}", animes_path(category: category), class: 'remove-deco' %>
+        </span>
       <% end %>
     </li>
   </ul>
