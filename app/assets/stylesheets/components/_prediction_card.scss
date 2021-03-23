@@ -93,3 +93,12 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+// QUENTIN COMMENTS
+#quentin_comments {
+  display: none;
+}
+
+#quentin_comments.active_comment {
+  display: flex;
+}
