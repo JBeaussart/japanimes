@@ -12,6 +12,7 @@ require("channels")
 require("custom/heart_animation")
 require("custom/card_tooltip")
 require("custom/onglets_anime_show")
+require("custom/review_theory")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -32,6 +33,7 @@ import { listenToNavbarToggle } from "../custom/toggle_menu";
 import { heart_animation } from "../custom/heart_animation";
 import { ongletsAnimeShow } from "../custom/onglets_anime_show";
 import { upvote } from "../custom/upvote_card";
+import { review_theory } from "../custom/review_theory";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -42,4 +44,5 @@ document.addEventListener('turbolinks:load', () => {
   heart_animation();
   ongletsAnimeShow();
   upvote();
+  review_theory();
 });
