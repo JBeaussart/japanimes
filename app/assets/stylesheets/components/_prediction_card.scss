@@ -42,23 +42,25 @@
   font-size: 12px;
   opacity: 0.5;
 }
-.grand-maitre {
-  font-size: 12px;
-  display: none;
+
+// RANK ANIMATION
+
+.rank_font {
+  font-size: 14px;
+  color: grey;
 }
 
-.grand-maitre.active-show {
-  display: inline-block;
+@keyframes rank {
+  0% {content: "Apprenti"; font-size: 14px;}
+  50% { opacity: 0; font-size: 8px;}
+  100% {content: "Sensei"; opacity: 1; color: $orange; font-size: 16px;}
 }
 
-.initie {
-  display: inline-block;
-  font-size: 12px;
+.rank:after {
+  content:"";
+  animation: rank 3s linear forwards;
 }
 
-.initie.inite-show {
-  display: none;
-}
 //Counter vote
 
 .upvote {
