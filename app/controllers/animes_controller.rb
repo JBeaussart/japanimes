@@ -2,7 +2,10 @@ class AnimesController < ApplicationController
   def index
     if params[:query].present?
       @animes = Anime.where("title ILIKE ?", "%#{params[:query]}%")
-      @filter = params[:query]
+    elsif params[:category].present?
+      @animes = Anime.where(category: params[:category])
+    elsif params[:streaming_service].present?
+      @animes = Anime.where(streaming_service: params[:streaming_service])
     else
       @animes = Anime.all
     end

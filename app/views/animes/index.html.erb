@@ -1,6 +1,10 @@
 <div class="container mt-5">
-  <% if @filter != nil %>
-    <h4>Résultat de la recherche: "<%= @filter %>"</h4>
+  <% if params[:query].present? %>
+    <h4>Résultat de la recherche : "<%= params[:query] %>"</h4>
+  <% elsif  params[:category].present? %>
+    <h4>Tous les animes dans la catégorie : "<%= params[:category] %>"</h4>
+  <% elsif  params[:streaming_service].present? %>
+    <h4>Tous les animes disponible sur : "<%= params[:streaming_service] %>"</h4>
   <% end %>
   <%= link_to  root_path do%>
     <i class="fas fa-arrow-circle-left return_home"></i>

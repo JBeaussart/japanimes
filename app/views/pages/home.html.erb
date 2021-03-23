@@ -15,9 +15,10 @@
   <ul class="category-choice">
     <li>
       <% @categories.each do |category| %>
-        <span class="button-3d"><%= link_to "#{category}", "#", class: 'remove-deco' %></span>
+        <span class="button-3d">
+          <%= link_to "#{category}", animes_path(category: category), class: 'remove-deco' %>
+        </span>
       <% end %>
     </li>
   </ul>
 </div>
-
