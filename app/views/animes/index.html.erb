@@ -1,18 +1,29 @@
 <div class="container mt-5 body-size">
-  <div class="search-index">
-    <%= render 'shared/searchbar', animes: @animes %>
-  </div>
-  <% if params[:query].present? %>
-    <h4>Résultat de la recherche : "<%= params[:query] %>"</h4>
-  <% elsif  params[:category].present? %>
-    <h4>Tous les animés dans la catégorie : "<%= params[:category] %>"</h4>
-  <% elsif  params[:streaming_service].present? %>
-    <h4>Tous les animés disponibles sur : "<%= params[:streaming_service] %>"</h4>
-  <% else %>
-    <h4>Tous les animés</h4>
+  <div class="top-index">
+    <div class="search-result">
+      <% if params[:query].present? %>
+        <h4>Résultat de la recherche : "<%= params[:query] %>"</h4>
+      <% elsif  params[:category].present? %>
+        <h4>Tous les animés dans la catégorie : "<%= params[:category] %>"</h4>
+      <% elsif  params[:streaming_service].present? %>
+        <h4>Tous les animés disponibles sur : "<%= params[:streaming_service] %>"</h4>
+      <% else %>
+        <h4>Tous les animés</h4>
+      <% end %>
+      <p class="count_result"><%= @animes.count %> résultats</p>
+    </div>
 
-  <% end %>
-  <p class="count_result"><%= @animes.count %> résultats</p>
+    <div class="search-index">
+      <%= form_tag animes_path, method: :get do %>
+        <%= text_field_tag :query,
+        params[:query],
+        class: "searchTerm",
+        placeholder: "Recherchez..."
+        %>
+      <% end %>
+    </div>
+  </div>
+
   <div class="row">
     <% @animes.each do |anime| %>
       <div class="card m-4">
