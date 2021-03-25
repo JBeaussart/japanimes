@@ -41,17 +41,17 @@ a:link {
   background: #171717;
   transition: all 0.7s ease-in-out;
   z-index: 999;
-  font-size: 20px;
   padding-top: 40px;
   padding-left: 40px;
 }
 
 .menu li {
+  font-size: 1.2vw;
   font-family: "Geomanist-Bold", serif;
   margin-bottom: 10px;
   padding-bottom: 7px;
   border-bottom: 1px solid rgba($color: #FFFFFF, $alpha: 0.1);
-  width: 200px;
+  width: 10vw;
 }
 
 .menu_link {
