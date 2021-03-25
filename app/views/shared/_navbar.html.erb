@@ -4,10 +4,13 @@
   </div>
   <ul class="menu">
     <li><%= link_to "ACCUEIL", "/", class: "menu_link" %></li>
-    <li><%= link_to "CATALOGUE", animes_path, class: "menu_link" %></li>
     <% if current_user != nil %>
       <li><%= link_to "MA WATCHLIST", user_path(current_user), class: "menu_link" %></li>
     <% end %>
+    <li><%= link_to "CATALOGUE", animes_path, class: "menu_link" %></li>
+    <li><%= link_to "NOUVEAUTÉ", "", class: "menu_link" %></li>
+    <li><%= link_to "ACTUALITÉ", "", class: "menu_link" %></li>
+    <li><%= link_to "COMMUNAUTÉ", "", class: "menu_link" %></li>
   </ul>
   <%= link_to root_path, class: "logo-navbar" do%>
     <%= image_tag 'logo.png', class:"img-logo" %>
@@ -17,7 +20,7 @@
       <% if user_signed_in? %>
         <li class="nav-item dropdown hello-text">Bonjour <%= current_user.nickname %></li>
         <li class="nav-item dropdown">
-          <%= image_tag "joseph.jpg", class: "goku avatar dropdown-toggle", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <%= image_tag "quentin.png", class: "goku avatar dropdown-toggle", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "dropdown-item", style: "color: $orange" %>
           </div>
