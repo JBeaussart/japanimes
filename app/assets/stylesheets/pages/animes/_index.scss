@@ -1,7 +1,21 @@
+.top-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .search-index {
-  position: absolute;
-  right: 17em;
-  top: 6em;
-  width: 300px;
-  height: 100px;
+  width: 231px;
+}
+
+.searchTerm {
+  border: 2px solid black;
+  padding: 15px 0 15px 10px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.searchTerm:focus{
+  color: $orange;
 }
