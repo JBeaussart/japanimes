@@ -6,19 +6,19 @@
     <div class="anime-info-show">
       <div class="anime-title-like-heart-show">
         <h1 class="anime-title-show font-family-title"><%= @anime.title %></h1>
-        <div class="like_heart">
+        <div class="like-btn-show">
           <% if current_user != nil %>
             <% if @anime.in?(current_user.animes) %>
               <%= link_to watchlist_anime_path(@watchlist), method: :delete do%>
-                <i class="fas fa-heart fa-3x"></i>
+                <div class="like" data-like-state="1"></div>
               <% end %>
             <% else %>
               <%= link_to anime_watchlist_animes_path(@anime), method: :post do %>
-                <i class="far fa-heart fa-3x"></i>
+                <div class="like" data-like-state="0"></div>
               <% end %>
             <% end %>
           <% end %>
-        </div>
+        </div>        
       </div>
       <p class="description_anime_show"><%= @anime.description %></p>
       <div class="anime-date-genre-note-show">
