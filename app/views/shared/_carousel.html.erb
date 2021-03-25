@@ -13,31 +13,31 @@
       <div class="carousel-item">
         <%= image_tag('shingeki.jpg', alt: 'shingeki.jpg', class: 'img-carousel d-block w-80') %>
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="title-carouselle"><%= link_to "L'attaque des titans", anime_path(98), class:'remove-decoration' %></h1>
+          <h1 class="title-carouselle"><%= link_to "L'attaque des titans", anime_path(Anime.find_by_title("L'attaque des titans")), class:'remove-decoration' %></h1>
         </div>
       </div>
       <div class="carousel-item active">
         <%= image_tag('jujutsu_kaisen.png', alt: 'jujutsu_kaisen.png', class: 'img-carousel d-block w-80') %>
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="title-carouselle"><%= link_to "Jujutsu Kaisen", anime_path(103), class:'remove-decoration' %></h1>
+          <h1 class="title-carouselle"><%= link_to "Jujutsu Kaisen", anime_path(Anime.find_by_title("Jujutsu kaisen")), class:'remove-decoration' %></h1>
         </div>
       </div>
       <div class="carousel-item">
         <%= image_tag('my_hero.png', alt: 'my_hero.png', class: 'img-carousel d-block w-80')%>
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="title-carouselle"><%= link_to "My Hero Academia", anime_path(110), class:'remove-decoration' %></h1>
+          <h1 class="title-carouselle"><%= link_to "My Hero Academia", anime_path(Anime.find_by_title("My hero academia")), class:'remove-decoration' %></h1>
         </div>
       </div>
       <div class="carousel-item">
         <%= image_tag('fire_force.png', alt: 'fire_force.png', class: 'img-carousel d-block w-80')%>
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="title-carouselle"><%= link_to "Fire Force", anime_path(99), class:'remove-decoration' %></h1>
+          <h1 class="title-carouselle"><%= link_to "Fire Force", anime_path(Anime.find_by_title("Fire force")), class:'remove-decoration' %></h1>
         </div>
       </div>
       <div class="carousel-item">
         <%= image_tag('black_clover.jpg', alt: 'black_clover.jpg', class: 'img-carousel d-block w-80')%>
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="title-carouselle"><%= link_to "Black Clover", anime_path(101), class:'remove-decoration' %></h1>
+          <h1 class="title-carouselle"><%= link_to "Black Clover", anime_path(Anime.find_by_title("Black Clover")), class:'remove-decoration' %></h1>
         </div>
       </div>
     </div>
