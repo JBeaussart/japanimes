@@ -57,6 +57,7 @@
 }
 
 .anime-info-show {
+  position: relative;
   background-color: white;
   box-shadow: 1px 1px 4px rgb(165, 165, 165);
   padding: 3% 3% 0 3%;
@@ -123,4 +124,11 @@
 .title_prediction {
   font-size: 40px;
   font-family: "Geomanist-Bold", serif;
+}
+
+
+.like-btn-show {
+  position: absolute;
+  top: -8%;
+  right: 0%;
 }
