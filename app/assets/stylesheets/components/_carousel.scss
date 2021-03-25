@@ -46,15 +46,20 @@
 }
 
 .text-anim-top {
+	display: flex;
+	justify-content: center;
+}
+
+.text-anim-top p {
 	position: absolute;
 	z-index: 1;
 	background-color: rgba($color: #000000, $alpha: 1.0);
 	top: 10px;
-	left: 625px;
 	color: $orange;
 	font-size: 20px;
 	font-family: 'Changa', sans-serif;
 	border-radius: 8px;
 	box-shadow: 1px 1px 10px $orange;
 	padding: 3px 8px 3px 8px;
+	text-align: center;
 }
