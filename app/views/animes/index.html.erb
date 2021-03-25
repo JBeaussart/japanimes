@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container mt-5 body-size">
   <div class="search-index">
     <%= render 'shared/searchbar', animes: @animes %>
   </div>
@@ -10,6 +10,7 @@
     <h4>Tous les animés disponibles sur : "<%= params[:streaming_service] %>"</h4>
   <% else %>
     <h4>Tous les animés</h4>
+
   <% end %>
   <p class="count_result"><%= @animes.count %> résultats</p>
   <div class="row">

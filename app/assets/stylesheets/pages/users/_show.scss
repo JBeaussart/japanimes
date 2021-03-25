@@ -1,6 +1,7 @@
 .user_show_container {
   display: flex;
   justify-content: space-evenly;
+  min-height: calc(100vh - 4vh - 60px);
   
   .user_information {
     position: sticky;
