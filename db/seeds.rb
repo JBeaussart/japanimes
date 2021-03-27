@@ -112,7 +112,7 @@ anime = Anime.create!(
   parution_date: "07/01/2021", 
   category: "Comedie", 
   streaming_service: "Crunchyroll", 
-  rating: 1,
+  rating: 4,
   vote: 41
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
@@ -138,7 +138,7 @@ anime = Anime.create!(
   parution_date: "10/01/2021", 
   category: "Action", 
   streaming_service: "Wakanim", 
-  rating: 3,
+  rating: 5,
   vote: 92
 )
 puts " - #{anime.title} (#{Anime.count}/25)"
